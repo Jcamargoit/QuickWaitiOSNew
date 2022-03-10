@@ -15,7 +15,7 @@ class RegisterUserViewController: UIViewController {
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfConfirmPassword: UITextField!
     
-    private var registerUserViewModel = RegisterUserViewModel()
+    private var vm = RegisterUserViewModel()
     var alert = UIAlertController ()
     
     override func viewDidLoad() {
@@ -29,46 +29,38 @@ class RegisterUserViewController: UIViewController {
     }
     
     @IBAction func tapToNext(_ sender: UIButton) {
+        createAnAccount()
     }
     
-    
-//    func criarConta()  {
-//          
-//          
-//          self.registerUserViewModel.username = ""
-//          self.registerUserViewModel.password = ""
-//          self.registerUserViewModel.email = ""
-//          self.registerUserViewModel.cpf = ""
-//          self.registerUserViewModel.phoneNumber = ""
-//          
-//          self.alert = UIAlertController(title: nil, message: "Carregando...", preferredStyle: .alert)
-//          let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
-//          loadingIndicator.hidesWhenStopped = true
-//          loadingIndicator.style = UIActivityIndicatorView.Style.large
-//          loadingIndicator.startAnimating();
-//          self.alert.view.addSubview(loadingIndicator)
-//          present(self.alert, animated: true, completion: nil)
-//      
-//          Webservice().load(resource: CriarConta.login(vm: self.vm)) { result in
-//              
-//              switch result {
-//                  
-//                  case .success(let order):
-//                  print("conta criada com sucesso ", order?.message ?? "")
-//                  DispatchQueue.main.async {
-//                      self.alert.dismiss(animated: false, completion: nil)
-//                  }
-//                  case .failure(let error):
-//                  print("erro ao criar conta ", error)
-//                  DispatchQueue.main.async {
-//                      self.alert.dismiss(animated: false, completion: nil)
-//                  }
-//                  
-//              }
-//          }
-//      }
-    
-    
+    func createAnAccount()  {
+        
+        self.vm.username = self.tfName.text ?? ""
+        self.vm.password = self.tfPassword.text ?? ""
+        self.vm.email = self.tfEmail.text ?? ""
+        self.vm.cpf = self.tfCPF.text ?? ""
+        self.vm.phoneNumber = self.tfCell.text ?? ""
+        
+        showLoading(enable: true)
+        
+        APIService().load(resource: CriarConta.login(vm: self.vm)) { result in
+            
+            switch result {
+                
+            case .success(let order):
+                print("conta criada com sucesso ", order?.message ?? "")
+                DispatchQueue.main.async {
+                    self.showLoading(enable: false)
+                    self.simplePopUp(title: "Cadastro", mensage: "Efetuado com sucesso")
+                }
+            case .failure(let error):
+                print("erro ao criar conta ", error)
+                DispatchQueue.main.async {
+                    self.showLoading(enable: false)
+                    self.simplePopUp(title: "Cadastro", mensage: "Não efetuado, tentar novamente")
+                }
+            }
+        }
+    }
     
     deinit {
         print("Deinit RegisterUserViewController")

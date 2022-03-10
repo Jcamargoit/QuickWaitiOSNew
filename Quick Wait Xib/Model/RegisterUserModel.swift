@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct RegisterUserModel:Codable {
+struct CriarConta:Codable {
     
     var username: String?
     var email: String?
@@ -23,13 +23,13 @@ struct responseLogin: Codable {
 }
 
 
-extension RegisterUserModel {
+extension CriarConta {
  
     
-    static func registerNewUser(registerUserModel: RegisterUserViewModel) -> Resource<responseLogin?>{
+    static func login(vm: RegisterUserViewModel) -> Resource<responseLogin?>{
         
-        let order = RegisterUserModel(registerUserModel)
-        guard let url = URL(string: "localhost:8072/auth/api/auth/signup") else{
+        let order = CriarConta(vm)
+        guard let url = URL(string: "http://localhost:8072/auth/api/auth/signup") else{
             fatalError("URL is incorrect!")
         }
        guard let data = try? JSONEncoder().encode(order) else {
@@ -44,15 +44,15 @@ extension RegisterUserModel {
     
 }
 
-extension RegisterUserModel {
+extension CriarConta {
     
-    init?(_ registerUserModel: RegisterUserViewModel){
+    init?(_ vm: RegisterUserViewModel){
         
-        guard let username = registerUserModel.username,
-              let email = registerUserModel.email,
-              let password = registerUserModel.password,
-              let cpf = registerUserModel.cpf,
-              let phoneNumber = registerUserModel.phoneNumber else {
+        guard let username = vm.username,
+              let email = vm.email,
+              let password = vm.password,
+              let cpf = vm.cpf,
+              let phoneNumber = vm.phoneNumber else {
                 
                 return nil
               }
@@ -64,3 +64,4 @@ extension RegisterUserModel {
         
     }
 }
+
