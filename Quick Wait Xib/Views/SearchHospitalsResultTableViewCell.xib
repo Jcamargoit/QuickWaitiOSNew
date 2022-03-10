@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand_Bold.otf">
+            <string>QuicksandBold-Regular</string>
+        </array>
+        <array key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celula" rowHeight="84" id="KGk-i7-Jjw" customClass="SearchHospitalsResultTableViewCell" customModule="Quick_Wait_Xib" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hospitalCell" translatesAutoresizingMaskIntoConstraints="NO" id="auh-eh-Izk">
+                        <rect key="frame" x="15" y="0.0" width="290" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="GLx-lV-1as"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHospital" translatesAutoresizingMaskIntoConstraints="NO" id="d6g-eQ-id6">
+                        <rect key="frame" x="35" y="18.5" width="28" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="XUj-P2-BJg"/>
+                            <constraint firstAttribute="height" constant="35" id="lkD-cZ-2iI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPA 24h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTp-59-3f2">
+                        <rect key="frame" x="78" y="13.5" width="207" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2wb-p5-gei"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBold-Regular" family="Quicksand" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80j-e2-Fam">
+                        <rect key="frame" x="78" y="33.5" width="207" height="5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="loB-3I-aMH"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Thelmo de Almeida Cruz" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1O-iC-UWh">
+                        <rect key="frame" x="78" y="38.5" width="207" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="9Oc-c1-iIN"/>
+                            <constraint firstAttribute="height" constant="20" id="fb5-54-38B"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHospitalGreen" translatesAutoresizingMaskIntoConstraints="NO" id="Fvo-pq-avZ">
+                        <rect key="frame" x="29" y="44.5" width="40" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Quy-LC-t4a"/>
+                            <constraint firstAttribute="height" constant="10" id="zbw-Vj-DYa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recomendado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caf-RU-Bpo">
+                        <rect key="frame" x="31" y="46.5" width="36" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="5tX-qa-R13"/>
+                            <constraint firstAttribute="width" constant="36" id="Gib-jp-I1r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="5"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="80j-e2-Fam" firstAttribute="leading" secondItem="d6g-eQ-id6" secondAttribute="trailing" constant="15" id="2vh-GQ-7yE"/>
+                    <constraint firstItem="80j-e2-Fam" firstAttribute="top" secondItem="dTp-59-3f2" secondAttribute="bottom" id="38W-9S-lIL"/>
+                    <constraint firstItem="u1O-iC-UWh" firstAttribute="trailing" secondItem="dTp-59-3f2" secondAttribute="trailing" id="9Dw-38-IJM"/>
+                    <constraint firstItem="u1O-iC-UWh" firstAttribute="leading" secondItem="dTp-59-3f2" secondAttribute="leading" id="Nkt-sD-iKU"/>
+                    <constraint firstItem="dTp-59-3f2" firstAttribute="leading" secondItem="d6g-eQ-id6" secondAttribute="trailing" constant="15" id="NnQ-gt-Fxd"/>
+                    <constraint firstItem="u1O-iC-UWh" firstAttribute="top" secondItem="80j-e2-Fam" secondAttribute="bottom" id="Sek-mL-fa8"/>
+                    <constraint firstItem="d6g-eQ-id6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="VXk-8g-uf3"/>
+                    <constraint firstItem="80j-e2-Fam" firstAttribute="centerY" secondItem="d6g-eQ-id6" secondAttribute="centerY" id="WPr-om-zdt"/>
+                    <constraint firstItem="d6g-eQ-id6" firstAttribute="centerY" secondItem="auh-eh-Izk" secondAttribute="centerY" constant="-4" id="Z61-Si-6nP"/>
+                    <constraint firstItem="auh-eh-Izk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZtX-eT-dh5"/>
+                    <constraint firstItem="caf-RU-Bpo" firstAttribute="centerX" secondItem="Fvo-pq-avZ" secondAttribute="centerX" id="eth-9F-Z2x"/>
+                    <constraint firstAttribute="trailing" secondItem="auh-eh-Izk" secondAttribute="trailing" constant="15" id="hvH-67-NPN"/>
+                    <constraint firstItem="80j-e2-Fam" firstAttribute="trailing" secondItem="auh-eh-Izk" secondAttribute="trailing" constant="-20" id="ohc-Xj-h19"/>
+                    <constraint firstItem="Fvo-pq-avZ" firstAttribute="bottom" secondItem="d6g-eQ-id6" secondAttribute="bottom" constant="1" id="plh-HM-7lM"/>
+                    <constraint firstItem="auh-eh-Izk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="reU-Fc-sQF"/>
+                    <constraint firstItem="dTp-59-3f2" firstAttribute="trailing" secondItem="80j-e2-Fam" secondAttribute="trailing" id="v90-jJ-oQ6"/>
+                    <constraint firstItem="Fvo-pq-avZ" firstAttribute="centerX" secondItem="d6g-eQ-id6" secondAttribute="centerX" id="yqz-ZB-uwS"/>
+                    <constraint firstItem="caf-RU-Bpo" firstAttribute="centerY" secondItem="Fvo-pq-avZ" secondAttribute="centerY" id="zM6-TB-IRl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="ivStatusHospital" destination="Fvo-pq-avZ" id="wud-6e-Msz"/>
+                <outlet property="lbAddressHospital" destination="u1O-iC-UWh" id="HlR-5A-QGX"/>
+                <outlet property="lbNameHospital" destination="dTp-59-3f2" id="0En-xZ-ZmZ"/>
+                <outlet property="lbStatusHospital" destination="caf-RU-Bpo" id="uXo-VN-g5n"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="203.57142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hospitalCell" width="337" height="71"/>
+        <image name="iconHospital" width="28" height="36"/>
+        <image name="iconHospitalGreen" width="41" height="10"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

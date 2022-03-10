@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewsCollectionViewCell" customModule="Quick_Wait_Xib" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="605" height="309"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="605" height="309"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdi-gH-xrt">
+                        <rect key="frame" x="0.0" y="0.0" width="605" height="309"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-Sc-qkA">
+                                <rect key="frame" x="0.0" y="0.0" width="605" height="309"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sm-7x-GaN">
+                                <rect key="frame" x="20" y="289" width="280" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Iy8-a2-E7B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="w8G-Sc-qkA" secondAttribute="bottom" id="CZ3-Ua-3Oq"/>
+                            <constraint firstAttribute="bottom" secondItem="0sm-7x-GaN" secondAttribute="bottom" constant="20" id="NLY-wt-PJm"/>
+                            <constraint firstItem="w8G-Sc-qkA" firstAttribute="top" secondItem="vdi-gH-xrt" secondAttribute="top" id="WHn-3N-sHi"/>
+                            <constraint firstItem="0sm-7x-GaN" firstAttribute="leading" secondItem="vdi-gH-xrt" secondAttribute="leading" constant="20" id="X84-T3-Ttz"/>
+                            <constraint firstItem="w8G-Sc-qkA" firstAttribute="leading" secondItem="vdi-gH-xrt" secondAttribute="leading" id="XBW-xM-qYZ"/>
+                            <constraint firstAttribute="trailing" secondItem="w8G-Sc-qkA" secondAttribute="trailing" id="jhG-9e-v8p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vdi-gH-xrt" secondAttribute="trailing" id="av5-zC-Ahd"/>
+                <constraint firstItem="vdi-gH-xrt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="m23-VA-jRU"/>
+                <constraint firstItem="vdi-gH-xrt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="n1P-Wt-sXV"/>
+                <constraint firstAttribute="bottom" secondItem="vdi-gH-xrt" secondAttribute="bottom" id="vbP-zn-l4G"/>
+            </constraints>
+            <size key="customSize" width="456" height="201"/>
+            <connections>
+                <outlet property="bannerImage" destination="w8G-Sc-qkA" id="Yce-BF-bm6"/>
+                <outlet property="lbTitle" destination="0sm-7x-GaN" id="ZWz-gl-02M"/>
+                <outlet property="shadowView" destination="vdi-gH-xrt" id="b5N-rH-nI2"/>
+            </connections>
+            <point key="canvasLocation" x="431.15942028985512" y="102.12053571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

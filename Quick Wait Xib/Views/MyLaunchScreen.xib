@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyLaunchViewController" customModule="Quick_Wait_Xib" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newLaunche" translatesAutoresizingMaskIntoConstraints="NO" id="cuZ-aB-L72">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="e2N-Pn-d72">
+                    <rect key="frame" x="97.5" y="348" width="219" height="200"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.89411764705882346" green="0.99215686274509807" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cuZ-aB-L72" secondAttribute="bottom" id="0SE-xg-D1j"/>
+                <constraint firstItem="e2N-Pn-d72" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.528986" id="6zS-Ri-vgA"/>
+                <constraint firstAttribute="trailing" secondItem="cuZ-aB-L72" secondAttribute="trailing" id="F03-VN-12Y"/>
+                <constraint firstItem="cuZ-aB-L72" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FAl-WV-pph"/>
+                <constraint firstItem="e2N-Pn-d72" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ROw-Kv-mxu"/>
+                <constraint firstItem="cuZ-aB-L72" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U01-Hc-pAr"/>
+                <constraint firstItem="e2N-Pn-d72" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.223214" id="nCK-4d-li6"/>
+                <constraint firstItem="e2N-Pn-d72" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="s5t-J2-Ehs"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="522" height="552"/>
+        <image name="newLaunche" width="1242" height="2688"/>
+    </resources>
+</document>

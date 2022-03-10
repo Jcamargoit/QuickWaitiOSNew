@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchHospitalsResultViewController" customModule="Quick_Wait_Xib" customModuleProvider="target">
+            <connections>
+                <outlet property="lbAddressHospital" destination="LJS-cO-yYu" id="uJy-le-1lc"/>
+                <outlet property="lbDistanceHospital" destination="wLw-vx-sCm" id="KFb-su-rga"/>
+                <outlet property="lbNameHospital" destination="sZX-LM-iBp" id="NfW-Fd-oSt"/>
+                <outlet property="myTableView" destination="I6M-af-ig0" id="JKo-Pi-5tD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTableView" destination="pFl-DA-sjS" id="W0r-e4-BaX"/>
+                <outlet property="viewTableViewResult" destination="0JA-rt-lXP" id="VdP-IX-pG4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFl-DA-sjS" userLabel="MyView">
+                    <rect key="frame" x="30" y="396" width="354" height="500"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="retangleSearchHospitals" translatesAutoresizingMaskIntoConstraints="NO" id="80W-n0-loO">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="500"/>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I6M-af-ig0">
+                            <rect key="frame" x="-2" y="35" width="358" height="465"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKQ-RZ-mp6" userLabel="closer">
+                            <rect key="frame" x="319" y="10" width="25" height="25"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title=" ">
+                                <backgroundConfiguration key="background"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tapToClouse:" destination="-1" eventType="touchUpInside" id="4uV-zF-g9w"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zKQ-RZ-mp6" secondAttribute="trailing" constant="10" id="63c-tn-ac2"/>
+                        <constraint firstItem="zKQ-RZ-mp6" firstAttribute="top" secondItem="pFl-DA-sjS" secondAttribute="top" constant="10" id="7FC-os-L2x"/>
+                        <constraint firstItem="zKQ-RZ-mp6" firstAttribute="width" secondItem="80W-n0-loO" secondAttribute="width" multiplier="0.0706215" id="AEP-FL-Zrj"/>
+                        <constraint firstAttribute="bottom" secondItem="80W-n0-loO" secondAttribute="bottom" id="Mrj-qe-2My"/>
+                        <constraint firstAttribute="trailing" secondItem="I6M-af-ig0" secondAttribute="trailing" constant="-2" id="NRa-mt-qle"/>
+                        <constraint firstAttribute="trailing" secondItem="80W-n0-loO" secondAttribute="trailing" id="QeC-7C-xBa"/>
+                        <constraint firstItem="zKQ-RZ-mp6" firstAttribute="height" secondItem="80W-n0-loO" secondAttribute="height" multiplier="0.05" id="XJq-T7-Q2P"/>
+                        <constraint firstItem="80W-n0-loO" firstAttribute="top" secondItem="pFl-DA-sjS" secondAttribute="top" id="aV7-0A-mwJ"/>
+                        <constraint firstAttribute="bottom" secondItem="I6M-af-ig0" secondAttribute="bottom" id="gNN-Ew-Cb6"/>
+                        <constraint firstItem="80W-n0-loO" firstAttribute="leading" secondItem="pFl-DA-sjS" secondAttribute="leading" id="os5-Rg-b44"/>
+                        <constraint firstItem="I6M-af-ig0" firstAttribute="leading" secondItem="pFl-DA-sjS" secondAttribute="leading" constant="-2" id="vPA-HB-VbV"/>
+                        <constraint firstItem="I6M-af-ig0" firstAttribute="top" secondItem="zKQ-RZ-mp6" secondAttribute="bottom" id="zir-7z-Yz4"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0JA-rt-lXP" userLabel="SubViewHospital">
+                    <rect key="frame" x="30" y="396" width="354" height="500"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="retangleSearchHospitals" translatesAutoresizingMaskIntoConstraints="NO" id="X11-lD-bV4">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="500"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital/Posto de saúde" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="4rj-LQ-0ou">
+                            <rect key="frame" x="46" y="20" width="282" height="20"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hospitalCell" translatesAutoresizingMaskIntoConstraints="NO" id="TEA-02-exY">
+                            <rect key="frame" x="26" y="50" width="302" height="58"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHospital1" translatesAutoresizingMaskIntoConstraints="NO" id="acy-up-gr7">
+                            <rect key="frame" x="46" y="58" width="33" height="36"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital Mater Dei" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="sZX-LM-iBp">
+                            <rect key="frame" x="89" y="59.5" width="229" height="16.5"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79n-yH-eiN">
+                            <rect key="frame" x="89" y="76" width="229" height="0.0"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="CxJ-Io-imv"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Un. Santo Agotinho" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="LJS-cO-yYu">
+                            <rect key="frame" x="89" y="76" width="229" height="14.5"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo estimado de espera" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="hFx-Hs-lHx">
+                            <rect key="frame" x="46" y="118" width="303" height="20"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundResultHospital" translatesAutoresizingMaskIntoConstraints="NO" id="LHf-fi-czI">
+                            <rect key="frame" x="26" y="148" width="302" height="46"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 minutos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="G9Y-U8-pXs">
+                            <rect key="frame" x="46" y="162.5" width="267" height="13"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distância a ser percorrida" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="wXn-kx-TMF">
+                            <rect key="frame" x="46" y="204" width="303" height="21"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundResultHospital" translatesAutoresizingMaskIntoConstraints="NO" id="Flh-GK-X2A">
+                            <rect key="frame" x="26" y="235" width="302" height="46"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wLw-vx-sCm">
+                            <rect key="frame" x="46" y="256" width="267" height="0.0"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hospitalCheck" translatesAutoresizingMaskIntoConstraints="NO" id="TZk-go-oO0">
+                            <rect key="frame" x="46" y="291" width="22" height="16"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hospitalCheck" translatesAutoresizingMaskIntoConstraints="NO" id="vq8-Uc-XOZ">
+                            <rect key="frame" x="46" y="317" width="22" height="16"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital masi próximo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pv1-DN-Qlu">
+                            <rect key="frame" x="78" y="292" width="250" height="14.5"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atende o seu plano" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBh-yA-dxg">
+                            <rect key="frame" x="78" y="318" width="250" height="14.5"/>
+                            <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQp-Xj-oDZ">
+                            <rect key="frame" x="36" y="343" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="72B-Bc-n6z"/>
+                                <constraint firstAttribute="height" constant="44" id="I5w-SM-uob"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title=" ">
+                                <backgroundConfiguration key="background" image="iconBackRegister"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tapToBack:" destination="-1" eventType="touchUpInside" id="UDf-Ak-E2n"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXS-eA-ry7">
+                            <rect key="frame" x="274" y="343" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="5yb-8Q-eWw"/>
+                                <constraint firstAttribute="width" constant="44" id="UsF-JV-aUV"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title=" ">
+                                <backgroundConfiguration key="background" image="btnConfirm"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="taToConfirm:" destination="-1" eventType="touchUpInside" id="qtD-sQ-cyq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4rj-LQ-0ou" firstAttribute="trailing" secondItem="TEA-02-exY" secondAttribute="trailing" id="0BH-OS-eDG"/>
+                        <constraint firstAttribute="trailing" secondItem="X11-lD-bV4" secondAttribute="trailing" id="0bS-f8-5ax"/>
+                        <constraint firstItem="LHf-fi-czI" firstAttribute="top" secondItem="hFx-Hs-lHx" secondAttribute="bottom" constant="10" id="47L-o6-1pz"/>
+                        <constraint firstItem="G9Y-U8-pXs" firstAttribute="leading" secondItem="hFx-Hs-lHx" secondAttribute="leading" id="5Bb-A1-jbB"/>
+                        <constraint firstItem="WQp-Xj-oDZ" firstAttribute="top" secondItem="vq8-Uc-XOZ" secondAttribute="bottom" constant="10" id="5CJ-ht-OKZ"/>
+                        <constraint firstItem="G9Y-U8-pXs" firstAttribute="centerY" secondItem="LHf-fi-czI" secondAttribute="centerY" constant="-2" id="5fK-T4-kzX"/>
+                        <constraint firstItem="vq8-Uc-XOZ" firstAttribute="height" secondItem="TZk-go-oO0" secondAttribute="height" id="6Sp-Oh-qWf"/>
+                        <constraint firstItem="wXn-kx-TMF" firstAttribute="leading" secondItem="hFx-Hs-lHx" secondAttribute="leading" id="7Dy-Db-4vD"/>
+                        <constraint firstItem="LHf-fi-czI" firstAttribute="leading" secondItem="TEA-02-exY" secondAttribute="leading" id="9Ge-6M-VlW"/>
+                        <constraint firstItem="sZX-LM-iBp" firstAttribute="leading" secondItem="79n-yH-eiN" secondAttribute="leading" id="AO0-js-rf5"/>
+                        <constraint firstItem="79n-yH-eiN" firstAttribute="trailing" secondItem="TEA-02-exY" secondAttribute="trailing" constant="-10" id="Aav-M3-8F1"/>
+                        <constraint firstItem="TEA-02-exY" firstAttribute="top" secondItem="4rj-LQ-0ou" secondAttribute="bottom" constant="10" id="BnR-eK-hUP"/>
+                        <constraint firstAttribute="bottom" secondItem="X11-lD-bV4" secondAttribute="bottom" id="BoF-HQ-CuY"/>
+                        <constraint firstItem="vq8-Uc-XOZ" firstAttribute="top" secondItem="TZk-go-oO0" secondAttribute="bottom" constant="10" id="CQR-xi-Nux"/>
+                        <constraint firstItem="79n-yH-eiN" firstAttribute="centerY" secondItem="acy-up-gr7" secondAttribute="centerY" id="Cge-3V-8iM"/>
+                        <constraint firstItem="acy-up-gr7" firstAttribute="centerY" secondItem="TEA-02-exY" secondAttribute="centerY" constant="-3" id="DYc-pC-tES"/>
+                        <constraint firstItem="hFx-Hs-lHx" firstAttribute="top" secondItem="TEA-02-exY" secondAttribute="bottom" constant="10" id="EAO-Zb-sNM"/>
+                        <constraint firstItem="Pv1-DN-Qlu" firstAttribute="leading" secondItem="TZk-go-oO0" secondAttribute="trailing" constant="10" id="F37-2T-CeR"/>
+                        <constraint firstItem="wLw-vx-sCm" firstAttribute="trailing" secondItem="Flh-GK-X2A" secondAttribute="trailing" constant="-15" id="Jqq-Zk-5U6"/>
+                        <constraint firstItem="hFx-Hs-lHx" firstAttribute="leading" secondItem="acy-up-gr7" secondAttribute="leading" id="MVe-Pp-HZH"/>
+                        <constraint firstItem="RXS-eA-ry7" firstAttribute="centerY" secondItem="WQp-Xj-oDZ" secondAttribute="centerY" id="Nxn-Tm-P90"/>
+                        <constraint firstItem="TEA-02-exY" firstAttribute="centerX" secondItem="0JA-rt-lXP" secondAttribute="centerX" id="ORb-6b-RMM"/>
+                        <constraint firstItem="sZX-LM-iBp" firstAttribute="trailing" secondItem="79n-yH-eiN" secondAttribute="trailing" id="PoB-J6-vZ2"/>
+                        <constraint firstItem="4rj-LQ-0ou" firstAttribute="leading" secondItem="acy-up-gr7" secondAttribute="leading" id="Q1U-NO-AYD"/>
+                        <constraint firstItem="RXS-eA-ry7" firstAttribute="trailing" secondItem="Flh-GK-X2A" secondAttribute="trailing" constant="-10" id="QHH-Wg-llj"/>
+                        <constraint firstItem="LHf-fi-czI" firstAttribute="trailing" secondItem="TEA-02-exY" secondAttribute="trailing" id="R28-5X-veb"/>
+                        <constraint firstItem="X11-lD-bV4" firstAttribute="leading" secondItem="0JA-rt-lXP" secondAttribute="leading" id="RPL-0W-JPI"/>
+                        <constraint firstItem="LJS-cO-yYu" firstAttribute="trailing" secondItem="79n-yH-eiN" secondAttribute="trailing" id="U6a-OO-zRj"/>
+                        <constraint firstItem="79n-yH-eiN" firstAttribute="leading" secondItem="acy-up-gr7" secondAttribute="trailing" constant="10" id="UUx-k1-5tO"/>
+                        <constraint firstItem="Pv1-DN-Qlu" firstAttribute="centerY" secondItem="TZk-go-oO0" secondAttribute="centerY" id="VQ8-GN-3QC"/>
+                        <constraint firstItem="wLw-vx-sCm" firstAttribute="leading" secondItem="wXn-kx-TMF" secondAttribute="leading" id="Wua-1I-OLT"/>
+                        <constraint firstItem="Flh-GK-X2A" firstAttribute="leading" secondItem="LHf-fi-czI" secondAttribute="leading" id="Xco-7D-f5Q"/>
+                        <constraint firstItem="TZk-go-oO0" firstAttribute="height" secondItem="0JA-rt-lXP" secondAttribute="height" multiplier="0.032" id="XfY-kH-l5A"/>
+                        <constraint firstItem="hFx-Hs-lHx" firstAttribute="trailing" secondItem="X11-lD-bV4" secondAttribute="trailing" constant="-5" id="aZh-vi-hHi"/>
+                        <constraint firstItem="LJS-cO-yYu" firstAttribute="top" secondItem="79n-yH-eiN" secondAttribute="bottom" id="ad5-if-eh3"/>
+                        <constraint firstItem="LJS-cO-yYu" firstAttribute="leading" secondItem="79n-yH-eiN" secondAttribute="leading" id="akv-XE-URE"/>
+                        <constraint firstItem="G9Y-U8-pXs" firstAttribute="trailing" secondItem="LHf-fi-czI" secondAttribute="trailing" constant="-15" id="bbb-tg-bMZ"/>
+                        <constraint firstItem="Pv1-DN-Qlu" firstAttribute="trailing" secondItem="Flh-GK-X2A" secondAttribute="trailing" id="bwQ-Dc-WZH"/>
+                        <constraint firstItem="vq8-Uc-XOZ" firstAttribute="width" secondItem="TZk-go-oO0" secondAttribute="width" id="bx2-Sb-5VA"/>
+                        <constraint firstItem="KBh-yA-dxg" firstAttribute="centerY" secondItem="vq8-Uc-XOZ" secondAttribute="centerY" id="c5o-U5-zWx"/>
+                        <constraint firstItem="TEA-02-exY" firstAttribute="width" secondItem="0JA-rt-lXP" secondAttribute="width" multiplier="0.854167" id="eXS-o0-Oej"/>
+                        <constraint firstItem="KBh-yA-dxg" firstAttribute="leading" secondItem="Pv1-DN-Qlu" secondAttribute="leading" id="eay-Ga-eD7"/>
+                        <constraint firstItem="acy-up-gr7" firstAttribute="width" secondItem="TEA-02-exY" secondAttribute="width" multiplier="0.109756" id="eh3-SL-FEL"/>
+                        <constraint firstItem="4rj-LQ-0ou" firstAttribute="top" secondItem="0JA-rt-lXP" secondAttribute="top" constant="20" id="fEa-5C-TSQ"/>
+                        <constraint firstItem="wXn-kx-TMF" firstAttribute="top" secondItem="LHf-fi-czI" secondAttribute="bottom" constant="10" id="gqw-cJ-P9f"/>
+                        <constraint firstItem="TZk-go-oO0" firstAttribute="leading" secondItem="wLw-vx-sCm" secondAttribute="leading" id="hSt-0u-IIl"/>
+                        <constraint firstItem="vq8-Uc-XOZ" firstAttribute="centerX" secondItem="TZk-go-oO0" secondAttribute="centerX" id="hYx-7f-5IR"/>
+                        <constraint firstItem="Flh-GK-X2A" firstAttribute="top" secondItem="wXn-kx-TMF" secondAttribute="bottom" constant="10" id="i1P-GP-UDO"/>
+                        <constraint firstItem="TEA-02-exY" firstAttribute="height" secondItem="0JA-rt-lXP" secondAttribute="height" multiplier="0.116" id="iZG-mW-3fR"/>
+                        <constraint firstItem="X11-lD-bV4" firstAttribute="top" secondItem="0JA-rt-lXP" secondAttribute="top" id="jGf-KJ-dGr"/>
+                        <constraint firstItem="wXn-kx-TMF" firstAttribute="trailing" secondItem="hFx-Hs-lHx" secondAttribute="trailing" id="jQf-Ht-mjv"/>
+                        <constraint firstItem="WQp-Xj-oDZ" firstAttribute="leading" secondItem="Flh-GK-X2A" secondAttribute="leading" constant="10" id="k4b-VY-4b9"/>
+                        <constraint firstItem="Flh-GK-X2A" firstAttribute="trailing" secondItem="LHf-fi-czI" secondAttribute="trailing" id="k9H-Oa-F1Z"/>
+                        <constraint firstItem="KBh-yA-dxg" firstAttribute="trailing" secondItem="Pv1-DN-Qlu" secondAttribute="trailing" id="m7R-mr-qQ5"/>
+                        <constraint firstItem="acy-up-gr7" firstAttribute="leading" secondItem="TEA-02-exY" secondAttribute="leading" constant="20" id="o4B-Vm-bl0"/>
+                        <constraint firstItem="LHf-fi-czI" firstAttribute="height" secondItem="X11-lD-bV4" secondAttribute="height" multiplier="0.092" id="oCX-sk-TWa"/>
+                        <constraint firstItem="TZk-go-oO0" firstAttribute="top" secondItem="Flh-GK-X2A" secondAttribute="bottom" constant="10" id="oYA-xU-wcO"/>
+                        <constraint firstItem="79n-yH-eiN" firstAttribute="top" secondItem="sZX-LM-iBp" secondAttribute="bottom" id="pAh-H7-DXp"/>
+                        <constraint firstItem="Flh-GK-X2A" firstAttribute="height" secondItem="X11-lD-bV4" secondAttribute="height" multiplier="0.092" id="ryQ-GJ-Qyy"/>
+                        <constraint firstItem="acy-up-gr7" firstAttribute="height" secondItem="TEA-02-exY" secondAttribute="height" multiplier="0.62069" id="uHw-hm-Xjt"/>
+                        <constraint firstItem="wLw-vx-sCm" firstAttribute="centerY" secondItem="Flh-GK-X2A" secondAttribute="centerY" constant="-2" id="uXC-ec-RNQ"/>
+                        <constraint firstItem="TZk-go-oO0" firstAttribute="width" secondItem="0JA-rt-lXP" secondAttribute="width" multiplier="0.0625" id="yuo-ol-eqX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pFl-DA-sjS" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.558036" id="2mH-5f-iRv"/>
+                <constraint firstItem="pFl-DA-sjS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-30" id="OSt-Xl-GHW"/>
+                <constraint firstItem="0JA-rt-lXP" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.558036" id="epH-dn-viQ"/>
+                <constraint firstAttribute="bottom" secondItem="0JA-rt-lXP" secondAttribute="bottom" id="huH-um-mQE"/>
+                <constraint firstAttribute="bottom" secondItem="pFl-DA-sjS" secondAttribute="bottom" id="kOH-Rk-Wpy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0JA-rt-lXP" secondAttribute="trailing" constant="30" id="tKq-g9-38S"/>
+                <constraint firstItem="0JA-rt-lXP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="unL-WH-iUg"/>
+                <constraint firstItem="pFl-DA-sjS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="zB1-FS-Pcq"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backgroundResultHospital" width="337" height="58"/>
+        <image name="btnConfirm" width="50" height="50"/>
+        <image name="hospitalCell" width="337" height="71"/>
+        <image name="hospitalCheck" width="31" height="23"/>
+        <image name="iconBackRegister" width="70" height="70"/>
+        <image name="iconHospital1" width="36" height="36"/>
+        <image name="retangleSearchHospitals" width="390" height="502"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

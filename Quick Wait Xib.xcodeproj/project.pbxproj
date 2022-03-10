@@ -1,0 +1,1087 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */; };
+		4CB92CA627BE8DD50079B5C1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */; };
+		A5416912D90100D4D3A0F1B6 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DD10A0931268D11BBB92E6 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */; };
+		BED32466B52361F065A0E334 /* Pods_Quick_Wait_XibTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840878C24F0297ADF36F4CA4 /* Pods_Quick_Wait_XibTests.framework */; };
+		EB5182FDEA0EA31BCCA7F974 /* Pods_Quick_Wait_Xib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C7D3C82C0CDF0D52048498 /* Pods_Quick_Wait_Xib.framework */; };
+		F2681AB027BC21070067FA4D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AAF27BC21070067FA4D /* APIService.swift */; };
+		F2681AB327BC26880067FA4D /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AB227BC26880067FA4D /* NewsModel.swift */; };
+		F2681AB827BC39A90067FA4D /* ApiNewsEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */; };
+		F26A7892279995E0008C625B /* Quicksand_Bold_Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F26A788B279995E0008C625B /* Quicksand_Bold_Oblique.otf */; };
+		F26A7893279995E0008C625B /* Quicksand_Light_Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F26A788C279995E0008C625B /* Quicksand_Light_Oblique.otf */; };
+		F26A7894279995E0008C625B /* Quicksand_Book_Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F26A788D279995E0008C625B /* Quicksand_Book_Oblique.otf */; };
+		F26A7895279995E0008C625B /* Quicksand_Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = F26A788E279995E0008C625B /* Quicksand_Book.otf */; };
+		F26A7896279995E0008C625B /* Quicksand_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F26A788F279995E0008C625B /* Quicksand_Light.otf */; };
+		F26A7897279995E0008C625B /* Quicksand_Dash.otf in Resources */ = {isa = PBXBuildFile; fileRef = F26A7890279995E0008C625B /* Quicksand_Dash.otf */; };
+		F26A7898279995E0008C625B /* Quicksand_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F26A7891279995E0008C625B /* Quicksand_Bold.otf */; };
+		F26D68B02798B46500E20503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D68AF2798B46500E20503 /* AppDelegate.swift */; };
+		F26D68B22798B46500E20503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D68B12798B46500E20503 /* SceneDelegate.swift */; };
+		F26D68B92798B46700E20503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26D68B82798B46700E20503 /* Assets.xcassets */; };
+		F26D68C72798B46700E20503 /* Quick_Wait_XibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D68C62798B46700E20503 /* Quick_Wait_XibTests.swift */; };
+		F26D68D12798B46700E20503 /* Quick_Wait_XibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D68D02798B46700E20503 /* Quick_Wait_XibUITests.swift */; };
+		F26D68D32798B46700E20503 /* Quick_Wait_XibUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D68D22798B46700E20503 /* Quick_Wait_XibUITestsLaunchTests.swift */; };
+		F29C3A0027C54D09002C417B /* NewsResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29C39FE27C54D09002C417B /* NewsResultViewController.swift */; };
+		F29C3A0127C54D09002C417B /* NewsResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29C39FF27C54D09002C417B /* NewsResultViewController.xib */; };
+		F29C508D27BA9295004D0BD4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29C508B27BA9295004D0BD4 /* NewsViewController.swift */; };
+		F29C508E27BA9295004D0BD4 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29C508C27BA9295004D0BD4 /* NewsViewController.xib */; };
+		F2AAEA7327CFBFB500D62386 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AAEA7127CFBFB500D62386 /* SettingsViewController.swift */; };
+		F2AAEA7427CFBFB500D62386 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2AAEA7227CFBFB500D62386 /* SettingsViewController.xib */; };
+		F2BBEC0327BD272D0088D85A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2BBEC0227BD272D0088D85A /* GoogleService-Info.plist */; };
+		F2C04E3327B3FAD600710727 /* SearchHospitalsResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E0A27B3FAD500710727 /* SearchHospitalsResultTableViewCell.swift */; };
+		F2C04E3427B3FAD600710727 /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E0C27B3FAD500710727 /* RecoverPasswordViewController.swift */; };
+		F2C04E3527B3FAD600710727 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E0D27B3FAD500710727 /* RegisterUserViewController.swift */; };
+		F2C04E3627B3FAD600710727 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E0E27B3FAD500710727 /* HomeViewController.swift */; };
+		F2C04E3727B3FAD600710727 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E0F27B3FAD500710727 /* ChoiceViewController.swift */; };
+		F2C04E3827B3FAD600710727 /* SearchHospitalsResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E1027B3FAD500710727 /* SearchHospitalsResultViewController.swift */; };
+		F2C04E3927B3FAD600710727 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E1127B3FAD500710727 /* LoginViewController.swift */; };
+		F2C04E3A27B3FAD600710727 /* MyLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E1227B3FAD500710727 /* MyLaunchViewController.swift */; };
+		F2C04E3B27B3FAD600710727 /* SearchHospitalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E1327B3FAD500710727 /* SearchHospitalsViewController.swift */; };
+		F2C04E3C27B3FAD600710727 /* RecoverPasswordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E1427B3FAD500710727 /* RecoverPasswordResultViewController.swift */; };
+		F2C04E3D27B3FAD600710727 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E1527B3FAD500710727 /* LoadingViewController.swift */; };
+		F2C04E3E27B3FAD600710727 /* ShowLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E1727B3FAD500710727 /* ShowLoading.swift */; };
+		F2C04E3F27B3FAD600710727 /* DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E1827B3FAD500710727 /* DismissKeyboard.swift */; };
+		F2C04E4027B3FAD600710727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1A27B3FAD600710727 /* LaunchScreen.storyboard */; };
+		F2C04E4127B3FAD600710727 /* ChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1B27B3FAD600710727 /* ChoiceViewController.xib */; };
+		F2C04E4227B3FAD600710727 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1C27B3FAD600710727 /* HomeViewController.xib */; };
+		F2C04E4327B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */; };
+		F2C04E4427B3FAD600710727 /* RecoverPasswordResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */; };
+		F2C04E4527B3FAD600710727 /* RecoverPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */; };
+		F2C04E4627B3FAD600710727 /* SearchHospitalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */; };
+		F2C04E4727B3FAD600710727 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2127B3FAD600710727 /* LoginViewController.xib */; };
+		F2C04E4827B3FAD600710727 /* SearchHospitalsResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */; };
+		F2C04E4927B3FAD600710727 /* MyLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */; };
+		F2C04E4A27B3FAD600710727 /* RegisterUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2427B3FAD600710727 /* RegisterUserViewController.xib */; };
+		F2C04E4C27B3FAD600710727 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2727B3FAD600710727 /* LoginViewModel.swift */; };
+		F2C04E4D27B3FAD600710727 /* RecoverPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2827B3FAD600710727 /* RecoverPasswordViewModel.swift */; };
+		F2C04E4E27B3FAD600710727 /* ChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2927B3FAD600710727 /* ChoiceViewModel.swift */; };
+		F2C04E4F27B3FAD600710727 /* RegisterUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2A27B3FAD600710727 /* RegisterUserViewModel.swift */; };
+		F2C04E5027B3FAD600710727 /* MyLaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2B27B3FAD600710727 /* MyLaunchScreenViewModel.swift */; };
+		F2C04E5127B3FAD600710727 /* RegisterUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2D27B3FAD600710727 /* RegisterUserModel.swift */; };
+		F2C04E5227B3FAD600710727 /* LocationHospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2E27B3FAD600710727 /* LocationHospitalModel.swift */; };
+		F2C04E5327B3FAD600710727 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2F27B3FAD600710727 /* LoginModel.swift */; };
+		F2C04E5427B3FAD600710727 /* RecoverPassawordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E3027B3FAD600710727 /* RecoverPassawordModel.swift */; };
+		F2C04E5527B3FAD600710727 /* ChoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E3127B3FAD600710727 /* ChoiceModel.swift */; };
+		F2C04E5627B3FAD600710727 /* SearchHospitalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E3227B3FAD600710727 /* SearchHospitalsModel.swift */; };
+		F2C04E5927B4028800710727 /* SimplePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E5827B4028800710727 /* SimplePopUp.swift */; };
+		F2C40E8827BFE61300EC0066 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */; };
+		F2C80D2F27BD8A9600189473 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C80D2D27BD8A9600189473 /* NewsCollectionViewCell.swift */; };
+		F2C80D3027BD8A9600189473 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C80D2E27BD8A9600189473 /* NewsCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F26D68C32798B46700E20503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26D68A42798B46500E20503 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F26D68AB2798B46500E20503;
+			remoteInfo = "Quick Wait Xib";
+		};
+		F26D68CD2798B46700E20503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26D68A42798B46500E20503 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F26D68AB2798B46500E20503;
+			remoteInfo = "Quick Wait Xib";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0351670EFA71C0080F08B00E /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		14DD10A0931268D11BBB92E6 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		72C7D3C82C0CDF0D52048498 /* Pods_Quick_Wait_Xib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_Xib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BBA0523BB80D768A5C5D6F4 /* Pods-Quick Wait Xib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib.release.xcconfig"; sourceTree = "<group>"; };
+		829878C52E1FB8FB017A0686 /* Pods-Quick Wait XibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait XibTests.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait XibTests/Pods-Quick Wait XibTests.debug.xcconfig"; sourceTree = "<group>"; };
+		840878C24F0297ADF36F4CA4 /* Pods_Quick_Wait_XibTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_XibTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B240D3B04D226B0B0A4AC64 /* Pods-Quick Wait XibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait XibTests.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait XibTests/Pods-Quick Wait XibTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2681AAF27BC21070067FA4D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F2681AB227BC26880067FA4D /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNewsEndPoints.swift; sourceTree = "<group>"; };
+		F26A788B279995E0008C625B /* Quicksand_Bold_Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Bold_Oblique.otf; sourceTree = "<group>"; };
+		F26A788C279995E0008C625B /* Quicksand_Light_Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Light_Oblique.otf; sourceTree = "<group>"; };
+		F26A788D279995E0008C625B /* Quicksand_Book_Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Book_Oblique.otf; sourceTree = "<group>"; };
+		F26A788E279995E0008C625B /* Quicksand_Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Book.otf; sourceTree = "<group>"; };
+		F26A788F279995E0008C625B /* Quicksand_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Light.otf; sourceTree = "<group>"; };
+		F26A7890279995E0008C625B /* Quicksand_Dash.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Dash.otf; sourceTree = "<group>"; };
+		F26A7891279995E0008C625B /* Quicksand_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Bold.otf; sourceTree = "<group>"; };
+		F26D68AC2798B46500E20503 /* Quick Wait Xib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Wait Xib.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26D68AF2798B46500E20503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F26D68B12798B46500E20503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F26D68B82798B46700E20503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F26D68BD2798B46700E20503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26D68C22798B46700E20503 /* Quick Wait XibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quick Wait XibTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26D68C62798B46700E20503 /* Quick_Wait_XibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_Wait_XibTests.swift; sourceTree = "<group>"; };
+		F26D68CC2798B46700E20503 /* Quick Wait XibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quick Wait XibUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26D68D02798B46700E20503 /* Quick_Wait_XibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_Wait_XibUITests.swift; sourceTree = "<group>"; };
+		F26D68D22798B46700E20503 /* Quick_Wait_XibUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_Wait_XibUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F29C39FE27C54D09002C417B /* NewsResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResultViewController.swift; sourceTree = "<group>"; };
+		F29C39FF27C54D09002C417B /* NewsResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsResultViewController.xib; sourceTree = "<group>"; };
+		F29C508B27BA9295004D0BD4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F29C508C27BA9295004D0BD4 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		F2AAEA7127CFBFB500D62386 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F2AAEA7227CFBFB500D62386 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		F2BBEC0227BD272D0088D85A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2C04E0A27B3FAD500710727 /* SearchHospitalsResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHospitalsResultTableViewCell.swift; sourceTree = "<group>"; };
+		F2C04E0C27B3FAD500710727 /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
+		F2C04E0D27B3FAD500710727 /* RegisterUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		F2C04E0E27B3FAD500710727 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F2C04E0F27B3FAD500710727 /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		F2C04E1027B3FAD500710727 /* SearchHospitalsResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHospitalsResultViewController.swift; sourceTree = "<group>"; };
+		F2C04E1127B3FAD500710727 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F2C04E1227B3FAD500710727 /* MyLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLaunchViewController.swift; sourceTree = "<group>"; };
+		F2C04E1327B3FAD500710727 /* SearchHospitalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHospitalsViewController.swift; sourceTree = "<group>"; };
+		F2C04E1427B3FAD500710727 /* RecoverPasswordResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoverPasswordResultViewController.swift; sourceTree = "<group>"; };
+		F2C04E1527B3FAD500710727 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		F2C04E1727B3FAD500710727 /* ShowLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowLoading.swift; sourceTree = "<group>"; };
+		F2C04E1827B3FAD500710727 /* DismissKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissKeyboard.swift; sourceTree = "<group>"; };
+		F2C04E1A27B3FAD600710727 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2C04E1B27B3FAD600710727 /* ChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceViewController.xib; sourceTree = "<group>"; };
+		F2C04E1C27B3FAD600710727 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsResultTableViewCell.xib; sourceTree = "<group>"; };
+		F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecoverPasswordResultViewController.xib; sourceTree = "<group>"; };
+		F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecoverPasswordViewController.xib; sourceTree = "<group>"; };
+		F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsViewController.xib; sourceTree = "<group>"; };
+		F2C04E2127B3FAD600710727 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsResultViewController.xib; sourceTree = "<group>"; };
+		F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLaunchScreen.xib; sourceTree = "<group>"; };
+		F2C04E2427B3FAD600710727 /* RegisterUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterUserViewController.xib; sourceTree = "<group>"; };
+		F2C04E2727B3FAD600710727 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F2C04E2827B3FAD600710727 /* RecoverPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewModel.swift; sourceTree = "<group>"; };
+		F2C04E2927B3FAD600710727 /* ChoiceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewModel.swift; sourceTree = "<group>"; };
+		F2C04E2A27B3FAD600710727 /* RegisterUserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserViewModel.swift; sourceTree = "<group>"; };
+		F2C04E2B27B3FAD600710727 /* MyLaunchScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLaunchScreenViewModel.swift; sourceTree = "<group>"; };
+		F2C04E2D27B3FAD600710727 /* RegisterUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserModel.swift; sourceTree = "<group>"; };
+		F2C04E2E27B3FAD600710727 /* LocationHospitalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHospitalModel.swift; sourceTree = "<group>"; };
+		F2C04E2F27B3FAD600710727 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		F2C04E3027B3FAD600710727 /* RecoverPassawordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoverPassawordModel.swift; sourceTree = "<group>"; };
+		F2C04E3127B3FAD600710727 /* ChoiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceModel.swift; sourceTree = "<group>"; };
+		F2C04E3227B3FAD600710727 /* SearchHospitalsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHospitalsModel.swift; sourceTree = "<group>"; };
+		F2C04E5827B4028800710727 /* SimplePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePopUp.swift; sourceTree = "<group>"; };
+		F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		F2C80D2D27BD8A9600189473 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		F2C80D2E27BD8A9600189473 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
+		F51C598D74108DC3AC38DBCE /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF164F420E48D16DE57AF813 /* Pods-Quick Wait Xib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F26D68A92798B46500E20503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5182FDEA0EA31BCCA7F974 /* Pods_Quick_Wait_Xib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26D68BF2798B46700E20503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED32466B52361F065A0E334 /* Pods_Quick_Wait_XibTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26D68C92798B46700E20503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5416912D90100D4D3A0F1B6 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB9DFF363B5D7ED4EBC1926A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72C7D3C82C0CDF0D52048498 /* Pods_Quick_Wait_Xib.framework */,
+				14DD10A0931268D11BBB92E6 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */,
+				840878C24F0297ADF36F4CA4 /* Pods_Quick_Wait_XibTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1DB031B73CAAE3D9B1149EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF164F420E48D16DE57AF813 /* Pods-Quick Wait Xib.debug.xcconfig */,
+				7BBA0523BB80D768A5C5D6F4 /* Pods-Quick Wait Xib.release.xcconfig */,
+				0351670EFA71C0080F08B00E /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */,
+				F51C598D74108DC3AC38DBCE /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */,
+				829878C52E1FB8FB017A0686 /* Pods-Quick Wait XibTests.debug.xcconfig */,
+				9B240D3B04D226B0B0A4AC64 /* Pods-Quick Wait XibTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F2681AAE27BC1F2C0067FA4D /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				F2681AAF27BC21070067FA4D /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		F2681AB627BC39820067FA4D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F26A788A279995E0008C625B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F26A788B279995E0008C625B /* Quicksand_Bold_Oblique.otf */,
+				F26A7891279995E0008C625B /* Quicksand_Bold.otf */,
+				F26A788D279995E0008C625B /* Quicksand_Book_Oblique.otf */,
+				F26A788E279995E0008C625B /* Quicksand_Book.otf */,
+				F26A7890279995E0008C625B /* Quicksand_Dash.otf */,
+				F26A788C279995E0008C625B /* Quicksand_Light_Oblique.otf */,
+				F26A788F279995E0008C625B /* Quicksand_Light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F26D68A32798B46500E20503 = {
+			isa = PBXGroup;
+			children = (
+				F26D68AE2798B46500E20503 /* Quick Wait Xib */,
+				F26D68C52798B46700E20503 /* Quick Wait XibTests */,
+				F26D68CF2798B46700E20503 /* Quick Wait XibUITests */,
+				F26D68AD2798B46500E20503 /* Products */,
+				E1DB031B73CAAE3D9B1149EA /* Pods */,
+				BB9DFF363B5D7ED4EBC1926A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F26D68AD2798B46500E20503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F26D68AC2798B46500E20503 /* Quick Wait Xib.app */,
+				F26D68C22798B46700E20503 /* Quick Wait XibTests.xctest */,
+				F26D68CC2798B46700E20503 /* Quick Wait XibUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F26D68AE2798B46500E20503 /* Quick Wait Xib */ = {
+			isa = PBXGroup;
+			children = (
+				F2BBEC0127BD27220088D85A /* FireBase */,
+				F2681AB627BC39820067FA4D /* Utils */,
+				F2681AAE27BC1F2C0067FA4D /* APIService */,
+				F2C04E0B27B3FAD500710727 /* Controllers */,
+				F2C04E0927B3FAD500710727 /* Custom Cell */,
+				F2C04E1627B3FAD500710727 /* Extension */,
+				F2C04E2C27B3FAD600710727 /* Model */,
+				F2C04E2627B3FAD600710727 /* ViewModel */,
+				F2C04E1927B3FAD600710727 /* Views */,
+				F26A788A279995E0008C625B /* Fonts */,
+				F26D68E52798B7AC00E20503 /* Delegates */,
+				F26D68B82798B46700E20503 /* Assets.xcassets */,
+				F26D68BD2798B46700E20503 /* Info.plist */,
+			);
+			path = "Quick Wait Xib";
+			sourceTree = "<group>";
+		};
+		F26D68C52798B46700E20503 /* Quick Wait XibTests */ = {
+			isa = PBXGroup;
+			children = (
+				F26D68C62798B46700E20503 /* Quick_Wait_XibTests.swift */,
+			);
+			path = "Quick Wait XibTests";
+			sourceTree = "<group>";
+		};
+		F26D68CF2798B46700E20503 /* Quick Wait XibUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F26D68D02798B46700E20503 /* Quick_Wait_XibUITests.swift */,
+				F26D68D22798B46700E20503 /* Quick_Wait_XibUITestsLaunchTests.swift */,
+			);
+			path = "Quick Wait XibUITests";
+			sourceTree = "<group>";
+		};
+		F26D68E52798B7AC00E20503 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F26D68AF2798B46500E20503 /* AppDelegate.swift */,
+				F26D68B12798B46500E20503 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		F2BBEC0127BD27220088D85A /* FireBase */ = {
+			isa = PBXGroup;
+			children = (
+				F2BBEC0227BD272D0088D85A /* GoogleService-Info.plist */,
+			);
+			path = FireBase;
+			sourceTree = "<group>";
+		};
+		F2C04E0927B3FAD500710727 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2C80D2D27BD8A9600189473 /* NewsCollectionViewCell.swift */,
+				4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */,
+				F2C04E0A27B3FAD500710727 /* SearchHospitalsResultTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		F2C04E0B27B3FAD500710727 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2C04E0F27B3FAD500710727 /* ChoiceViewController.swift */,
+				F2C04E0E27B3FAD500710727 /* HomeViewController.swift */,
+				F2C04E1527B3FAD500710727 /* LoadingViewController.swift */,
+				F2C04E1127B3FAD500710727 /* LoginViewController.swift */,
+				F2C04E1227B3FAD500710727 /* MyLaunchViewController.swift */,
+				F29C39FE27C54D09002C417B /* NewsResultViewController.swift */,
+				F29C508B27BA9295004D0BD4 /* NewsViewController.swift */,
+				F2C04E1427B3FAD500710727 /* RecoverPasswordResultViewController.swift */,
+				F2C04E0C27B3FAD500710727 /* RecoverPasswordViewController.swift */,
+				F2C04E0D27B3FAD500710727 /* RegisterUserViewController.swift */,
+				F2C04E1027B3FAD500710727 /* SearchHospitalsResultViewController.swift */,
+				F2C04E1327B3FAD500710727 /* SearchHospitalsViewController.swift */,
+				F2AAEA7127CFBFB500D62386 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F2C04E1627B3FAD500710727 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F2C04E1827B3FAD500710727 /* DismissKeyboard.swift */,
+				F2C04E1727B3FAD500710727 /* ShowLoading.swift */,
+				F2C04E5827B4028800710727 /* SimplePopUp.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F2C04E1927B3FAD600710727 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2C04E1B27B3FAD600710727 /* ChoiceViewController.xib */,
+				F2C04E1C27B3FAD600710727 /* HomeViewController.xib */,
+				F2C04E1A27B3FAD600710727 /* LaunchScreen.storyboard */,
+				F2C04E2127B3FAD600710727 /* LoginViewController.xib */,
+				F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */,
+				F2C80D2E27BD8A9600189473 /* NewsCollectionViewCell.xib */,
+				F29C39FF27C54D09002C417B /* NewsResultViewController.xib */,
+				4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */,
+				F29C508C27BA9295004D0BD4 /* NewsViewController.xib */,
+				F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */,
+				F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */,
+				F2C04E2427B3FAD600710727 /* RegisterUserViewController.xib */,
+				F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */,
+				F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */,
+				F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */,
+				F2AAEA7227CFBFB500D62386 /* SettingsViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2C04E2627B3FAD600710727 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F2C04E2927B3FAD600710727 /* ChoiceViewModel.swift */,
+				F2C04E2727B3FAD600710727 /* LoginViewModel.swift */,
+				F2C04E2B27B3FAD600710727 /* MyLaunchScreenViewModel.swift */,
+				F2C04E2827B3FAD600710727 /* RecoverPasswordViewModel.swift */,
+				F2C04E2A27B3FAD600710727 /* RegisterUserViewModel.swift */,
+				F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F2C04E2C27B3FAD600710727 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2C04E3127B3FAD600710727 /* ChoiceModel.swift */,
+				F2C04E2E27B3FAD600710727 /* LocationHospitalModel.swift */,
+				F2C04E2F27B3FAD600710727 /* LoginModel.swift */,
+				F2C04E3027B3FAD600710727 /* RecoverPassawordModel.swift */,
+				F2C04E2D27B3FAD600710727 /* RegisterUserModel.swift */,
+				F2C04E3227B3FAD600710727 /* SearchHospitalsModel.swift */,
+				F2681AB227BC26880067FA4D /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F26D68AB2798B46500E20503 /* Quick Wait Xib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26D68D62798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait Xib" */;
+			buildPhases = (
+				308CBA1606683F8495953A6E /* [CP] Check Pods Manifest.lock */,
+				F26D68A82798B46500E20503 /* Sources */,
+				F26D68A92798B46500E20503 /* Frameworks */,
+				F26D68AA2798B46500E20503 /* Resources */,
+				977095BC7421289ED7BD99CB /* [CP] Embed Pods Frameworks */,
+				F2D848EF27D25932007421E5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quick Wait Xib";
+			productName = "Quick Wait Xib";
+			productReference = F26D68AC2798B46500E20503 /* Quick Wait Xib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F26D68C12798B46700E20503 /* Quick Wait XibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26D68D92798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait XibTests" */;
+			buildPhases = (
+				785B6ED577ABE6D53ED053FA /* [CP] Check Pods Manifest.lock */,
+				F26D68BE2798B46700E20503 /* Sources */,
+				F26D68BF2798B46700E20503 /* Frameworks */,
+				F26D68C02798B46700E20503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F26D68C42798B46700E20503 /* PBXTargetDependency */,
+			);
+			name = "Quick Wait XibTests";
+			productName = "Quick Wait XibTests";
+			productReference = F26D68C22798B46700E20503 /* Quick Wait XibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F26D68CB2798B46700E20503 /* Quick Wait XibUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26D68DC2798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait XibUITests" */;
+			buildPhases = (
+				BE1E2B5AD4B12B35458D85C9 /* [CP] Check Pods Manifest.lock */,
+				F26D68C82798B46700E20503 /* Sources */,
+				F26D68C92798B46700E20503 /* Frameworks */,
+				F26D68CA2798B46700E20503 /* Resources */,
+				1A8882459F9A1D48F6508FC3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F26D68CE2798B46700E20503 /* PBXTargetDependency */,
+			);
+			name = "Quick Wait XibUITests";
+			productName = "Quick Wait XibUITests";
+			productReference = F26D68CC2798B46700E20503 /* Quick Wait XibUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F26D68A42798B46500E20503 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F26D68AB2798B46500E20503 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					F26D68C12798B46700E20503 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = F26D68AB2798B46500E20503;
+					};
+					F26D68CB2798B46700E20503 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = F26D68AB2798B46500E20503;
+					};
+				};
+			};
+			buildConfigurationList = F26D68A72798B46500E20503 /* Build configuration list for PBXProject "Quick Wait Xib" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F26D68A32798B46500E20503;
+			productRefGroup = F26D68AD2798B46500E20503 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F26D68AB2798B46500E20503 /* Quick Wait Xib */,
+				F26D68C12798B46700E20503 /* Quick Wait XibTests */,
+				F26D68CB2798B46700E20503 /* Quick Wait XibUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F26D68AA2798B46500E20503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C04E4927B3FAD600710727 /* MyLaunchScreen.xib in Resources */,
+				F2C04E4A27B3FAD600710727 /* RegisterUserViewController.xib in Resources */,
+				F2C04E4727B3FAD600710727 /* LoginViewController.xib in Resources */,
+				F2C04E4027B3FAD600710727 /* LaunchScreen.storyboard in Resources */,
+				F26A7893279995E0008C625B /* Quicksand_Light_Oblique.otf in Resources */,
+				F26A7894279995E0008C625B /* Quicksand_Book_Oblique.otf in Resources */,
+				F2C04E4427B3FAD600710727 /* RecoverPasswordResultViewController.xib in Resources */,
+				F29C508E27BA9295004D0BD4 /* NewsViewController.xib in Resources */,
+				F29C3A0127C54D09002C417B /* NewsResultViewController.xib in Resources */,
+				F26A7897279995E0008C625B /* Quicksand_Dash.otf in Resources */,
+				F26A7896279995E0008C625B /* Quicksand_Light.otf in Resources */,
+				F26D68B92798B46700E20503 /* Assets.xcassets in Resources */,
+				F2AAEA7427CFBFB500D62386 /* SettingsViewController.xib in Resources */,
+				F26A7895279995E0008C625B /* Quicksand_Book.otf in Resources */,
+				F2C04E4127B3FAD600710727 /* ChoiceViewController.xib in Resources */,
+				F26A7898279995E0008C625B /* Quicksand_Bold.otf in Resources */,
+				F26A7892279995E0008C625B /* Quicksand_Bold_Oblique.otf in Resources */,
+				F2C04E4827B3FAD600710727 /* SearchHospitalsResultViewController.xib in Resources */,
+				F2C04E4627B3FAD600710727 /* SearchHospitalsViewController.xib in Resources */,
+				F2C04E4327B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib in Resources */,
+				F2C04E4527B3FAD600710727 /* RecoverPasswordViewController.xib in Resources */,
+				4CB92CA627BE8DD50079B5C1 /* NewsTableViewCell.xib in Resources */,
+				F2C04E4227B3FAD600710727 /* HomeViewController.xib in Resources */,
+				F2BBEC0327BD272D0088D85A /* GoogleService-Info.plist in Resources */,
+				F2C80D3027BD8A9600189473 /* NewsCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26D68C02798B46700E20503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26D68CA2798B46700E20503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A8882459F9A1D48F6508FC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		308CBA1606683F8495953A6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quick Wait Xib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		785B6ED577ABE6D53ED053FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quick Wait XibTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		977095BC7421289ED7BD99CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE1E2B5AD4B12B35458D85C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quick Wait Xib-Quick Wait XibUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2D848EF27D25932007421E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			dependencyFile = "${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}";
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if which sentry-cli >/dev/null; then\nexport SENTRY_ORG=jose-carlos-my\nexport SENTRY_PROJECT=ios\nexport SENTRY_AUTH_TOKEN=0d605e8a3f5b406d8fa6946934d93ed54ace2fb311bb4275ac86d48247083779\nERROR=$(sentry-cli upload-dif \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n\n\nexport SENTRY_URL=https://mysentry.invalid/\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F26D68A82798B46500E20503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C04E3927B3FAD600710727 /* LoginViewController.swift in Sources */,
+				F2C04E3527B3FAD600710727 /* RegisterUserViewController.swift in Sources */,
+				F2681AB027BC21070067FA4D /* APIService.swift in Sources */,
+				F2C04E3B27B3FAD600710727 /* SearchHospitalsViewController.swift in Sources */,
+				F26D68B02798B46500E20503 /* AppDelegate.swift in Sources */,
+				F2C04E4F27B3FAD600710727 /* RegisterUserViewModel.swift in Sources */,
+				F2C04E4C27B3FAD600710727 /* LoginViewModel.swift in Sources */,
+				F2C04E3327B3FAD600710727 /* SearchHospitalsResultTableViewCell.swift in Sources */,
+				F2C04E3427B3FAD600710727 /* RecoverPasswordViewController.swift in Sources */,
+				F2C04E4E27B3FAD600710727 /* ChoiceViewModel.swift in Sources */,
+				F2C04E5027B3FAD600710727 /* MyLaunchScreenViewModel.swift in Sources */,
+				F2C04E5927B4028800710727 /* SimplePopUp.swift in Sources */,
+				F29C508D27BA9295004D0BD4 /* NewsViewController.swift in Sources */,
+				4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */,
+				F26D68B22798B46500E20503 /* SceneDelegate.swift in Sources */,
+				F2C04E3E27B3FAD600710727 /* ShowLoading.swift in Sources */,
+				F2C04E3627B3FAD600710727 /* HomeViewController.swift in Sources */,
+				F2C04E5327B3FAD600710727 /* LoginModel.swift in Sources */,
+				F2C04E5527B3FAD600710727 /* ChoiceModel.swift in Sources */,
+				F2C04E4D27B3FAD600710727 /* RecoverPasswordViewModel.swift in Sources */,
+				F2C04E3A27B3FAD600710727 /* MyLaunchViewController.swift in Sources */,
+				F2C04E3727B3FAD600710727 /* ChoiceViewController.swift in Sources */,
+				F2C04E5427B3FAD600710727 /* RecoverPassawordModel.swift in Sources */,
+				F2C04E3827B3FAD600710727 /* SearchHospitalsResultViewController.swift in Sources */,
+				F2C04E3D27B3FAD600710727 /* LoadingViewController.swift in Sources */,
+				F2C80D2F27BD8A9600189473 /* NewsCollectionViewCell.swift in Sources */,
+				F2681AB327BC26880067FA4D /* NewsModel.swift in Sources */,
+				F2C04E5627B3FAD600710727 /* SearchHospitalsModel.swift in Sources */,
+				F29C3A0027C54D09002C417B /* NewsResultViewController.swift in Sources */,
+				F2C04E5227B3FAD600710727 /* LocationHospitalModel.swift in Sources */,
+				F2C04E3C27B3FAD600710727 /* RecoverPasswordResultViewController.swift in Sources */,
+				F2C04E5127B3FAD600710727 /* RegisterUserModel.swift in Sources */,
+				F2C40E8827BFE61300EC0066 /* NewsViewModel.swift in Sources */,
+				F2C04E3F27B3FAD600710727 /* DismissKeyboard.swift in Sources */,
+				F2681AB827BC39A90067FA4D /* ApiNewsEndPoints.swift in Sources */,
+				F2AAEA7327CFBFB500D62386 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26D68BE2798B46700E20503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26D68C72798B46700E20503 /* Quick_Wait_XibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26D68C82798B46700E20503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26D68D12798B46700E20503 /* Quick_Wait_XibUITests.swift in Sources */,
+				F26D68D32798B46700E20503 /* Quick_Wait_XibUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F26D68C42798B46700E20503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F26D68AB2798B46500E20503 /* Quick Wait Xib */;
+			targetProxy = F26D68C32798B46700E20503 /* PBXContainerItemProxy */;
+		};
+		F26D68CE2798B46700E20503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F26D68AB2798B46500E20503 /* Quick Wait Xib */;
+			targetProxy = F26D68CD2798B46700E20503 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F26D68D42798B46700E20503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F26D68D52798B46700E20503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F26D68D72798B46700E20503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF164F420E48D16DE57AF813 /* Pods-Quick Wait Xib.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ394G4MSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quick Wait Xib/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quick Wait";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Receba os hospitais mais próximos, lembretes e instruções de rotas. Você pode desabilitar sua localização em configurações.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Receba os hospitais mais próximos, lembretes e instruções de rotas. Você pode desabilitar sua localização em configurações.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Receba os hospitais mais próximos, lembretes e instruções de rotas. Você pode desabilitar sua localização em configurações.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Receba os hospitais mais próximos, lembretes e instruções de rotas. Você pode desabilitar sua localização em configurações.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juninho.Quick-Wait-Xib-New";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F26D68D82798B46700E20503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBA0523BB80D768A5C5D6F4 /* Pods-Quick Wait Xib.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ394G4MSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quick Wait Xib/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quick Wait";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Receba os hospitais mais próximos, lembretes e instruções de rotas. Você pode desabilitar sua localização em configurações.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Receba os hospitais mais próximos, lembretes e instruções de rotas. Você pode desabilitar sua localização em configurações.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Receba os hospitais mais próximos, lembretes e instruções de rotas. Você pode desabilitar sua localização em configurações.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Receba os hospitais mais próximos, lembretes e instruções de rotas. Você pode desabilitar sua localização em configurações.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juninho.Quick-Wait-Xib-New";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F26D68DA2798B46700E20503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 829878C52E1FB8FB017A0686 /* Pods-Quick Wait XibTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ394G4MSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juninho.Quick-Wait-XibTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Wait Xib.app/Quick Wait Xib";
+			};
+			name = Debug;
+		};
+		F26D68DB2798B46700E20503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B240D3B04D226B0B0A4AC64 /* Pods-Quick Wait XibTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ394G4MSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juninho.Quick-Wait-XibTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Wait Xib.app/Quick Wait Xib";
+			};
+			name = Release;
+		};
+		F26D68DD2798B46700E20503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0351670EFA71C0080F08B00E /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ394G4MSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juninho.Quick-Wait-XibUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quick Wait Xib";
+			};
+			name = Debug;
+		};
+		F26D68DE2798B46700E20503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51C598D74108DC3AC38DBCE /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UJ394G4MSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juninho.Quick-Wait-XibUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quick Wait Xib";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F26D68A72798B46500E20503 /* Build configuration list for PBXProject "Quick Wait Xib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26D68D42798B46700E20503 /* Debug */,
+				F26D68D52798B46700E20503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26D68D62798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait Xib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26D68D72798B46700E20503 /* Debug */,
+				F26D68D82798B46700E20503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26D68D92798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait XibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26D68DA2798B46700E20503 /* Debug */,
+				F26D68DB2798B46700E20503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26D68DC2798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait XibUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26D68DD2798B46700E20503 /* Debug */,
+				F26D68DE2798B46700E20503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F26D68A42798B46500E20503 /* Project object */;
+}

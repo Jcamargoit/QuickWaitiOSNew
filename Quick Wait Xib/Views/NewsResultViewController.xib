@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand_Book.otf">
+            <string>QuicksandBook-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsResultViewController" customModule="Quick_Wait_Xib" customModuleProvider="target">
+            <connections>
+                <outlet property="ivNews" destination="S3q-ld-Y2J" id="x4g-4e-LHD"/>
+                <outlet property="lbContent" destination="oFe-14-Sre" id="wEE-Em-HeK"/>
+                <outlet property="lbDescription" destination="Rpc-ci-Xxi" id="OcC-hB-tUx"/>
+                <outlet property="lbName" destination="KCP-kC-RUp" id="3D5-Z9-Eg9"/>
+                <outlet property="lbPublishedAt" destination="oLX-xj-Vrt" id="EVy-54-juX"/>
+                <outlet property="lbTitle" destination="DqS-qM-6L7" id="Grg-TD-EOH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S3q-ld-Y2J">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="321"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="321" id="oJI-IJ-qvQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqS-qM-6L7">
+                    <rect key="frame" x="20" y="301" width="374" height="0.0"/>
+                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangleNews" translatesAutoresizingMaskIntoConstraints="NO" id="0mZ-Gm-CSX">
+                    <rect key="frame" x="0.0" y="321" width="414" height="541"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpc-ci-Xxi">
+                    <rect key="frame" x="30" y="361" width="354" height="0.0"/>
+                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCP-kC-RUp">
+                    <rect key="frame" x="30" y="371" width="354" height="0.0"/>
+                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="16"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLX-xj-Vrt">
+                    <rect key="frame" x="30" y="381" width="354" height="0.0"/>
+                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="16"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFe-14-Sre">
+                    <rect key="frame" x="40" y="401" width="334" height="0.0"/>
+                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="16"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tz-nX-jsR">
+                    <rect key="frame" x="20" y="64" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="C9Q-MP-vHa"/>
+                        <constraint firstAttribute="height" constant="34" id="PLv-MP-5J2"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=" ">
+                        <backgroundConfiguration key="background" image="iconBtnBack"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tapToBack:" destination="-1" eventType="touchUpInside" id="aO3-55-jx5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="S3q-ld-Y2J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2z0-hY-j5t"/>
+                <constraint firstItem="3Tz-nX-jsR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7MP-De-icu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0mZ-Gm-CSX" secondAttribute="trailing" id="9LQ-pi-coE"/>
+                <constraint firstItem="oLX-xj-Vrt" firstAttribute="trailing" secondItem="KCP-kC-RUp" secondAttribute="trailing" id="AwK-G8-cvX"/>
+                <constraint firstItem="3Tz-nX-jsR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="ESk-aC-LAA"/>
+                <constraint firstItem="0mZ-Gm-CSX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JI8-ZI-nch"/>
+                <constraint firstItem="S3q-ld-Y2J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JV1-bT-PDd"/>
+                <constraint firstItem="0mZ-Gm-CSX" firstAttribute="top" secondItem="S3q-ld-Y2J" secondAttribute="bottom" id="KhQ-0K-J2v"/>
+                <constraint firstItem="oLX-xj-Vrt" firstAttribute="leading" secondItem="KCP-kC-RUp" secondAttribute="leading" id="KmG-yj-Pbd"/>
+                <constraint firstItem="Rpc-ci-Xxi" firstAttribute="top" secondItem="0mZ-Gm-CSX" secondAttribute="top" constant="40" id="PRh-dl-v2I"/>
+                <constraint firstItem="S3q-ld-Y2J" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Q2b-ew-Czn"/>
+                <constraint firstItem="KCP-kC-RUp" firstAttribute="leading" secondItem="Rpc-ci-Xxi" secondAttribute="leading" id="Qgc-eC-Ebz"/>
+                <constraint firstItem="Rpc-ci-Xxi" firstAttribute="trailing" secondItem="0mZ-Gm-CSX" secondAttribute="trailing" constant="-30" id="T7k-Jx-6K1"/>
+                <constraint firstItem="0mZ-Gm-CSX" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Wos-ZX-8Mk"/>
+                <constraint firstItem="KCP-kC-RUp" firstAttribute="trailing" secondItem="Rpc-ci-Xxi" secondAttribute="trailing" id="Ymx-OA-SXw"/>
+                <constraint firstItem="DqS-qM-6L7" firstAttribute="bottom" secondItem="S3q-ld-Y2J" secondAttribute="bottom" constant="-20" id="era-qn-tD8"/>
+                <constraint firstItem="oLX-xj-Vrt" firstAttribute="top" secondItem="KCP-kC-RUp" secondAttribute="bottom" constant="10" id="g6o-aa-lQS"/>
+                <constraint firstItem="oFe-14-Sre" firstAttribute="top" secondItem="oLX-xj-Vrt" secondAttribute="bottom" constant="20" id="gtb-KV-xfi"/>
+                <constraint firstItem="Rpc-ci-Xxi" firstAttribute="leading" secondItem="0mZ-Gm-CSX" secondAttribute="leading" constant="30" id="ljf-pm-CNm"/>
+                <constraint firstItem="oFe-14-Sre" firstAttribute="trailing" secondItem="oLX-xj-Vrt" secondAttribute="trailing" constant="-10" id="lkX-Mt-miV"/>
+                <constraint firstItem="DqS-qM-6L7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="oVd-g1-8lL"/>
+                <constraint firstItem="KCP-kC-RUp" firstAttribute="top" secondItem="Rpc-ci-Xxi" secondAttribute="bottom" constant="10" id="sFl-2y-gi1"/>
+                <constraint firstItem="oFe-14-Sre" firstAttribute="leading" secondItem="oLX-xj-Vrt" secondAttribute="leading" constant="10" id="wjT-Nb-Coo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DqS-qM-6L7" secondAttribute="trailing" constant="20" id="z2f-NW-pmK"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconBtnBack" width="52" height="52"/>
+        <image name="rectangleNews" width="414" height="586"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
