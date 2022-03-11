@@ -6,12 +6,16 @@ target 'Quick Wait Xib' do
   use_frameworks!
 
   # Pods for Quick Wait Xib
-pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '7.10.0'
+pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '7.10.1'
 pod 'Firebase/Messaging'
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
-  pod 'Firebase/Auth'
+pod 'Firebase/Auth'
 pod 'SDWebImage'
+pod 'RxSwift'
+pod 'RxDataSources'
+pod 'RxSwiftExt'
+pod 'RxGesture'
 
 
   target 'Quick Wait XibTests' do

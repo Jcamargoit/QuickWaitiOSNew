@@ -152,7 +152,7 @@
                                             <fragment content="LOCALIZAR HOSPITAL">
                                                 <attributes>
                                                     <color key="NSColor" red="0.283128202" green="0.63110059500000004" blue="0.65492057800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <font key="NSFont" size="20" name="QuicksandBook-Regular"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -173,7 +173,7 @@
                                             <fragment content="LEMBRETES">
                                                 <attributes>
                                                     <color key="NSColor" red="0.283128202" green="0.63110059500000004" blue="0.65492057800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <font key="NSFont" size="20" name="QuicksandBook-Regular"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -194,7 +194,7 @@
                                             <fragment content="NOTÍCIAS">
                                                 <attributes>
                                                     <color key="NSColor" red="0.283128202" green="0.63110059500000004" blue="0.65492057800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <font key="NSFont" size="20" name="QuicksandBook-Regular"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -215,7 +215,7 @@
                                             <fragment content="CONFIGURAÇÕES">
                                                 <attributes>
                                                     <color key="NSColor" red="0.283128202" green="0.63110059500000004" blue="0.65492057800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <font key="NSFont" size="20" name="QuicksandBook-Regular"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
