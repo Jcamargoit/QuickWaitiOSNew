@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C1FA7B027DA46250026D3C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FA7AF27DA46250026D3C7 /* LoginView.swift */; };
 		4C1FA7B227DB700C0026D3C7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FA7B127DB700C0026D3C7 /* UIView+Extensions.swift */; };
+		4C26D2FA27DB88D100C19B4B /* UITextfield+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26D2F927DB88D100C19B4B /* UITextfield+Extensions.swift */; };
 		4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */; };
 		4CB92CA627BE8DD50079B5C1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */; };
 		F2681AB027BC21070067FA4D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AAF27BC21070067FA4D /* APIService.swift */; };
@@ -54,7 +55,6 @@
 		F2C04E4427B3FAD600710727 /* RecoverPasswordResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */; };
 		F2C04E4527B3FAD600710727 /* RecoverPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */; };
 		F2C04E4627B3FAD600710727 /* SearchHospitalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */; };
-		F2C04E4727B3FAD600710727 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2127B3FAD600710727 /* LoginViewController.xib */; };
 		F2C04E4827B3FAD600710727 /* SearchHospitalsResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */; };
 		F2C04E4927B3FAD600710727 /* MyLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */; };
 		F2C04E4A27B3FAD600710727 /* RegisterUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2427B3FAD600710727 /* RegisterUserViewController.xib */; };
@@ -95,6 +95,7 @@
 /* Begin PBXFileReference section */
 		4C1FA7AF27DA46250026D3C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4C1FA7B127DB700C0026D3C7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		4C26D2F927DB88D100C19B4B /* UITextfield+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extensions.swift"; sourceTree = "<group>"; };
 		4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		F2681AAF27BC21070067FA4D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -144,7 +145,6 @@
 		F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecoverPasswordResultViewController.xib; sourceTree = "<group>"; };
 		F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecoverPasswordViewController.xib; sourceTree = "<group>"; };
 		F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsViewController.xib; sourceTree = "<group>"; };
-		F2C04E2127B3FAD600710727 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsResultViewController.xib; sourceTree = "<group>"; };
 		F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLaunchScreen.xib; sourceTree = "<group>"; };
 		F2C04E2427B3FAD600710727 /* RegisterUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterUserViewController.xib; sourceTree = "<group>"; };
@@ -339,6 +339,7 @@
 				F2C04E1727B3FAD500710727 /* ShowLoading.swift */,
 				F2C04E5827B4028800710727 /* SimplePopUp.swift */,
 				4C1FA7B127DB700C0026D3C7 /* UIView+Extensions.swift */,
+				4C26D2F927DB88D100C19B4B /* UITextfield+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -349,7 +350,6 @@
 				F2C04E1B27B3FAD600710727 /* ChoiceViewController.xib */,
 				F2C04E1C27B3FAD600710727 /* HomeViewController.xib */,
 				F2C04E1A27B3FAD600710727 /* LaunchScreen.storyboard */,
-				F2C04E2127B3FAD600710727 /* LoginViewController.xib */,
 				F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */,
 				F2C80D2E27BD8A9600189473 /* NewsCollectionViewCell.xib */,
 				F29C39FF27C54D09002C417B /* NewsResultViewController.xib */,
@@ -501,7 +501,6 @@
 			files = (
 				F2C04E4927B3FAD600710727 /* MyLaunchScreen.xib in Resources */,
 				F2C04E4A27B3FAD600710727 /* RegisterUserViewController.xib in Resources */,
-				F2C04E4727B3FAD600710727 /* LoginViewController.xib in Resources */,
 				F2C04E4027B3FAD600710727 /* LaunchScreen.storyboard in Resources */,
 				F26A7893279995E0008C625B /* Quicksand_Light_Oblique.otf in Resources */,
 				F26A7894279995E0008C625B /* Quicksand_Book_Oblique.otf in Resources */,
@@ -606,6 +605,7 @@
 				F2C40E8827BFE61300EC0066 /* NewsViewModel.swift in Sources */,
 				F2C04E3F27B3FAD600710727 /* DismissKeyboard.swift in Sources */,
 				F2681AB827BC39A90067FA4D /* ApiNewsEndPoints.swift in Sources */,
+				4C26D2FA27DB88D100C19B4B /* UITextfield+Extensions.swift in Sources */,
 				F2AAEA7327CFBFB500D62386 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

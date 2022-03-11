@@ -21,6 +21,12 @@ class LoginViewController: UIViewController {
         }
     }
     
+    var presentationView: LoginView = LoginView()
+    
+    override func loadView() {
+        view = presentationView
+    }
+    
     var numeros = Int ()
     var verificacao = String ()
     var user: String = "framework"

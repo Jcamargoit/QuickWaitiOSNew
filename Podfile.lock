@@ -118,9 +118,9 @@ PODS:
   - SDWebImage (5.12.2):
     - SDWebImage/Core (= 5.12.2)
   - SDWebImage/Core (5.12.2)
-  - Sentry (7.10.0):
-    - Sentry/Core (= 7.10.0)
-  - Sentry/Core (7.10.0)
+  - Sentry (7.10.1):
+    - Sentry/Core (= 7.10.1)
+  - Sentry/Core (7.10.1)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -128,7 +128,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Messaging
   - SDWebImage
-  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `7.10.0`)
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `7.10.1`)
 
 SPEC REPOS:
   trunk:
@@ -152,12 +152,12 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Sentry:
     :git: https://github.com/getsentry/sentry-cocoa.git
-    :tag: 7.10.0
+    :tag: 7.10.1
 
 CHECKOUT OPTIONS:
   Sentry:
     :git: https://github.com/getsentry/sentry-cocoa.git
-    :tag: 7.10.0
+    :tag: 7.10.1
 
 SPEC CHECKSUMS:
   Firebase: 44213362f1dcc52555b935dc925ed35ac55f1b20
@@ -176,8 +176,8 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
-  Sentry: 6ff0eac197e699126c024993eba40a7462e92941
+  Sentry: ddcd9fde63cfe7e9e2243da59d98daa382413e49
 
-PODFILE CHECKSUM: 9007eb4a194ab955909ff971d964b15a03920dcc
+PODFILE CHECKSUM: 947af9dc9f94b936d550f8d6e4db97264243ca9a
 
 COCOAPODS: 1.11.2

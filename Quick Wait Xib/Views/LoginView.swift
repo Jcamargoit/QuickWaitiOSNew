@@ -21,16 +21,19 @@ class LoginView: UIView {
        var lbl = UILabel()
         lbl.text = "Usuário:"
         lbl.textColor = UIColor(red: 0.18, green: 0.75, blue: 0.76, alpha: 1.00)
-        lbl.font = UIFont.init(name: "QuicksandBook-Regular", size: 24)
+        lbl.font = UIFont.init(name: "QuicksandBook-Regular", size: 23)
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
     
     var txtUser: UITextView = {
        var txt = UITextView()
-        txt.layer.shadowOpacity = 4
-        txt.layer.shadowColor = UIColor.black.cgColor
-        txt.layer.shadowOffset = CGSize.init(width: 12, height: 12)
+        txt.font = UIFont.systemFont(ofSize: 26)
+        txt.backgroundColor = .white
+        txt.layer.masksToBounds = false
+        txt.layer.shadowOpacity = 0.6
+        txt.layer.shadowColor = UIColor.gray.cgColor
+        txt.layer.shadowOffset = CGSize.init(width: 0, height: 3)
         txt.layer.cornerRadius = 12
         txt.translatesAutoresizingMaskIntoConstraints = false
         return txt
@@ -40,16 +43,18 @@ class LoginView: UIView {
        var lbl = UILabel()
         lbl.text = "Senha:"
         lbl.textColor = UIColor(red: 0.18, green: 0.75, blue: 0.76, alpha: 1.00)
-        lbl.font = UIFont.init(name: "QuicksandBook-Regular", size: 24)
+        lbl.font = UIFont.init(name: "QuicksandBook-Regular", size: 23)
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
     
     var txtPassword: UITextView = {
        var txt = UITextView()
-        txt.layer.shadowOpacity = 4
-        txt.layer.shadowColor = UIColor.black.cgColor
-        txt.layer.shadowOffset = CGSize.init(width: 12, height: 12)
+        txt.font = UIFont.systemFont(ofSize: 26)
+        txt.layer.shadowOpacity = 0.6
+        txt.layer.masksToBounds = false
+        txt.layer.shadowColor = UIColor.gray.cgColor
+        txt.layer.shadowOffset = CGSize.init(width: 0, height: 3)
         txt.layer.cornerRadius = 12
         txt.translatesAutoresizingMaskIntoConstraints = false
         return txt
@@ -58,6 +63,8 @@ class LoginView: UIView {
     var labelForgotPass: UILabel = {
        var lbl = UILabel()
         lbl.text = "Esqueceu sua senha?"
+        lbl.font = UIFont.init(name: "QuicksandBook-Regular", size: 15)
+        lbl.textColor = .gray
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
@@ -65,7 +72,7 @@ class LoginView: UIView {
     var buttonForgot: UIButton = {
         var btn = UIButton()
         btn.setTitle("Clique aqui", for: .normal)
-        btn.titleLabel?.textColor = .link
+        btn.setTitleColor(.link, for: .normal)
         btn.backgroundColor = .clear
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
@@ -74,12 +81,13 @@ class LoginView: UIView {
     var buttonEnter: UIButton = {
        var btn = UIButton()
         btn.setTitle("Entrar", for: .normal)
-        btn.titleLabel?.textColor = UIColor(red: 0.18, green: 0.75, blue: 0.76, alpha: 1.00)
+        btn.setTitleColor(UIColor(red: 0.18, green: 0.75, blue: 0.76, alpha: 1.00), for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.backgroundColor = .white
         btn.layer.cornerRadius = 12
-        btn.layer.shadowOpacity = 12
-        btn.layer.shadowRadius = 12
+        btn.layer.shadowOpacity = 0.6
+        btn.layer.shadowColor = UIColor.gray.cgColor
+        btn.layer.shadowOffset = CGSize.init(width: 0, height: 3)
         return btn
     }()
     
@@ -101,7 +109,11 @@ class LoginView: UIView {
         createSubView()
     }
     
+    
+    
     func createSubView() {
+        
+        backgroundColor = UIColor(red: 0.87, green: 1.00, blue: 1.00, alpha: 1.00)
         setupLogo()
         setupUserText()
         setupPasswordText()
@@ -111,77 +123,83 @@ class LoginView: UIView {
     }
     
     func setupLogo() {
+        addSubview(iconImage)
         NSLayoutConstraint.activate([
-            iconImage.topAnchor.constraint(equalTo: topAnchor),
+            iconImage.topAnchor.constraint(equalTo: topAnchor, constant: size.height * 0.13),
             iconImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             iconImage.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -15),
-            iconImage.heightAnchor.constraint(equalToConstant: 150)
+            iconImage.heightAnchor.constraint(equalToConstant: size.height * 0.2)
         ])
     }
     
     func setupUserText() {
-        
+        addSubview(labelUser)
         NSLayoutConstraint.activate([
-            labelUser.topAnchor.constraint(equalTo: iconImage.bottomAnchor, constant: 25),
+            labelUser.topAnchor.constraint(equalTo: iconImage.bottomAnchor, constant: 30),
             labelUser.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
             labelUser.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -25),
         ])
         
+        addSubview(txtUser)
         NSLayoutConstraint.activate([
             txtUser.topAnchor.constraint(equalTo: labelUser.bottomAnchor, constant: 4),
-            txtUser.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
-            txtUser.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
-            txtUser.heightAnchor.constraint(equalToConstant: 50)
+            txtUser.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 7),
+            txtUser.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -7),
+            txtUser.heightAnchor.constraint(equalToConstant: 50),
         ])
         
     }
     
     func setupPasswordText() {
-        
+        addSubview(labelPassword)
         NSLayoutConstraint.activate([
             labelPassword.topAnchor.constraint(equalTo: txtUser.bottomAnchor, constant: 25),
             labelPassword.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
             labelPassword.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -25),
         ])
         
+        addSubview(txtPassword)
         NSLayoutConstraint.activate([
             txtPassword.topAnchor.constraint(equalTo: labelPassword.bottomAnchor, constant: 4),
-            txtPassword.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
-            txtPassword.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
+            txtPassword.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 7),
+            txtPassword.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -7),
             txtPassword.heightAnchor.constraint(equalToConstant: 50)
         ])
         
     }
     
     func setupForgotLabel() {
+        addSubview(labelForgotPass)
         NSLayoutConstraint.activate([
-            labelForgotPass.topAnchor.constraint(equalTo: txtPassword.bottomAnchor, constant: 15),
+            labelForgotPass.topAnchor.constraint(equalTo: txtPassword.bottomAnchor, constant: 25),
             labelForgotPass.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
         ])
         
+        addSubview(buttonForgot)
         NSLayoutConstraint.activate([
             buttonForgot.centerYAnchor.constraint(equalTo: labelForgotPass.centerYAnchor),
             buttonForgot.leadingAnchor.constraint(equalTo: labelForgotPass.trailingAnchor, constant: 5),
-            buttonForgot.widthAnchor.constraint(equalToConstant: 50)
         ])
     }
     
     func setupButtonEnter() {
+        addSubview(buttonEnter)
         NSLayoutConstraint.activate([
-            buttonEnter.topAnchor.constraint(equalTo: labelForgotPass.bottomAnchor, constant: 15),
-            buttonEnter.widthAnchor.constraint(equalToConstant: size.width * 0.3),
+            buttonEnter.topAnchor.constraint(equalTo: labelForgotPass.bottomAnchor, constant: size.height * 0.05),
+            buttonEnter.widthAnchor.constraint(equalToConstant: size.width * 0.4),
             buttonEnter.centerXAnchor.constraint(equalTo: centerXAnchor),
-            buttonEnter.heightAnchor.constraint(equalToConstant: 50)
+            buttonEnter.heightAnchor.constraint(equalToConstant: 40)
         ])
         
     }
     
     func setupBack() {
+        addSubview(imageReturn)
         NSLayoutConstraint.activate([
-            imageReturn.topAnchor.constraint(equalTo: buttonEnter.bottomAnchor, constant: 10),
+            imageReturn.topAnchor.constraint(equalTo: buttonEnter.bottomAnchor, constant: size.height * 0.08),
             imageReturn.centerXAnchor.constraint(equalTo: centerXAnchor),
-            imageReturn.widthAnchor.constraint(equalToConstant: 25),
-            imageReturn.heightAnchor.constraint(equalToConstant: 25)
+            imageReturn.widthAnchor.constraint(equalToConstant: 50),
+            imageReturn.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
