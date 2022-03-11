@@ -9,9 +9,13 @@ import XCTest
 @testable import Quick_Wait_Xib
 
 class Quick_Wait_XibTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var login: LoginModel = LoginModel()
+    
+    func testIfDataIsBeingInsert() {
+        login.setUser(user: "Teste")
+        login.setPassword(password: "Teste")
+        
+        return XCTAssert(login.checkAllFields())
     }
 
     override func tearDownWithError() throws {

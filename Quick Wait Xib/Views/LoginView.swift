@@ -30,6 +30,7 @@ class LoginView: UIView {
        var txt = UITextView()
         txt.font = UIFont.systemFont(ofSize: 26)
         txt.backgroundColor = .white
+        txt.autocapitalizationType = .none
         txt.layer.masksToBounds = false
         txt.layer.shadowOpacity = 0.6
         txt.layer.shadowColor = UIColor.gray.cgColor
@@ -51,6 +52,7 @@ class LoginView: UIView {
     var txtPassword: UITextView = {
        var txt = UITextView()
         txt.font = UIFont.systemFont(ofSize: 26)
+        txt.autocapitalizationType = .none
         txt.layer.shadowOpacity = 0.6
         txt.layer.masksToBounds = false
         txt.layer.shadowColor = UIColor.gray.cgColor
@@ -108,8 +110,6 @@ class LoginView: UIView {
         super.init(coder: coder)
         createSubView()
     }
-    
-    
     
     func createSubView() {
         

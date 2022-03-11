@@ -371,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				F2C04E2927B3FAD600710727 /* ChoiceViewModel.swift */,
-				F2C04E2727B3FAD600710727 /* LoginViewModel.swift */,
 				F2C04E2B27B3FAD600710727 /* MyLaunchScreenViewModel.swift */,
 				F2C04E2827B3FAD600710727 /* RecoverPasswordViewModel.swift */,
 				F2C04E2A27B3FAD600710727 /* RegisterUserViewModel.swift */,
@@ -383,6 +382,7 @@
 		F2C04E2C27B3FAD600710727 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F2C04E2727B3FAD600710727 /* LoginViewModel.swift */,
 				F2C04E3127B3FAD600710727 /* ChoiceModel.swift */,
 				F2C04E2E27B3FAD600710727 /* LocationHospitalModel.swift */,
 				F2C04E2F27B3FAD600710727 /* LoginModel.swift */,
