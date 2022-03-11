@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         SentrySDK.start { options in
-            options.dsn = "https://be4e70d28e7840508adf77ee9bd432ad@o1144636.ingest.sentry.io/6242701"
+            options.dsn = "https://b3911f8c49f74aab805ed09be5b17a51@o1164074.ingest.sentry.io/6252882"
             options.debug = true // Enabled debug when first installing is always helpful
             
             // Set tracesSampleRate to 1.0 to capture 100% of transactions for performance monitoring.

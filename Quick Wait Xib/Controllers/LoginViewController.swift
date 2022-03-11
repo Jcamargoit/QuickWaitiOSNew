@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Sentry
 
 class LoginViewController: UIViewController {
     
@@ -51,7 +52,17 @@ class LoginViewController: UIViewController {
     
     func verificationLogin(){
         
+        let eventId = SentrySDK.capture(message: "FeedBack")
+
+        let userFeedback = UserFeedback(eventId: eventId)
+        userFeedback.comments = "Testando FeedBack enviado por um usuario."
+        userFeedback.email = "ronaldosamuel@frwk.com.br"
+        userFeedback.name = "Ronaldo Samuel"
+        SentrySDK.capture(userFeedback: userFeedback)
+        
         if tfUser.text!.isEmpty {
+            let error = NSError(domain: "LoginError", code: 12, userInfo: nil)
+            SentrySDK.capture(error: error)
             simplePopUp(title: "", mensage: "É necessário digitar o usuário")
         } else  if tfPassword.text!.isEmpty{
             simplePopUp(title: "", mensage: "É necessário digitar a senha")
