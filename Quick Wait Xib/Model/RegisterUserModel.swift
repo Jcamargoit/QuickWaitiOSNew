@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-struct CriarConta:Codable {
+struct RegisterUserModel:Codable {
     
     var username: String?
     var email: String?
@@ -18,24 +17,23 @@ struct CriarConta:Codable {
     
 }
 
-struct responseLogin: Codable {
+struct responseRegisterUser: Codable {
     let message: String?
 }
 
 
-extension CriarConta {
+extension RegisterUserModel {
  
-    
-    static func login(vm: RegisterUserViewModel) -> Resource<responseLogin?>{
+    static func addNewUser(vm: RegisterUserViewModel) -> Resource<responseRegisterUser?>{
         
-        let order = CriarConta(vm)
+        let order = RegisterUserModel(vm)
         guard let url = URL(string: "http://localhost:8072/auth/api/auth/signup") else{
             fatalError("URL is incorrect!")
         }
        guard let data = try? JSONEncoder().encode(order) else {
             fatalError("Error encoding order!")
         }
-        var resource = Resource<responseLogin?>(url: url)
+        var resource = Resource<responseRegisterUser?>(url: url)
         resource.httpMethod = HttpMethod.post
         resource.body = data
         return resource
@@ -44,7 +42,7 @@ extension CriarConta {
     
 }
 
-extension CriarConta {
+extension RegisterUserModel {
     
     init?(_ vm: RegisterUserViewModel){
         
