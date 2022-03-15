@@ -15,7 +15,12 @@ enum LoginViewModeStatus {
 }
 
 class LoginViewModel {
-   private var model: LoginModel = LoginModel()
+    var token: String?
+    var type: String?
+    var id: String?
+    var email: String?
+    
+    private var model: LoginModel = LoginModel()
     var reportStatus: BehaviorRelay<LoginViewModeStatus> = BehaviorRelay<LoginViewModeStatus>(value: .default)
     
     func setUserToModel(user: String) {

@@ -15,7 +15,7 @@ class RegisterUserViewController: UIViewController {
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfConfirmPassword: UITextField!
     
-    private var vm = RegisterUserViewModel()
+    private var registerUserViewModel = RegisterUserViewModel()
     var alert = UIAlertController ()
     
     override func viewDidLoad() {
@@ -34,15 +34,15 @@ class RegisterUserViewController: UIViewController {
     
     func createAnAccount()  {
         
-        self.vm.username = self.tfName.text ?? ""
-        self.vm.password = self.tfPassword.text ?? ""
-        self.vm.email = self.tfEmail.text ?? ""
-        self.vm.cpf = self.tfCPF.text ?? ""
-        self.vm.phoneNumber = self.tfCell.text ?? ""
+        self.registerUserViewModel.username = self.tfName.text ?? ""
+        self.registerUserViewModel.password = self.tfPassword.text ?? ""
+        self.registerUserViewModel.email = self.tfEmail.text ?? ""
+        self.registerUserViewModel.cpf = self.tfCPF.text ?? ""
+        self.registerUserViewModel.phoneNumber = self.tfCell.text ?? ""
         
         showLoading(enable: true)
         
-        APIService().load(resource: CriarConta.login(vm: self.vm)) { result in
+        APIService().load(resource: RegisterUserModel.addNewUser(vm: self.registerUserViewModel)) { result in
             
             switch result {
                 
