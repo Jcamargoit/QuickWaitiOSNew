@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1E141D27DFD1810018B7FC /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E141C27DFD1810018B7FC /* ChoiceView.swift */; };
 		4C1FA7B027DA46250026D3C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FA7AF27DA46250026D3C7 /* LoginView.swift */; };
 		4C1FA7B227DB700C0026D3C7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FA7B127DB700C0026D3C7 /* UIView+Extensions.swift */; };
 		4C26D2FA27DB88D100C19B4B /* UITextfield+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26D2F927DB88D100C19B4B /* UITextfield+Extensions.swift */; };
+		4C4FFBB627E0B05A00C46CDD /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FFBB527E0B05A00C46CDD /* CustomButtonView.swift */; };
 		4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */; };
 		4CB92CA627BE8DD50079B5C1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */; };
 		5D76F25611DEF8A4D0459962 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CFF1C66D4003F63E047BD0 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */; };
@@ -52,7 +54,6 @@
 		F2C04E3E27B3FAD600710727 /* ShowLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E1727B3FAD500710727 /* ShowLoading.swift */; };
 		F2C04E3F27B3FAD600710727 /* DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E1827B3FAD500710727 /* DismissKeyboard.swift */; };
 		F2C04E4027B3FAD600710727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1A27B3FAD600710727 /* LaunchScreen.storyboard */; };
-		F2C04E4127B3FAD600710727 /* ChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1B27B3FAD600710727 /* ChoiceViewController.xib */; };
 		F2C04E4227B3FAD600710727 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1C27B3FAD600710727 /* HomeViewController.xib */; };
 		F2C04E4327B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */; };
 		F2C04E4427B3FAD600710727 /* RecoverPasswordResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */; };
@@ -99,9 +100,11 @@
 		1D583B73FC79A72E5FB28A90 /* Pods_Quick_Wait_XibTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_XibTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37252CDCF3A86D83EE39335A /* Pods-Quick Wait XibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait XibTests.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait XibTests/Pods-Quick Wait XibTests.release.xcconfig"; sourceTree = "<group>"; };
 		469175D87619A3C814F4A756 /* Pods-Quick Wait Xib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib.debug.xcconfig"; sourceTree = "<group>"; };
+		4C1E141C27DFD1810018B7FC /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 		4C1FA7AF27DA46250026D3C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4C1FA7B127DB700C0026D3C7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4C26D2F927DB88D100C19B4B /* UITextfield+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extensions.swift"; sourceTree = "<group>"; };
+		4C4FFBB527E0B05A00C46CDD /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		57B9612444A47B160D7996B0 /* Pods-Quick Wait XibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait XibTests.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait XibTests/Pods-Quick Wait XibTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +154,6 @@
 		F2C04E1727B3FAD500710727 /* ShowLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowLoading.swift; sourceTree = "<group>"; };
 		F2C04E1827B3FAD500710727 /* DismissKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissKeyboard.swift; sourceTree = "<group>"; };
 		F2C04E1A27B3FAD600710727 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F2C04E1B27B3FAD600710727 /* ChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceViewController.xib; sourceTree = "<group>"; };
 		F2C04E1C27B3FAD600710727 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsResultTableViewCell.xib; sourceTree = "<group>"; };
 		F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecoverPasswordResultViewController.xib; sourceTree = "<group>"; };
@@ -205,6 +207,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C4FFBB327E0B01500C46CDD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FFBB427E0B01B00C46CDD /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4C4FFBB427E0B01B00C46CDD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FFBB527E0B05A00C46CDD /* CustomButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		71F0AFDFB6B5FF1E10620017 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +301,7 @@
 		F26D68AE2798B46500E20503 /* Quick Wait Xib */ = {
 			isa = PBXGroup;
 			children = (
+				4C4FFBB327E0B01500C46CDD /* UI */,
 				F2BBEC0127BD27220088D85A /* FireBase */,
 				F2681AB627BC39820067FA4D /* Utils */,
 				F2681AAE27BC1F2C0067FA4D /* APIService */,
@@ -379,7 +398,6 @@
 		F2C04E1927B3FAD600710727 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F2C04E1B27B3FAD600710727 /* ChoiceViewController.xib */,
 				F2C04E1C27B3FAD600710727 /* HomeViewController.xib */,
 				F2C04E1A27B3FAD600710727 /* LaunchScreen.storyboard */,
 				F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */,
@@ -395,6 +413,7 @@
 				F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */,
 				F2AAEA7227CFBFB500D62386 /* SettingsViewController.xib */,
 				4C1FA7AF27DA46250026D3C7 /* LoginView.swift */,
+				4C1E141C27DFD1810018B7FC /* ChoiceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -549,7 +568,6 @@
 				F26D68B92798B46700E20503 /* Assets.xcassets in Resources */,
 				F2AAEA7427CFBFB500D62386 /* SettingsViewController.xib in Resources */,
 				F26A7895279995E0008C625B /* Quicksand_Book.otf in Resources */,
-				F2C04E4127B3FAD600710727 /* ChoiceViewController.xib in Resources */,
 				F26A7898279995E0008C625B /* Quicksand_Bold.otf in Resources */,
 				F26A7892279995E0008C625B /* Quicksand_Bold_Oblique.otf in Resources */,
 				F2C04E4827B3FAD600710727 /* SearchHospitalsResultViewController.xib in Resources */,
@@ -720,8 +738,10 @@
 				4C1FA7B227DB700C0026D3C7 /* UIView+Extensions.swift in Sources */,
 				F29C508D27BA9295004D0BD4 /* NewsViewController.swift in Sources */,
 				4C1FA7B027DA46250026D3C7 /* LoginView.swift in Sources */,
+				4C4FFBB627E0B05A00C46CDD /* CustomButtonView.swift in Sources */,
 				4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */,
 				F26D68B22798B46500E20503 /* SceneDelegate.swift in Sources */,
+				4C1E141D27DFD1810018B7FC /* ChoiceView.swift in Sources */,
 				F2C04E3E27B3FAD600710727 /* ShowLoading.swift in Sources */,
 				F2C04E3627B3FAD600710727 /* HomeViewController.swift in Sources */,
 				F2C04E5327B3FAD600710727 /* LoginModel.swift in Sources */,
@@ -903,9 +923,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UJ394G4MSU;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Quick Wait Xib/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Quick Wait";
@@ -927,6 +948,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.juninho.Quick-Wait-Xib-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -940,9 +962,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UJ394G4MSU;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Quick Wait Xib/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Quick Wait";
@@ -964,6 +987,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.juninho.Quick-Wait-Xib-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
