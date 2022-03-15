@@ -57,7 +57,7 @@ class ChoiceViewController: UIViewController {
         self.presentationView.btnSigin.rx.tapGesture().when(.recognized).bind { _ in
             self.tapToRegister()
         }.disposed(by: disposable)
-        
+         
         self.presentationView.btnGuest.rx.tapGesture().when(.recognized).bind { _ in
             self.tapToLoginAsGuest()
         }.disposed(by: disposable)

@@ -12,6 +12,9 @@
 		4C1FA7B227DB700C0026D3C7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FA7B127DB700C0026D3C7 /* UIView+Extensions.swift */; };
 		4C26D2FA27DB88D100C19B4B /* UITextfield+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26D2F927DB88D100C19B4B /* UITextfield+Extensions.swift */; };
 		4C4FFBB627E0B05A00C46CDD /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FFBB527E0B05A00C46CDD /* CustomButtonView.swift */; };
+		4C4FFBB827E0F16700C46CDD /* RegisterUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FFBB727E0F16700C46CDD /* RegisterUserView.swift */; };
+		4C4FFBBA27E0F29E00C46CDD /* RegisterCustomTextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FFBB927E0F29E00C46CDD /* RegisterCustomTextfieldView.swift */; };
+		4C4FFBBD27E1032B00C46CDD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FFBBC27E1032B00C46CDD /* String+Extensions.swift */; };
 		4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */; };
 		4CB92CA627BE8DD50079B5C1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */; };
 		F2681AB027BC21070067FA4D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AAF27BC21070067FA4D /* APIService.swift */; };
@@ -99,6 +102,9 @@
 		4C1FA7B127DB700C0026D3C7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4C26D2F927DB88D100C19B4B /* UITextfield+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extensions.swift"; sourceTree = "<group>"; };
 		4C4FFBB527E0B05A00C46CDD /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		4C4FFBB727E0F16700C46CDD /* RegisterUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserView.swift; sourceTree = "<group>"; };
+		4C4FFBB927E0F29E00C46CDD /* RegisterCustomTextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomTextfieldView.swift; sourceTree = "<group>"; };
+		4C4FFBBC27E1032B00C46CDD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		F2681AAF27BC21070067FA4D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -204,8 +210,17 @@
 			isa = PBXGroup;
 			children = (
 				4C4FFBB527E0B05A00C46CDD /* CustomButtonView.swift */,
+				4C4FFBB927E0F29E00C46CDD /* RegisterCustomTextfieldView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4C4FFBBB27E1031800C46CDD /* Contants */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FFBBC27E1032B00C46CDD /* String+Extensions.swift */,
+			);
+			path = Contants;
 			sourceTree = "<group>";
 		};
 		E1DB031B73CAAE3D9B1149EA /* Pods */ = {
@@ -269,6 +284,7 @@
 		F26D68AE2798B46500E20503 /* Quick Wait Xib */ = {
 			isa = PBXGroup;
 			children = (
+				4C4FFBBB27E1031800C46CDD /* Contants */,
 				4C4FFBB327E0B01500C46CDD /* UI */,
 				F2BBEC0127BD27220088D85A /* FireBase */,
 				F2681AB627BC39820067FA4D /* Utils */,
@@ -382,6 +398,7 @@
 				F2AAEA7227CFBFB500D62386 /* SettingsViewController.xib */,
 				4C1FA7AF27DA46250026D3C7 /* LoginView.swift */,
 				4C1E141C27DFD1810018B7FC /* ChoiceView.swift */,
+				4C4FFBB727E0F16700C46CDD /* RegisterUserView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -598,9 +615,11 @@
 				F2C04E4E27B3FAD600710727 /* ChoiceViewModel.swift in Sources */,
 				F2C04E5027B3FAD600710727 /* MyLaunchScreenViewModel.swift in Sources */,
 				F2C04E5927B4028800710727 /* SimplePopUp.swift in Sources */,
+				4C4FFBBD27E1032B00C46CDD /* String+Extensions.swift in Sources */,
 				4C1FA7B227DB700C0026D3C7 /* UIView+Extensions.swift in Sources */,
 				F29C508D27BA9295004D0BD4 /* NewsViewController.swift in Sources */,
 				4C1FA7B027DA46250026D3C7 /* LoginView.swift in Sources */,
+				4C4FFBBA27E0F29E00C46CDD /* RegisterCustomTextfieldView.swift in Sources */,
 				4C4FFBB627E0B05A00C46CDD /* CustomButtonView.swift in Sources */,
 				4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */,
 				F26D68B22798B46500E20503 /* SceneDelegate.swift in Sources */,
@@ -622,6 +641,7 @@
 				F2C04E5227B3FAD600710727 /* LocationHospitalModel.swift in Sources */,
 				F2C04E3C27B3FAD600710727 /* RecoverPasswordResultViewController.swift in Sources */,
 				F2C04E5127B3FAD600710727 /* RegisterUserModel.swift in Sources */,
+				4C4FFBB827E0F16700C46CDD /* RegisterUserView.swift in Sources */,
 				F2C40E8827BFE61300EC0066 /* NewsViewModel.swift in Sources */,
 				F2C04E3F27B3FAD600710727 /* DismissKeyboard.swift in Sources */,
 				F2681AB827BC39A90067FA4D /* ApiNewsEndPoints.swift in Sources */,
