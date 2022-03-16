@@ -20,6 +20,8 @@ class LoginViewModel {
     var id: String?
     var email: String?
     
+    var disposable: DisposeBag = DisposeBag()
+    
     private var model: LoginModel = LoginModel()
     var reportStatus: BehaviorRelay<LoginViewModeStatus> = BehaviorRelay<LoginViewModeStatus>(value: .default)
     
@@ -51,14 +53,28 @@ class LoginViewModel {
             self.reportStatus.accept(.failed)
         } else {
             self.reportStatus.accept(.startLoding)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                if self.model.getUser() == "frame" && self.model.getPassword() == "frame" {
-                    self.reportStatus.accept(.success)
-                } else {
-                    self.reportStatus.accept(.error)
-                }
-                self.reportStatus.accept(.stopLoading)
+            
+            UserClient.loginUser(loginModel: self.model).asObservable()
+                .subscribe(
+                    onNext: { result in
+                        print(result.email)
+                        self.reportStatus.accept(.success)
+                        self.reportStatus.accept(.stopLoading)
+                    },
+                    onError: { error in
+                        self.sendErrorTest()
+                        self.reportStatus.accept(.error)
+                        self.reportStatus.accept(.stopLoading)
+                    }).disposed(by: disposable)
+            
+            UserClient.createUser(name: "adas", email: "asdasda").asObservable().subscribe(onNext: {
+                result in
+                print(result.mensagem)
+            }, onError: {
+                error in
+                print(error)
             }
+            
         }
     }
     

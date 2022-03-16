@@ -22,7 +22,14 @@ class RegisterCustomTextfieldView: UIView {
     
     var fieldTitle: UILabel = {
        var lbl = UILabel()
-        
+        return lbl
+    }()
+    
+    var requiredLabel: UILabel = {
+       var lbl = UILabel()
+        lbl.text = "*"
+        lbl.font = UIFont.systemFont(ofSize: 3)
+        lbl.textColor = .systemPink
         return lbl
     }()
     
@@ -87,5 +94,18 @@ class RegisterCustomTextfieldView: UIView {
             textfield.heightAnchor.constraint(equalToConstant: 50),
         ])
     }
+    
+    func setTitle(value: String) {
+        self.fieldTitle.text = value
+    }
+    
+    func makeTextRequired() {
+        addSubview(requiredLabel)
+        NSLayoutConstraint.activate([
+            requiredLabel.topAnchor.constraint(equalTo: fieldTitle.topAnchor),
+            requiredLabel.leadingAnchor.constraint(equalTo: fieldTitle.trailingAnchor, constant: 2)
+        ])
+    }
+    
     
 }

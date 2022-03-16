@@ -17,6 +17,16 @@
 		4C4FFBBD27E1032B00C46CDD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FFBBC27E1032B00C46CDD /* String+Extensions.swift */; };
 		4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */; };
 		4CB92CA627BE8DD50079B5C1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */; };
+		4CC28F1E27E231DC00AC7A21 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F1D27E231DC00AC7A21 /* APIClient.swift */; };
+		4CC28F2027E231E800AC7A21 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F1F27E231E800AC7A21 /* APIConfiguration.swift */; };
+		4CC28F2227E231F500AC7A21 /* NetworkInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F2127E231F500AC7A21 /* NetworkInterceptor.swift */; };
+		4CC28F2427E231FF00AC7A21 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F2327E231FF00AC7A21 /* NetworkLogger.swift */; };
+		4CC28F2627E2320900AC7A21 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F2527E2320900AC7A21 /* NetworkReachability.swift */; };
+		4CC28F2B27E233CA00AC7A21 /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F2A27E233CA00AC7A21 /* LoginClient.swift */; };
+		4CC28F2D27E233D400AC7A21 /* LoginResultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F2C27E233D400AC7A21 /* LoginResultCodable.swift */; };
+		4CC28F2F27E233DC00AC7A21 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F2E27E233DC00AC7A21 /* UserRouter.swift */; };
+		4CC28F3127E243BB00AC7A21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F3027E243BB00AC7A21 /* Constants.swift */; };
+		4CC28F3327E267CC00AC7A21 /* DefaultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F3227E267CC00AC7A21 /* DefaultCodable.swift */; };
 		F2681AB027BC21070067FA4D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AAF27BC21070067FA4D /* APIService.swift */; };
 		F2681AB327BC26880067FA4D /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AB227BC26880067FA4D /* NewsModel.swift */; };
 		F2681AB827BC39A90067FA4D /* ApiNewsEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */; };
@@ -107,6 +117,16 @@
 		4C4FFBBC27E1032B00C46CDD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		4CC28F1D27E231DC00AC7A21 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4CC28F1F27E231E800AC7A21 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		4CC28F2127E231F500AC7A21 /* NetworkInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptor.swift; sourceTree = "<group>"; };
+		4CC28F2327E231FF00AC7A21 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		4CC28F2527E2320900AC7A21 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		4CC28F2A27E233CA00AC7A21 /* LoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
+		4CC28F2C27E233D400AC7A21 /* LoginResultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResultCodable.swift; sourceTree = "<group>"; };
+		4CC28F2E27E233DC00AC7A21 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		4CC28F3027E243BB00AC7A21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4CC28F3227E267CC00AC7A21 /* DefaultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCodable.swift; sourceTree = "<group>"; };
 		F2681AAF27BC21070067FA4D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F2681AB227BC26880067FA4D /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNewsEndPoints.swift; sourceTree = "<group>"; };
@@ -218,9 +238,74 @@
 		4C4FFBBB27E1031800C46CDD /* Contants */ = {
 			isa = PBXGroup;
 			children = (
-				4C4FFBBC27E1032B00C46CDD /* String+Extensions.swift */,
+				4CC28F3027E243BB00AC7A21 /* Constants.swift */,
 			);
 			path = Contants;
+			sourceTree = "<group>";
+		};
+		4CC28F1927E2317400AC7A21 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4CC28F1A27E2318D00AC7A21 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4CC28F1C27E231AD00AC7A21 /* Networking */,
+				4CC28F1B27E2319E00AC7A21 /* Extension */,
+				4C4FFBBB27E1031800C46CDD /* Contants */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4CC28F1B27E2319E00AC7A21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FFBBC27E1032B00C46CDD /* String+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4CC28F1C27E231AD00AC7A21 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4CC28F2727E233A400AC7A21 /* Client */,
+				4CC28F2827E233AE00AC7A21 /* Codable */,
+				4CC28F2927E233B400AC7A21 /* Router */,
+				4CC28F1D27E231DC00AC7A21 /* APIClient.swift */,
+				4CC28F1F27E231E800AC7A21 /* APIConfiguration.swift */,
+				4CC28F2127E231F500AC7A21 /* NetworkInterceptor.swift */,
+				4CC28F2327E231FF00AC7A21 /* NetworkLogger.swift */,
+				4CC28F2527E2320900AC7A21 /* NetworkReachability.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4CC28F2727E233A400AC7A21 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				4CC28F2A27E233CA00AC7A21 /* LoginClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		4CC28F2827E233AE00AC7A21 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				4CC28F2C27E233D400AC7A21 /* LoginResultCodable.swift */,
+				4CC28F3227E267CC00AC7A21 /* DefaultCodable.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		4CC28F2927E233B400AC7A21 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4CC28F2E27E233DC00AC7A21 /* UserRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		E1DB031B73CAAE3D9B1149EA /* Pods */ = {
@@ -284,7 +369,8 @@
 		F26D68AE2798B46500E20503 /* Quick Wait Xib */ = {
 			isa = PBXGroup;
 			children = (
-				4C4FFBBB27E1031800C46CDD /* Contants */,
+				4CC28F1A27E2318D00AC7A21 /* Core */,
+				4CC28F1927E2317400AC7A21 /* New Group */,
 				4C4FFBB327E0B01500C46CDD /* UI */,
 				F2BBEC0127BD27220088D85A /* FireBase */,
 				F2681AB627BC39820067FA4D /* Utils */,
@@ -603,6 +689,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC28F3327E267CC00AC7A21 /* DefaultCodable.swift in Sources */,
 				F2C04E3927B3FAD600710727 /* LoginViewController.swift in Sources */,
 				F2C04E3527B3FAD600710727 /* RegisterUserViewController.swift in Sources */,
 				F2681AB027BC21070067FA4D /* APIService.swift in Sources */,
@@ -611,6 +698,7 @@
 				F2C04E4F27B3FAD600710727 /* RegisterUserViewModel.swift in Sources */,
 				F2C04E4C27B3FAD600710727 /* LoginViewModel.swift in Sources */,
 				F2C04E3327B3FAD600710727 /* SearchHospitalsResultTableViewCell.swift in Sources */,
+				4CC28F1E27E231DC00AC7A21 /* APIClient.swift in Sources */,
 				F2C04E3427B3FAD600710727 /* RecoverPasswordViewController.swift in Sources */,
 				F2C04E4E27B3FAD600710727 /* ChoiceViewModel.swift in Sources */,
 				F2C04E5027B3FAD600710727 /* MyLaunchScreenViewModel.swift in Sources */,
@@ -618,6 +706,7 @@
 				4C4FFBBD27E1032B00C46CDD /* String+Extensions.swift in Sources */,
 				4C1FA7B227DB700C0026D3C7 /* UIView+Extensions.swift in Sources */,
 				F29C508D27BA9295004D0BD4 /* NewsViewController.swift in Sources */,
+				4CC28F2B27E233CA00AC7A21 /* LoginClient.swift in Sources */,
 				4C1FA7B027DA46250026D3C7 /* LoginView.swift in Sources */,
 				4C4FFBBA27E0F29E00C46CDD /* RegisterCustomTextfieldView.swift in Sources */,
 				4C4FFBB627E0B05A00C46CDD /* CustomButtonView.swift in Sources */,
@@ -625,8 +714,11 @@
 				F26D68B22798B46500E20503 /* SceneDelegate.swift in Sources */,
 				4C1E141D27DFD1810018B7FC /* ChoiceView.swift in Sources */,
 				F2C04E3E27B3FAD600710727 /* ShowLoading.swift in Sources */,
+				4CC28F2627E2320900AC7A21 /* NetworkReachability.swift in Sources */,
 				F2C04E3627B3FAD600710727 /* HomeViewController.swift in Sources */,
+				4CC28F2427E231FF00AC7A21 /* NetworkLogger.swift in Sources */,
 				F2C04E5327B3FAD600710727 /* LoginModel.swift in Sources */,
+				4CC28F2027E231E800AC7A21 /* APIConfiguration.swift in Sources */,
 				F2C04E5527B3FAD600710727 /* ChoiceModel.swift in Sources */,
 				F2C04E4D27B3FAD600710727 /* RecoverPasswordViewModel.swift in Sources */,
 				F2C04E3A27B3FAD600710727 /* MyLaunchViewController.swift in Sources */,
@@ -638,7 +730,9 @@
 				F2681AB327BC26880067FA4D /* NewsModel.swift in Sources */,
 				F2C04E5627B3FAD600710727 /* SearchHospitalsModel.swift in Sources */,
 				F29C3A0027C54D09002C417B /* NewsResultViewController.swift in Sources */,
+				4CC28F2227E231F500AC7A21 /* NetworkInterceptor.swift in Sources */,
 				F2C04E5227B3FAD600710727 /* LocationHospitalModel.swift in Sources */,
+				4CC28F2D27E233D400AC7A21 /* LoginResultCodable.swift in Sources */,
 				F2C04E3C27B3FAD600710727 /* RecoverPasswordResultViewController.swift in Sources */,
 				F2C04E5127B3FAD600710727 /* RegisterUserModel.swift in Sources */,
 				4C4FFBB827E0F16700C46CDD /* RegisterUserView.swift in Sources */,
@@ -646,6 +740,8 @@
 				F2C04E3F27B3FAD600710727 /* DismissKeyboard.swift in Sources */,
 				F2681AB827BC39A90067FA4D /* ApiNewsEndPoints.swift in Sources */,
 				4C26D2FA27DB88D100C19B4B /* UITextfield+Extensions.swift in Sources */,
+				4CC28F3127E243BB00AC7A21 /* Constants.swift in Sources */,
+				4CC28F2F27E233DC00AC7A21 /* UserRouter.swift in Sources */,
 				F2AAEA7327CFBFB500D62386 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

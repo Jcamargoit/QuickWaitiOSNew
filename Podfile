@@ -16,6 +16,7 @@ pod 'RxSwift'
 pod 'RxDataSources'
 pod 'RxSwiftExt'
 pod 'RxGesture'
+pod 'Alamofire'
 
 
   target 'Quick Wait XibTests' do

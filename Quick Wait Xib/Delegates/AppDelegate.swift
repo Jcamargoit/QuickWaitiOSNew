@@ -29,13 +29,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SentrySDK.start { options in
             options.dsn = "https://b3911f8c49f74aab805ed09be5b17a51@o1164074.ingest.sentry.io/6252882"
-            options.debug = true // Enabled debug when first installing is always helpful
+            options.debug = false // Enabled debug when first installing is always helpful
             
             // Set tracesSampleRate to 1.0 to capture 100% of transactions for performance monitoring.
             // We recommend adjusting this value in production.
             options.tracesSampleRate = 1.0
         }
         FirebaseApp.configure()
+        
+        // MARK: Networking
+        NetworkReachability.shared.startNetworkMonitoring()
         
         return true
     }
