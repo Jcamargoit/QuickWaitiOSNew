@@ -11,7 +11,7 @@ import Alamofire
 enum UserRouter: APIConfiguration {
     
     case loginUser(user: LoginModel)
-    case registerUser(nome: String, email: String)
+    case registerUser(userRegister: RegisterUserModel)
     
     
     var method: HTTPMethod {
@@ -25,14 +25,20 @@ enum UserRouter: APIConfiguration {
     var parameters: RequestParams {
         switch self {
         case .loginUser(let user):
+             print("GetUser", user.getUser())
+            print("GetPassword", user.getPassword())
+            
             return .body([
                 "username": user.getUser(),
                 "password": user.getPassword()
             ])
-        case .registerUser(let nome,let email):
+        case .registerUser(let userRegister):
             return .body([
-                "nome": nome,
-                "email": email
+                "username": userRegister.getUserName(),
+                "email": userRegister.getEmail(),
+                "password": userRegister.getPassword(),
+                "cpf": userRegister.getCpf(),
+                "phoneNumber": userRegister.getPhoneNumber()
             ])
         default:
             return .url([:])
@@ -42,9 +48,10 @@ enum UserRouter: APIConfiguration {
     var path: String {
         switch self {
         case .registerUser:
-            return "signin"
-        case .loginUser:
             return "signup"
+        case .loginUser:
+            return "signin"
+            
         }
     }
     
