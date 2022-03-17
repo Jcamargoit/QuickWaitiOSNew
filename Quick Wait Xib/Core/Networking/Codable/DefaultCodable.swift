@@ -8,7 +8,6 @@
 import Foundation
 
 struct DefaultCodable: Codable {
-    let status: String?
-    let mensagem: String?
-    let error: String?
+    let status: Int?
+    let message: String?
 }

@@ -10,7 +10,9 @@ import Foundation
 struct LoginResultCodable: Codable {
     var username: String?
     var token: String?
-    var type: String?
-    var id: String?
+    var status: Int?
+    var message: String?
+//    var type: String?
+//    var id: Int?
     var email: String?
 }

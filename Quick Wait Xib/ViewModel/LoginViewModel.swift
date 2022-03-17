@@ -26,6 +26,9 @@ class LoginViewModel {
     private var model: LoginModel = LoginModel()
     var reportStatus: BehaviorRelay<LoginViewModeStatus> = BehaviorRelay<LoginViewModeStatus>(value: .default)
     
+    
+    var errorMessage: BehaviorRelay<String> = BehaviorRelay<String>(value: "")
+    
     func setUserToModel(user: String) {
         self.model.setUser(user: user)
     }
@@ -58,23 +61,22 @@ class LoginViewModel {
             UserClient.loginUser(loginModel: self.model).asObservable()
                 .subscribe(
                     onNext: { result in
-                        print(result.email)
-                        self.reportStatus.accept(.success)
+                        print("Result", result.message)
                         self.reportStatus.accept(.stopLoading)
+                        
+                        if (result.message ?? "") != ""  {
+                            self.reportStatus.accept(.error)
+                            self.errorMessage.accept(result.message!)
+                        }else {
+                            self.reportStatus.accept(.success)
+                        }
                     },
                     onError: { error in
+                         print(error)
                         self.sendErrorTest()
                         self.reportStatus.accept(.error)
                         self.reportStatus.accept(.stopLoading)
                     }).disposed(by: disposable)
-            
-            UserClient.createUser(name: "adas", email: "asdasda").asObservable().subscribe(onNext: {
-                result in
-                print(result.mensagem)
-            }, onError: {
-                error in
-                print(error)
-            }
-            ) }
+      }
     }
 }
