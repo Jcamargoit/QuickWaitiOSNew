@@ -9,7 +9,7 @@ import Foundation
 
 struct Constants {
     struct API {
-        static let baseUrl = "localhost:8072/auth/api"
-        static let urlUser= "localhost:8072/auth/api/auth/"
+        static let baseUrl = "http://localhost:8072/auth/api"
+        static let urlUser = "http://localhost:8072/auth/api/auth/"
     }
 }

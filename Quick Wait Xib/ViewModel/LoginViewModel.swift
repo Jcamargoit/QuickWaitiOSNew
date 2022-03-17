@@ -15,6 +15,7 @@ enum LoginViewModeStatus {
 }
 
 class LoginViewModel {
+    
     var token: String?
     var type: String?
     var id: String?
@@ -48,7 +49,7 @@ class LoginViewModel {
         SentrySDK.capture(userFeedback: userFeedback)
     }
     
-    func verificationLogin(){
+    func verificationLogin() {
         if !model.checkAllFields() {
             self.reportStatus.accept(.failed)
         } else {
@@ -74,8 +75,6 @@ class LoginViewModel {
                 error in
                 print(error)
             }
-            
-        }
+            ) }
     }
-    
 }
