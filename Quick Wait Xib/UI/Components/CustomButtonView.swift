@@ -34,7 +34,7 @@ class CustomButtonView: UIView {
        var lbl = UILabel()
         lbl.textAlignment = .center
         lbl.textColor = UIColor(red: 0.15, green: 0.66, blue: 0.69, alpha: 1.00)
-        lbl.font = UIFont.systemFont(ofSize: 12)
+        lbl.font = UIFont.systemFont(ofSize: 10)
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
@@ -98,7 +98,7 @@ class CustomButtonView: UIView {
     }
     
     func setupBoldFont(value: UIFont.Weight) {
-        self.buttonTitle.font = UIFont.systemFont(ofSize: 13, weight: value)
+        self.buttonTitle.font = UIFont.systemFont(ofSize: 11, weight: value)
     }
     
     func updateConstraintButton(padding: CGFloat) {
