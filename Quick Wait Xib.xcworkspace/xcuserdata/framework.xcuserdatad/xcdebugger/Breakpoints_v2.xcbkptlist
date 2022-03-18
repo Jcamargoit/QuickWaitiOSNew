@@ -14,9 +14,9 @@
             filePath = "Quick Wait Xib/Controllers/RegisterUserViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "createAnAccount()"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "bindView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -30,9 +30,9 @@
             filePath = "Quick Wait Xib/Controllers/RegisterUserViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "createAnAccount()"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "bindView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

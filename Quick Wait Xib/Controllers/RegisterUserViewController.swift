@@ -17,6 +17,8 @@ class RegisterUserViewController: UIViewController {
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfConfirmPassword: UITextField!
     
+    var presentationView: RegisterUserView = RegisterUserView()
+    
     var disposed: DisposeBag = DisposeBag()
     private var viewModel = RegisterUserViewModel()
     

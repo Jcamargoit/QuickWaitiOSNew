@@ -57,26 +57,29 @@ class LoginViewModel {
             self.reportStatus.accept(.failed)
         } else {
             self.reportStatus.accept(.startLoding)
-            
-            UserClient.loginUser(loginModel: self.model).asObservable()
-                .subscribe(
-                    onNext: { result in
-                        print("Result", result.message)
-                        self.reportStatus.accept(.stopLoading)
-                        
-                        if (result.message ?? "") != ""  {
-                            self.reportStatus.accept(.error)
-                            self.errorMessage.accept(result.message!)
-                        }else {
-                            self.reportStatus.accept(.success)
-                        }
-                    },
-                    onError: { error in
-                         print(error)
-                        self.sendErrorTest()
-                        self.reportStatus.accept(.error)
-                        self.reportStatus.accept(.stopLoading)
-                    }).disposed(by: disposable)
+            self.loginUserApiCall()
       }
+    }
+    
+    func loginUserApiCall() {
+        UserClient.loginUser(loginModel: self.model).asObservable()
+            .subscribe(
+                onNext: { result in
+                    print("Result", result.message)
+                    self.reportStatus.accept(.stopLoading)
+                    
+                    if (result.message ?? "") != ""  {
+                        self.reportStatus.accept(.error)
+                        self.errorMessage.accept(result.message!)
+                    }else {
+                        self.reportStatus.accept(.success)
+                    }
+                },
+                onError: { error in
+                     print(error)
+                    self.sendErrorTest()
+                    self.reportStatus.accept(.error)
+                    self.reportStatus.accept(.stopLoading)
+                }).disposed(by: disposable)
     }
 }

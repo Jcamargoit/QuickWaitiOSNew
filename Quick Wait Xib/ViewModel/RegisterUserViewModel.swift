@@ -68,61 +68,59 @@ class RegisterUserViewModel {
     }
     
     func verificationLoginRegister() {
-        
-        print("Iniciou cadastro")
-        
         if !model.checkAllFields() {
             self.reportStatus.accept(.failed)
         } else {
             self.reportStatus.accept(.startLoding)
-            
-            UserClient.createUser(registerUserModel: self.model).asObservable()
-                .subscribe(
-                    onNext: { result in
-                        print("Mensagem response", result.status)
-                        
-                        self.reportStatus.accept(.stopLoading)
-                        if result.status != 200 {
-                            self.reportStatus.accept(.error)
-                            self.errorMessage.accept("\(result.message)")
-                            
-                        }else {
-                            self.reportStatus.accept(.success)
-                            
-                            UserClient.loginUser(loginModel: LoginModel(user: self.model.getUserName(), password: self.model.getPassword()))
-                                .asObservable()
-                                .subscribe(
-                                    onNext: {
-                                        result in
-                                        print("Token", result.token)
-                                        self.reportStatus.accept(.stopLoading)
-                                        
-                                        if (result.message ?? "") != ""  {
-                                            self.reportStatus.accept(.error)
-                                            self.errorMessage.accept(result.message!)
-                                        }else {
-                                            self.reportStatus.accept(.success)
-                                        }
-                                    },
-                                    onError: {
-                                        error in
-                                        print(error)
-                                        self.sendErrorTest()
-                                        self.reportStatus.accept(.error)
-                                        self.reportStatus.accept(.stopLoading)
-                                    }).disposed(by: self.disposable)
-                            
-                        }
-                        
-                        
-                    },
-                    onError: { error in
-                        self.sendErrorTest()
-                        self.reportStatus.accept(.error)
-                        self.reportStatus.accept(.stopLoading)
-                    }).disposed(by: disposable)
-            
-            
+            self.registerUserApiCall()
         }
+    }
+    
+    func registerUserApiCall() {
+        UserClient.createUser(registerUserModel: self.model).asObservable()
+            .subscribe(
+                onNext: { result in
+                    self.reportStatus.accept(.stopLoading)
+                    if result.status != 200 {
+                        self.reportStatus.accept(.error)
+                        self.errorMessage.accept("\(result.message)")
+                    }else {
+                        self.reportStatus.accept(.success)
+                        //Chamar api para logar o usuario
+                        self.loginUserApiCall(user: LoginModel(user: self.model.getUserName(), password: self.model.getPassword()))
+                    }
+            
+                },
+                onError: { error in
+                    self.sendErrorTest()
+                    self.reportStatus.accept(.error)
+                    self.reportStatus.accept(.stopLoading)
+                }).disposed(by: disposable)
+    }
+    
+    func loginUserApiCall(user: LoginModel) {
+        UserClient.loginUser(loginModel: user)
+            .asObservable()
+            .subscribe(
+                onNext: {
+                    result in
+                    print("Token", result.token)
+                    
+                    self.reportStatus.accept(.stopLoading)
+                    
+                    if (result.message ?? "") != ""  {
+                        self.reportStatus.accept(.error)
+                        self.errorMessage.accept(result.message!)
+                    }else {
+                        self.reportStatus.accept(.success)
+                    }
+                },
+                onError: {
+                    error in
+                    print(error)
+                    self.sendErrorTest()
+                    self.reportStatus.accept(.stopLoading)
+                    self.reportStatus.accept(.error)
+                }).disposed(by: self.disposable)
     }
 }

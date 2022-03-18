@@ -185,7 +185,68 @@ class RegisterUserView: UIView {
         ])
         
         contentView.addSubview(siginView)
+        NSLayoutConstraint.activate([
+            siginView.topAnchor.constraint(equalTo: topImage.bottomAnchor, constant: 30),
+            siginView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+            siginView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15)
+        ])
         
+        siginView.addSubview(fieldName)
+        NSLayoutConstraint.activate([
+            fieldName.topAnchor.constraint(equalTo: siginView.topAnchor, constant: 15),
+            fieldName.leadingAnchor.constraint(equalTo: siginView.leadingAnchor, constant: 5),
+            fieldName.trailingAnchor.constraint(equalTo: siginView.trailingAnchor, constant: 5),
+            fieldName.heightAnchor.constraint(equalToConstant: 70)
+        ])
+        siginView.addSubview(fieldBirthDay)
+        NSLayoutConstraint.activate([
+            fieldBirthDay.topAnchor.constraint(equalTo: fieldName.topAnchor, constant: 15),
+            fieldBirthDay.leadingAnchor.constraint(equalTo: siginView.leadingAnchor, constant: 5),
+            fieldBirthDay.trailingAnchor.constraint(equalTo: siginView.trailingAnchor, constant: 5),
+            fieldBirthDay.heightAnchor.constraint(equalToConstant: 70)
+        ])
+        
+        siginView.addSubview(fieldPhone)
+        NSLayoutConstraint.activate([
+            fieldPhone.topAnchor.constraint(equalTo: fieldBirthDay.topAnchor, constant: 15),
+            fieldPhone.leadingAnchor.constraint(equalTo: siginView.leadingAnchor, constant: 5),
+            fieldPhone.trailingAnchor.constraint(equalTo: siginView.trailingAnchor, constant: 5),
+            fieldPhone.heightAnchor.constraint(equalToConstant: 70)
+        ])
+        
+        siginView.addSubview(fieldEmail)
+        NSLayoutConstraint.activate([
+            fieldEmail.topAnchor.constraint(equalTo: fieldPhone.topAnchor, constant: 15),
+            fieldEmail.leadingAnchor.constraint(equalTo: siginView.leadingAnchor, constant: 5),
+            fieldEmail.trailingAnchor.constraint(equalTo: siginView.trailingAnchor, constant: 5),
+            fieldEmail.heightAnchor.constraint(equalToConstant: 70)
+        ])
+        
+        siginView.addSubview(fieldCPF)
+        NSLayoutConstraint.activate([
+            fieldCPF.topAnchor.constraint(equalTo: fieldEmail.topAnchor, constant: 15),
+            fieldCPF.leadingAnchor.constraint(equalTo: siginView.leadingAnchor, constant: 5),
+            fieldCPF.trailingAnchor.constraint(equalTo: siginView.trailingAnchor, constant: 5),
+            fieldCPF.heightAnchor.constraint(equalToConstant: 70)
+        ])
+        
+        siginView.addSubview(fieldPassword)
+        NSLayoutConstraint.activate([
+            fieldPassword.topAnchor.constraint(equalTo: fieldCPF.topAnchor, constant: 15),
+            fieldPassword.leadingAnchor.constraint(equalTo: siginView.leadingAnchor, constant: 5),
+            fieldPassword.trailingAnchor.constraint(equalTo: siginView.trailingAnchor, constant: 5),
+            fieldPassword.heightAnchor.constraint(equalToConstant: 70)
+        ])
+        
+        siginView.addSubview(fieldConfirmPassword)
+        NSLayoutConstraint.activate([
+            fieldConfirmPassword.topAnchor.constraint(equalTo: fieldPassword.topAnchor, constant: 15),
+            fieldConfirmPassword.leadingAnchor.constraint(equalTo: siginView.leadingAnchor, constant: 5),
+            fieldConfirmPassword.trailingAnchor.constraint(equalTo: siginView.trailingAnchor, constant: 5),
+            fieldConfirmPassword.heightAnchor.constraint(equalToConstant: 70),
+            fieldConfirmPassword.bottomAnchor.constraint(equalTo: siginView.bottomAnchor, constant: -15),
+            siginView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 25)
+        ])
         
     }
 }
