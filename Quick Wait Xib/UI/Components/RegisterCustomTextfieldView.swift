@@ -96,7 +96,7 @@ class RegisterCustomTextfieldView: UIView {
         NSLayoutConstraint.activate([
             textfield.topAnchor.constraint(equalTo: fieldTitle.bottomAnchor, constant: 3),
             textfield.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            textfield.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
+            textfield.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             textfield.heightAnchor.constraint(equalToConstant: 40),
             textfield.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
         ])

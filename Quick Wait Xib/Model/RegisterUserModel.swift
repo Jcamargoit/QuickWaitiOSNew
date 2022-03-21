@@ -44,8 +44,6 @@ class RegisterUserModel {
         return self.phoneNumber
     }
     
-    
-    
     func setUserName(username: String) {
         self.username = username
     }
@@ -70,6 +68,10 @@ class RegisterUserModel {
     
     func checkAllFields() -> Bool {
         return !self.username.isEmpty && !self.email.isEmpty && !self.password.isEmpty && !self.cpf.isEmpty && !self.phoneNumber.isEmpty
+    }
+    
+    func returnCpfValid() -> Bool {
+        return self.cpf.isValidCPF
     }
     
 }
