@@ -3,6 +3,8 @@
 //  Created by Juninho on 14/02/22.
 
 import UIKit
+import Alamofire
+import RxSwift
 
 class NewsViewController: UIViewController {
     
@@ -36,13 +38,12 @@ class NewsViewController: UIViewController {
         }
     }
     
-    var titleNews = [String]()
-    var btnNews = [UIButton]()
-    var dataAndFontNews = [String]()
-    var imageNews = [UIImage]()
+
     var indexOfCellBeforeDragging = 0
     var flowLayout = UICollectionViewFlowLayout()
-    var newsViewModel = NewsViewModel()
+    var viewModel = NewsViewModel()
+    
+    var disposed: DisposeBag = DisposeBag()
 
     
     override func viewDidLoad() {
@@ -51,38 +52,19 @@ class NewsViewController: UIViewController {
         self.bannerPageControl.numberOfPages = 4
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-            self.setup()
+            self.viewModel.delegate = self
+            self.viewModel.setup()
         }
     }
+    
+    // Testando Git
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         showLoading(enable: false)
     }
     
-    func setup(){
-   
-        APIService().load(resource: NewsModel.Get) { [weak self] result in
-              switch result {
-              case .success(let orders):
-            
-                  self?.newsViewModel.newsViewModel = orders.articles
-                  self?.showLoading(enable: false)
-                  self?.enableButtons()
-              //    self.bannerPageControl.ma  self?.newsViewModel.newsViewModel.count
-               self?.myTableView.reloadData()
-                  self?.featuredNewsCollectionView.reloadData()
-                  
-                  
-           case .failure(let error):
-               print("Error ", error)
-                  self?.showLoading(enable: false)
-                  self?.enableButtons()
-           }
-       }
-    }
-    
-    
+
     func enableButtons() {
         self.bannerPageControl.isHidden = false
         self.btnBack.isHidden = false
@@ -151,19 +133,20 @@ extension NewsViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.newsViewModel.newsViewModel.count
+        
+    return self.viewModel.modelResult?.articles.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: NewsCollectionViewCell.self), for: indexPath) as? NewsCollectionViewCell {
+
             
-            if self.newsViewModel.newsViewModel.count > 0 {
-                cell.configure(map: self.newsViewModel.newsViewModel(at: indexPath.row))
+            
+            if let articles = self.viewModel.modelResult?.articles[indexPath.row]{
+                cell.configure(map: articles)
             }
-            
-         //   cell.configure(map: self.newsViewModel.newsViewModel(at: indexPath.row))
-            
+      
             
             return cell
         }
@@ -173,7 +156,7 @@ extension NewsViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let vc = NewsResultViewController()
-        vc.newsViewModel = newsViewModel.newsViewModel(at: indexPath.row)
+        vc.newsViewModel = viewModel.modelResult?.articles[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
         print("to clicando")
         
@@ -194,14 +177,17 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.newsViewModel.newsViewModel.count
+        return self.viewModel.modelResult?.articles.count ?? 0
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let vc = NewsResultViewController()
-        vc.newsViewModel = newsViewModel.newsViewModel(at: indexPath.row)
+        vc.newsViewModel = viewModel.modelResult?.articles[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
+        
+        self.myTableView.reloadData()
         
     }
     
@@ -209,10 +195,27 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for:
                                                     indexPath) as! NewsTableViewCell
         
-        if self.newsViewModel.newsViewModel.count > 0 {
-            cell.setupCell(map: self.newsViewModel.newsViewModel(at: indexPath.row))
+        if let articles = self.viewModel.modelResult?.articles[indexPath.row]{
+            cell.setupCell(map: articles)
         }
-        
+   
         return cell
+    }
+}
+
+
+
+extension NewsViewController: refreshNews {
+
+    func reload() {
+        self.showLoading(enable: false)
+        self.myTableView.reloadData()
+        self.featuredNewsCollectionView.reloadData()
+     //   print(viewModel.modelResult)
+    }
+    
+    func error() {
+        self.showLoading(enable: false)
+        simplePopUp(title: "Erro", mensage: "Não foi possível carregar as informações, tente novamente")
     }
 }

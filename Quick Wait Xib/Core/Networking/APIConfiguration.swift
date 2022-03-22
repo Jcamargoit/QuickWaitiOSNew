@@ -35,6 +35,8 @@ enum RequestParams {
     
     case body(_:Parameters)
     case url(_:Parameters)
+    //
+    case headers(_:Parameters)
 }
 
 enum APIError: Error {

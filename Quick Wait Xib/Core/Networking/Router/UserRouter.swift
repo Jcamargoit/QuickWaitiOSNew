@@ -12,6 +12,7 @@ enum UserRouter: APIConfiguration {
     
     case loginUser(user: LoginModel)
     case registerUser(userRegister: RegisterUserModel)
+  //  case userNews(userNews: NewsModel)
     
     
     var method: HTTPMethod {
@@ -25,7 +26,7 @@ enum UserRouter: APIConfiguration {
     var parameters: RequestParams {
         switch self {
         case .loginUser(let user):
-             print("GetUser", user.getUser())
+            print("GetUser", user.getUser())
             print("GetPassword", user.getPassword())
             
             return .body([
@@ -40,6 +41,7 @@ enum UserRouter: APIConfiguration {
                 "cpf": userRegister.getCpf(),
                 "phoneNumber": userRegister.getPhoneNumber()
             ])
+            
         default:
             return .url([:])
         }
@@ -51,7 +53,6 @@ enum UserRouter: APIConfiguration {
             return "signup"
         case .loginUser:
             return "signin"
-            
         }
     }
     
@@ -67,19 +68,19 @@ enum UserRouter: APIConfiguration {
         
         
         switch parameters {
-               
-               case .body(let params):
-                   urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
-                   
-               case .url(let params):
-                   let queryParams = params.map { pair  in
-                       return URLQueryItem(name: pair.key, value: "\(pair.value)")
-                   }
-                   var components = URLComponents(string:url.appendingPathComponent(path).absoluteString)
-                   components?.queryItems = queryParams
-                   urlRequest.url = components?.url
+            
+        case .body(let params):
+            urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
+            
+        case .url(let params):
+            let queryParams = params.map { pair  in
+                return URLQueryItem(name: pair.key, value: "\(pair.value)")
+            }
+            var components = URLComponents(string:url.appendingPathComponent(path).absoluteString)
+            components?.queryItems = queryParams
+            urlRequest.url = components?.url
         default: break
-               }
+        }
         
         return urlRequest
     }

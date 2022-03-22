@@ -65,7 +65,9 @@ class LoginViewModel {
         UserClient.loginUser(loginModel: self.model).asObservable()
             .subscribe(
                 onNext: { result in
-                    print("Result", result.message)
+                    print("Token Usuario", result.token)
+                    //Gravar no user Default
+                    UserDefaults.standard.set(result.token, forKey: "TokenAcesso")
                     self.reportStatus.accept(.stopLoading)
                     
                     if (result.message ?? "") != ""  {

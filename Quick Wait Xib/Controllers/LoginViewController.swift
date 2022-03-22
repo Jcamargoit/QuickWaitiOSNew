@@ -63,7 +63,7 @@ class LoginViewController: UIViewController {
     func takeReport(report: LoginViewModeStatus) {
         switch report {
         case .success:
-            
+           
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 let vc = HomeViewController()
                 self.navigationController?.pushViewController(vc, animated: true)

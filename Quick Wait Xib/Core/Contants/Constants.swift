@@ -11,5 +11,6 @@ struct Constants {
     struct API {
         static let baseUrl = "http://localhost:8072/auth/api"
         static let urlUser = "http://localhost:8072/auth/api/auth/"
+        static let newsUser = "http://localhost:8072/news/api/v1/"
     }
 }

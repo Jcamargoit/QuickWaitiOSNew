@@ -16,5 +16,7 @@ class UserClient: APIClient {
     static func createUser(registerUserModel: RegisterUserModel) -> Observable<DefaultCodable> {
         return request(UserRouter.registerUser(userRegister: registerUserModel))
     }
+    
+
 
 }
