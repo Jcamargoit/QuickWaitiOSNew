@@ -1,0 +1,6 @@
+framework module Pods_Quick_Wait_XibTests {
+  umbrella header "Pods-Quick Wait XibTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
