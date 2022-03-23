@@ -11,8 +11,7 @@ import Alamofire
 enum UserRouter: APIConfiguration {
     
     case loginUser(user: LoginModel)
-    case registerUser(userRegister: RegisterUserModel)
-  //  case userNews(userNews: NewsModel)
+    case registerUser(nome: String, email: String)
     
     
     var method: HTTPMethod {
@@ -26,22 +25,15 @@ enum UserRouter: APIConfiguration {
     var parameters: RequestParams {
         switch self {
         case .loginUser(let user):
-            print("GetUser", user.getUser())
-            print("GetPassword", user.getPassword())
-            
             return .body([
                 "username": user.getUser(),
                 "password": user.getPassword()
             ])
-        case .registerUser(let userRegister):
+        case .registerUser(let nome,let email):
             return .body([
-                "username": userRegister.getUserName(),
-                "email": userRegister.getEmail(),
-                "password": userRegister.getPassword(),
-                "cpf": userRegister.getCpf(),
-                "phoneNumber": userRegister.getPhoneNumber()
+                "nome": nome,
+                "email": email
             ])
-            
         default:
             return .url([:])
         }
@@ -50,9 +42,9 @@ enum UserRouter: APIConfiguration {
     var path: String {
         switch self {
         case .registerUser:
-            return "signup"
-        case .loginUser:
             return "signin"
+        case .loginUser:
+            return "signup"
         }
     }
     
@@ -68,19 +60,19 @@ enum UserRouter: APIConfiguration {
         
         
         switch parameters {
-            
-        case .body(let params):
-            urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
-            
-        case .url(let params):
-            let queryParams = params.map { pair  in
-                return URLQueryItem(name: pair.key, value: "\(pair.value)")
-            }
-            var components = URLComponents(string:url.appendingPathComponent(path).absoluteString)
-            components?.queryItems = queryParams
-            urlRequest.url = components?.url
+               
+               case .body(let params):
+                   urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
+                   
+               case .url(let params):
+                   let queryParams = params.map { pair  in
+                       return URLQueryItem(name: pair.key, value: "\(pair.value)")
+                   }
+                   var components = URLComponents(string:url.appendingPathComponent(path).absoluteString)
+                   components?.queryItems = queryParams
+                   urlRequest.url = components?.url
         default: break
-        }
+               }
         
         return urlRequest
     }

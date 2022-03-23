@@ -38,7 +38,6 @@ class APIService {
         var request = URLRequest(url: resource.url)
         request.httpMethod = resource.httpMethod.rawValue
         request.httpBody = resource.body
-        
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type") 
         
         URLSession.shared.dataTask(with: request) { data, response, error in

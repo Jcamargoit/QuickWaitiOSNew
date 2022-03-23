@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C96B84D2592DBE1B7D73378 /* Pods_Quick_Wait_XibTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACC0C6C0BF80C057902719A /* Pods_Quick_Wait_XibTests.framework */; };
 		4C1E141D27DFD1810018B7FC /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E141C27DFD1810018B7FC /* ChoiceView.swift */; };
 		4C1FA7B027DA46250026D3C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FA7AF27DA46250026D3C7 /* LoginView.swift */; };
 		4C1FA7B227DB700C0026D3C7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FA7B127DB700C0026D3C7 /* UIView+Extensions.swift */; };
@@ -28,10 +27,9 @@
 		4CC28F2F27E233DC00AC7A21 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F2E27E233DC00AC7A21 /* UserRouter.swift */; };
 		4CC28F3127E243BB00AC7A21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F3027E243BB00AC7A21 /* Constants.swift */; };
 		4CC28F3327E267CC00AC7A21 /* DefaultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F3227E267CC00AC7A21 /* DefaultCodable.swift */; };
-		4F5A827102F3EEDEA53C0A07 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B5D32BA187C56FA6BA7DD0 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */; };
-		9C44C56927E8F828005249C9 /* NewsResultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44C56827E8F828005249C9 /* NewsResultCodable.swift */; };
-		9C44C56B27E8FE01005249C9 /* NewsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44C56A27E8FE01005249C9 /* NewsClient.swift */; };
-		9C44C56D27E8FF20005249C9 /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44C56C27E8FF20005249C9 /* NewsRouter.swift */; };
+		8DD4ED0815A3356AD25521F1 /* Pods_Quick_Wait_XibTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2B6E27F762D056D704BC61 /* Pods_Quick_Wait_XibTests.framework */; };
+		8F5A7E4BFFF21CEB996804B0 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3ED10E2F6F4006AF6ADEF67 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */; };
+		EC5BE043113FBC96F2AAE1C6 /* Pods_Quick_Wait_Xib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C74908051F6F0A0E9B59EB8 /* Pods_Quick_Wait_Xib.framework */; };
 		F2681AB027BC21070067FA4D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AAF27BC21070067FA4D /* APIService.swift */; };
 		F2681AB327BC26880067FA4D /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AB227BC26880067FA4D /* NewsModel.swift */; };
 		F2681AB827BC39A90067FA4D /* ApiNewsEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */; };
@@ -72,10 +70,10 @@
 		F2C04E4227B3FAD600710727 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1C27B3FAD600710727 /* HomeViewController.xib */; };
 		F2C04E4327B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */; };
 		F2C04E4427B3FAD600710727 /* RecoverPasswordResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */; };
-		F2C04E4527B3FAD600710727 /* RecoverPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */; };
 		F2C04E4627B3FAD600710727 /* SearchHospitalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */; };
 		F2C04E4827B3FAD600710727 /* SearchHospitalsResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */; };
 		F2C04E4927B3FAD600710727 /* MyLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */; };
+		F2C04E4A27B3FAD600710727 /* RegisterUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2427B3FAD600710727 /* RegisterUserViewController.xib */; };
 		F2C04E4C27B3FAD600710727 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2727B3FAD600710727 /* LoginViewModel.swift */; };
 		F2C04E4D27B3FAD600710727 /* RecoverPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2827B3FAD600710727 /* RecoverPasswordViewModel.swift */; };
 		F2C04E4E27B3FAD600710727 /* ChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2927B3FAD600710727 /* ChoiceViewModel.swift */; };
@@ -91,7 +89,10 @@
 		F2C40E8827BFE61300EC0066 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */; };
 		F2C80D2F27BD8A9600189473 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C80D2D27BD8A9600189473 /* NewsCollectionViewCell.swift */; };
 		F2C80D3027BD8A9600189473 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C80D2E27BD8A9600189473 /* NewsCollectionViewCell.xib */; };
-		F9240A891871340E784DCAC6 /* Pods_Quick_Wait_Xib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0325F28B19EEA011EE69C12C /* Pods_Quick_Wait_Xib.framework */; };
+		F54138AF27E3C7EF00C71111 /* RecoverPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54138AE27E3C7EF00C71111 /* RecoverPasswordView.swift */; };
+		F54138B227E3F69200C71111 /* RecoverPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54138AE27E3C7EF00C71111 /* RecoverPasswordView.swift */; };
+		F54138B327E3F69500C71111 /* RecoverPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54138AE27E3C7EF00C71111 /* RecoverPasswordView.swift */; };
+		F58875EA27E56C4000A7B118 /* MainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58875E927E56C4000A7B118 /* MainTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,9 +113,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0325F28B19EEA011EE69C12C /* Pods_Quick_Wait_Xib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_Xib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07D5B39271C971EB6D6E9562 /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3F25A3115A16BE2617B52DE5 /* Pods-Quick Wait XibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait XibTests.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait XibTests/Pods-Quick Wait XibTests.release.xcconfig"; sourceTree = "<group>"; };
+		1C2B6E27F762D056D704BC61 /* Pods_Quick_Wait_XibTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_XibTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1E141C27DFD1810018B7FC /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 		4C1FA7AF27DA46250026D3C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4C1FA7B127DB700C0026D3C7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -135,13 +134,14 @@
 		4CC28F2E27E233DC00AC7A21 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
 		4CC28F3027E243BB00AC7A21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4CC28F3227E267CC00AC7A21 /* DefaultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCodable.swift; sourceTree = "<group>"; };
-		6ACC0C6C0BF80C057902719A /* Pods_Quick_Wait_XibTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_XibTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80B6B8571EAEA82254AB9F2B /* Pods-Quick Wait XibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait XibTests.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait XibTests/Pods-Quick Wait XibTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9C44C56827E8F828005249C9 /* NewsResultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResultCodable.swift; sourceTree = "<group>"; };
-		9C44C56A27E8FE01005249C9 /* NewsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsClient.swift; sourceTree = "<group>"; };
-		9C44C56C27E8FF20005249C9 /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
-		B55DFCAE17EE96FDD65D4AD9 /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D6E34657AF174DCF64E5C6BC /* Pods-Quick Wait Xib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib.debug.xcconfig"; sourceTree = "<group>"; };
+		52DA4D3419C37050B4D2875C /* Pods-Quick Wait XibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait XibTests.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait XibTests/Pods-Quick Wait XibTests.release.xcconfig"; sourceTree = "<group>"; };
+		7226D37FBFF426B28568692B /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		774C8084E2F3FA8351CEDDA1 /* Pods-Quick Wait XibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait XibTests.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait XibTests/Pods-Quick Wait XibTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C74908051F6F0A0E9B59EB8 /* Pods_Quick_Wait_Xib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_Xib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DA9893AE55D2116B06A43A /* Pods-Quick Wait Xib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib.release.xcconfig"; sourceTree = "<group>"; };
+		A074E19C9B6A026C13D3B36F /* Pods-Quick Wait Xib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib.debug.xcconfig"; sourceTree = "<group>"; };
+		A3ED10E2F6F4006AF6ADEF67 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E1CF7C4921345440428AB5 /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F2681AAF27BC21070067FA4D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F2681AB227BC26880067FA4D /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNewsEndPoints.swift; sourceTree = "<group>"; };
@@ -186,10 +186,10 @@
 		F2C04E1C27B3FAD600710727 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsResultTableViewCell.xib; sourceTree = "<group>"; };
 		F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecoverPasswordResultViewController.xib; sourceTree = "<group>"; };
-		F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecoverPasswordViewController.xib; sourceTree = "<group>"; };
 		F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsViewController.xib; sourceTree = "<group>"; };
 		F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsResultViewController.xib; sourceTree = "<group>"; };
 		F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLaunchScreen.xib; sourceTree = "<group>"; };
+		F2C04E2427B3FAD600710727 /* RegisterUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterUserViewController.xib; sourceTree = "<group>"; };
 		F2C04E2727B3FAD600710727 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F2C04E2827B3FAD600710727 /* RecoverPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewModel.swift; sourceTree = "<group>"; };
 		F2C04E2927B3FAD600710727 /* ChoiceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewModel.swift; sourceTree = "<group>"; };
@@ -205,8 +205,8 @@
 		F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		F2C80D2D27BD8A9600189473 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F2C80D2E27BD8A9600189473 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
-		F5B5D32BA187C56FA6BA7DD0 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDD959DCD490670D075FB8C4 /* Pods-Quick Wait Xib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib.release.xcconfig"; sourceTree = "<group>"; };
+		F54138AE27E3C7EF00C71111 /* RecoverPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordView.swift; sourceTree = "<group>"; };
+		F58875E927E56C4000A7B118 /* MainTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9240A891871340E784DCAC6 /* Pods_Quick_Wait_Xib.framework in Frameworks */,
+				EC5BE043113FBC96F2AAE1C6 /* Pods_Quick_Wait_Xib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C96B84D2592DBE1B7D73378 /* Pods_Quick_Wait_XibTests.framework in Frameworks */,
+				8DD4ED0815A3356AD25521F1 /* Pods_Quick_Wait_XibTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F5A827102F3EEDEA53C0A07 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework in Frameworks */,
+				8F5A7E4BFFF21CEB996804B0 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +250,7 @@
 			children = (
 				4C4FFBB527E0B05A00C46CDD /* CustomButtonView.swift */,
 				4C4FFBB927E0F29E00C46CDD /* RegisterCustomTextfieldView.swift */,
+				F58875E927E56C4000A7B118 /* MainTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -299,7 +300,6 @@
 			isa = PBXGroup;
 			children = (
 				4CC28F2A27E233CA00AC7A21 /* LoginClient.swift */,
-				9C44C56A27E8FE01005249C9 /* NewsClient.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -308,7 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				4CC28F2C27E233D400AC7A21 /* LoginResultCodable.swift */,
-				9C44C56827E8F828005249C9 /* NewsResultCodable.swift */,
 				4CC28F3227E267CC00AC7A21 /* DefaultCodable.swift */,
 			);
 			path = Codable;
@@ -318,20 +317,29 @@
 			isa = PBXGroup;
 			children = (
 				4CC28F2E27E233DC00AC7A21 /* UserRouter.swift */,
-				9C44C56C27E8FF20005249C9 /* NewsRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		B1A35B516D74346CC7C865C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C74908051F6F0A0E9B59EB8 /* Pods_Quick_Wait_Xib.framework */,
+				A3ED10E2F6F4006AF6ADEF67 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */,
+				1C2B6E27F762D056D704BC61 /* Pods_Quick_Wait_XibTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E1DB031B73CAAE3D9B1149EA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D6E34657AF174DCF64E5C6BC /* Pods-Quick Wait Xib.debug.xcconfig */,
-				FDD959DCD490670D075FB8C4 /* Pods-Quick Wait Xib.release.xcconfig */,
-				07D5B39271C971EB6D6E9562 /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */,
-				B55DFCAE17EE96FDD65D4AD9 /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */,
-				80B6B8571EAEA82254AB9F2B /* Pods-Quick Wait XibTests.debug.xcconfig */,
-				3F25A3115A16BE2617B52DE5 /* Pods-Quick Wait XibTests.release.xcconfig */,
+				A074E19C9B6A026C13D3B36F /* Pods-Quick Wait Xib.debug.xcconfig */,
+				84DA9893AE55D2116B06A43A /* Pods-Quick Wait Xib.release.xcconfig */,
+				7226D37FBFF426B28568692B /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */,
+				B2E1CF7C4921345440428AB5 /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */,
+				774C8084E2F3FA8351CEDDA1 /* Pods-Quick Wait XibTests.debug.xcconfig */,
+				52DA4D3419C37050B4D2875C /* Pods-Quick Wait XibTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -374,7 +382,7 @@
 				F26D68CF2798B46700E20503 /* Quick Wait XibUITests */,
 				F26D68AD2798B46500E20503 /* Products */,
 				E1DB031B73CAAE3D9B1149EA /* Pods */,
-				F2725E6320B4D9FC32D46392 /* Frameworks */,
+				B1A35B516D74346CC7C865C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -434,16 +442,6 @@
 				F26D68B12798B46500E20503 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
-			sourceTree = "<group>";
-		};
-		F2725E6320B4D9FC32D46392 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0325F28B19EEA011EE69C12C /* Pods_Quick_Wait_Xib.framework */,
-				F5B5D32BA187C56FA6BA7DD0 /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */,
-				6ACC0C6C0BF80C057902719A /* Pods_Quick_Wait_XibTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F2BBEC0127BD27220088D85A /* FireBase */ = {
@@ -507,7 +505,7 @@
 				4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */,
 				F29C508C27BA9295004D0BD4 /* NewsViewController.xib */,
 				F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */,
-				F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */,
+				F2C04E2427B3FAD600710727 /* RegisterUserViewController.xib */,
 				F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */,
 				F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */,
 				F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */,
@@ -515,6 +513,7 @@
 				4C1FA7AF27DA46250026D3C7 /* LoginView.swift */,
 				4C1E141C27DFD1810018B7FC /* ChoiceView.swift */,
 				4C4FFBB727E0F16700C46CDD /* RegisterUserView.swift */,
+				F54138AE27E3C7EF00C71111 /* RecoverPasswordView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -553,12 +552,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F26D68D62798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait Xib" */;
 			buildPhases = (
-				22CDD07DA29864654072BCA7 /* [CP] Check Pods Manifest.lock */,
+				A5292CF9844060C9ED24641E /* [CP] Check Pods Manifest.lock */,
 				F26D68A82798B46500E20503 /* Sources */,
 				F26D68A92798B46500E20503 /* Frameworks */,
 				F26D68AA2798B46500E20503 /* Resources */,
 				F2D848EF27D25932007421E5 /* ShellScript */,
-				4727435559606B2890C5BE68 /* [CP] Embed Pods Frameworks */,
+				237254DB1782F7559F1663FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -573,7 +572,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F26D68D92798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait XibTests" */;
 			buildPhases = (
-				64C617A672D55F61CDCFD49E /* [CP] Check Pods Manifest.lock */,
+				8F8B1588AFF2C525EB2D4143 /* [CP] Check Pods Manifest.lock */,
 				F26D68BE2798B46700E20503 /* Sources */,
 				F26D68BF2798B46700E20503 /* Frameworks */,
 				F26D68C02798B46700E20503 /* Resources */,
@@ -592,11 +591,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F26D68DC2798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait XibUITests" */;
 			buildPhases = (
-				90B93614425D65453B2BF7C4 /* [CP] Check Pods Manifest.lock */,
+				C7A7FFDBEFB258D796D1705B /* [CP] Check Pods Manifest.lock */,
 				F26D68C82798B46700E20503 /* Sources */,
 				F26D68C92798B46700E20503 /* Frameworks */,
 				F26D68CA2798B46700E20503 /* Resources */,
-				1F3C9C5FFEB283F7DB392C1D /* [CP] Embed Pods Frameworks */,
+				E13DAEDA6A78E190ACC2095C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -657,6 +656,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C04E4927B3FAD600710727 /* MyLaunchScreen.xib in Resources */,
+				F2C04E4A27B3FAD600710727 /* RegisterUserViewController.xib in Resources */,
 				F2C04E4027B3FAD600710727 /* LaunchScreen.storyboard in Resources */,
 				F26A7893279995E0008C625B /* Quicksand_Light_Oblique.otf in Resources */,
 				F26A7894279995E0008C625B /* Quicksand_Book_Oblique.otf in Resources */,
@@ -673,7 +673,6 @@
 				F2C04E4827B3FAD600710727 /* SearchHospitalsResultViewController.xib in Resources */,
 				F2C04E4627B3FAD600710727 /* SearchHospitalsViewController.xib in Resources */,
 				F2C04E4327B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib in Resources */,
-				F2C04E4527B3FAD600710727 /* RecoverPasswordViewController.xib in Resources */,
 				4CB92CA627BE8DD50079B5C1 /* NewsTableViewCell.xib in Resources */,
 				F2C04E4227B3FAD600710727 /* HomeViewController.xib in Resources */,
 				F2BBEC0327BD272D0088D85A /* GoogleService-Info.plist in Resources */,
@@ -698,46 +697,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F3C9C5FFEB283F7DB392C1D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		22CDD07DA29864654072BCA7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Quick Wait Xib-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4727435559606B2890C5BE68 /* [CP] Embed Pods Frameworks */ = {
+		237254DB1782F7559F1663FA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -754,7 +714,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		64C617A672D55F61CDCFD49E /* [CP] Check Pods Manifest.lock */ = {
+		8F8B1588AFF2C525EB2D4143 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -776,7 +736,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		90B93614425D65453B2BF7C4 /* [CP] Check Pods Manifest.lock */ = {
+		A5292CF9844060C9ED24641E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quick Wait Xib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A7FFDBEFB258D796D1705B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -796,6 +778,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13DAEDA6A78E190ACC2095C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F2D848EF27D25932007421E5 /* ShellScript */ = {
@@ -830,7 +829,6 @@
 				F2C04E3B27B3FAD600710727 /* SearchHospitalsViewController.swift in Sources */,
 				F26D68B02798B46500E20503 /* AppDelegate.swift in Sources */,
 				F2C04E4F27B3FAD600710727 /* RegisterUserViewModel.swift in Sources */,
-				9C44C56B27E8FE01005249C9 /* NewsClient.swift in Sources */,
 				F2C04E4C27B3FAD600710727 /* LoginViewModel.swift in Sources */,
 				F2C04E3327B3FAD600710727 /* SearchHospitalsResultTableViewCell.swift in Sources */,
 				4CC28F1E27E231DC00AC7A21 /* APIClient.swift in Sources */,
@@ -840,7 +838,6 @@
 				F2C04E5927B4028800710727 /* SimplePopUp.swift in Sources */,
 				4C4FFBBD27E1032B00C46CDD /* String+Extensions.swift in Sources */,
 				4C1FA7B227DB700C0026D3C7 /* UIView+Extensions.swift in Sources */,
-				9C44C56927E8F828005249C9 /* NewsResultCodable.swift in Sources */,
 				F29C508D27BA9295004D0BD4 /* NewsViewController.swift in Sources */,
 				4CC28F2B27E233CA00AC7A21 /* LoginClient.swift in Sources */,
 				4C1FA7B027DA46250026D3C7 /* LoginView.swift in Sources */,
@@ -851,14 +848,15 @@
 				4C1E141D27DFD1810018B7FC /* ChoiceView.swift in Sources */,
 				F2C04E3E27B3FAD600710727 /* ShowLoading.swift in Sources */,
 				4CC28F2627E2320900AC7A21 /* NetworkReachability.swift in Sources */,
-				9C44C56D27E8FF20005249C9 /* NewsRouter.swift in Sources */,
 				F2C04E3627B3FAD600710727 /* HomeViewController.swift in Sources */,
 				4CC28F2427E231FF00AC7A21 /* NetworkLogger.swift in Sources */,
+				F58875EA27E56C4000A7B118 /* MainTextField.swift in Sources */,
 				F2C04E5327B3FAD600710727 /* LoginModel.swift in Sources */,
 				4CC28F2027E231E800AC7A21 /* APIConfiguration.swift in Sources */,
 				F2C04E5527B3FAD600710727 /* ChoiceModel.swift in Sources */,
 				F2C04E4D27B3FAD600710727 /* RecoverPasswordViewModel.swift in Sources */,
 				F2C04E3A27B3FAD600710727 /* MyLaunchViewController.swift in Sources */,
+				F54138AF27E3C7EF00C71111 /* RecoverPasswordView.swift in Sources */,
 				F2C04E3727B3FAD600710727 /* ChoiceViewController.swift in Sources */,
 				F2C04E5427B3FAD600710727 /* RecoverPassawordModel.swift in Sources */,
 				F2C04E3827B3FAD600710727 /* SearchHospitalsResultViewController.swift in Sources */,
@@ -887,6 +885,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54138B227E3F69200C71111 /* RecoverPasswordView.swift in Sources */,
 				F26D68C72798B46700E20503 /* Quick_Wait_XibTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -895,6 +894,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54138B327E3F69500C71111 /* RecoverPasswordView.swift in Sources */,
 				F26D68D12798B46700E20503 /* Quick_Wait_XibUITests.swift in Sources */,
 				F26D68D32798B46700E20503 /* Quick_Wait_XibUITestsLaunchTests.swift in Sources */,
 			);
@@ -1034,7 +1034,7 @@
 		};
 		F26D68D72798B46700E20503 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6E34657AF174DCF64E5C6BC /* Pods-Quick Wait Xib.debug.xcconfig */;
+			baseConfigurationReference = A074E19C9B6A026C13D3B36F /* Pods-Quick Wait Xib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1042,7 +1042,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UJ394G4MSU;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Quick Wait Xib/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Quick Wait";
@@ -1073,7 +1073,7 @@
 		};
 		F26D68D82798B46700E20503 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDD959DCD490670D075FB8C4 /* Pods-Quick Wait Xib.release.xcconfig */;
+			baseConfigurationReference = 84DA9893AE55D2116B06A43A /* Pods-Quick Wait Xib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1081,7 +1081,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UJ394G4MSU;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Quick Wait Xib/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Quick Wait";
@@ -1112,7 +1112,7 @@
 		};
 		F26D68DA2798B46700E20503 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80B6B8571EAEA82254AB9F2B /* Pods-Quick Wait XibTests.debug.xcconfig */;
+			baseConfigurationReference = 774C8084E2F3FA8351CEDDA1 /* Pods-Quick Wait XibTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1133,7 +1133,7 @@
 		};
 		F26D68DB2798B46700E20503 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F25A3115A16BE2617B52DE5 /* Pods-Quick Wait XibTests.release.xcconfig */;
+			baseConfigurationReference = 52DA4D3419C37050B4D2875C /* Pods-Quick Wait XibTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1154,7 +1154,7 @@
 		};
 		F26D68DD2798B46700E20503 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D5B39271C971EB6D6E9562 /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */;
+			baseConfigurationReference = 7226D37FBFF426B28568692B /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1173,7 +1173,7 @@
 		};
 		F26D68DE2798B46700E20503 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B55DFCAE17EE96FDD65D4AD9 /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */;
+			baseConfigurationReference = B2E1CF7C4921345440428AB5 /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

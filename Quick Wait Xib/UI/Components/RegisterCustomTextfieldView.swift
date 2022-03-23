@@ -22,26 +22,21 @@ class RegisterCustomTextfieldView: UIView {
     
     var fieldTitle: UILabel = {
        var lbl = UILabel()
-        lbl.textColor = UIColor(red: 0.00, green: 0.64, blue: 0.66, alpha: 1.00)
-        lbl.font = UIFont.init(name: "QuicksandBook-Regular", size: 20)
-        lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
     
     var requiredLabel: UILabel = {
        var lbl = UILabel()
         lbl.text = "*"
-        lbl.font = UIFont.systemFont(ofSize: 15)
+        lbl.font = UIFont.systemFont(ofSize: 3)
         lbl.textColor = .systemPink
-        lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
     
-    var textfield: UITextField = {
-       var txt = UITextField()
-        txt.font = UIFont.systemFont(ofSize: 23)
+    var textfield: UITextView = {
+       var txt = UITextView()
+        txt.font = UIFont.systemFont(ofSize: 26)
         txt.backgroundColor = .white
-        txt.keyboardType = .alphabet
         txt.autocapitalizationType = .none
         txt.layer.masksToBounds = false
         txt.layer.shadowOpacity = 0.6
@@ -66,7 +61,6 @@ class RegisterCustomTextfieldView: UIView {
         bindText()
         setupContentView()
         setupTitle()
-        setupTextField()
     }
     
     func bindText() {
@@ -78,7 +72,8 @@ class RegisterCustomTextfieldView: UIView {
         NSLayoutConstraint.activate([
             contentView.topAnchor.constraint(equalTo: topAnchor),
             contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            contentView.trailingAnchor.constraint(equalTo: trailingAnchor)
+            contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            contentView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
     
@@ -88,17 +83,15 @@ class RegisterCustomTextfieldView: UIView {
             fieldTitle.topAnchor.constraint(equalTo: contentView.topAnchor),
             fieldTitle.centerXAnchor.constraint(equalTo: contentView.centerXAnchor)
         ])
-        
     }
     
     func setupTextField() {
         contentView.addSubview(textfield)
         NSLayoutConstraint.activate([
-            textfield.topAnchor.constraint(equalTo: fieldTitle.bottomAnchor, constant: 3),
-            textfield.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            textfield.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-            textfield.heightAnchor.constraint(equalToConstant: 40),
-            textfield.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
+            textfield.topAnchor.constraint(equalTo: fieldTitle.bottomAnchor, constant: 10),
+            textfield.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            textfield.trailingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            textfield.heightAnchor.constraint(equalToConstant: 50),
         ])
     }
     
@@ -106,17 +99,12 @@ class RegisterCustomTextfieldView: UIView {
         self.fieldTitle.text = value
     }
     
-    func setupNewTypeInput(input: UIKeyboardType) {
-        self.textfield.keyboardType = input
-    }
-    
     func makeTextRequired() {
-    contentView.addSubview(requiredLabel)
+        addSubview(requiredLabel)
         NSLayoutConstraint.activate([
-            requiredLabel.topAnchor.constraint(equalTo: fieldTitle.topAnchor,constant: -2),
+            requiredLabel.topAnchor.constraint(equalTo: fieldTitle.topAnchor),
             requiredLabel.leadingAnchor.constraint(equalTo: fieldTitle.trailingAnchor, constant: 2)
         ])
-        layoutIfNeeded()
     }
     
     

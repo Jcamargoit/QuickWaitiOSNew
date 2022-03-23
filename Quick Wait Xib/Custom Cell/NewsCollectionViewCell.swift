@@ -27,9 +27,10 @@ class NewsCollectionViewCell: UICollectionViewCell {
         CAGradientLayer.setDropShadow(layer: self.shadowView.layer, radius: 4.0, opacity: 0.8)
     }
     
-    func configure(map: Article) {
-        let url = NSURL(string: map.url ?? "")
+    func configure(map: Articles) {
+        let url = NSURL(string: map.urlToImage ?? "")
         self.bannerImage.sd_setImage(with: url! as URL)
+        
         self.lbTitle.text = map.title ?? ""
 
     }

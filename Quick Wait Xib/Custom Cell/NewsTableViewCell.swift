@@ -17,18 +17,17 @@ class NewsTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    //Testando git
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
     
-    func setupCell(map: Article) {
+    func setupCell(map: Articles) {
         
-        let url = NSURL(string: map.url ?? "")
+        let url = NSURL(string: map.urlToImage ?? "")
         self.ivCell.sd_setImage(with: url! as URL)
-        self.lbTitle.text = map.title
-        self.lbName.text = map.source.name
-        self.lbPublishedAt.text = map.publishedAt
+        self.lbTitle.text = map.title ?? ""
+        self.lbName.text = map.source.name ?? ""
+        self.lbPublishedAt.text = map.publishedAt ?? ""
     }
 }

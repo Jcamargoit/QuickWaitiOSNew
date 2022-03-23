@@ -17,15 +17,15 @@ class NewsResultViewController: UIViewController {
     @IBOutlet weak var lbPublishedAt: UILabel!
     @IBOutlet weak var lbContent: UILabel!
     
-    var newsViewModel: Article?
-     
+    var newsViewModel: Articles?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.lbName.text  = newsViewModel?.source.name ?? ""
-        let url = NSURL(string: newsViewModel?.url ?? "")
+        let url = NSURL(string: newsViewModel?.urlToImage ?? "")
         ivNews.sd_setImage(with: url! as URL)
-        self.lbDescription.text  = newsViewModel?.articleDescription ?? ""
+        self.lbDescription.text  = newsViewModel?.description ?? ""
         self.lbTitle.text  = newsViewModel?.title ?? ""
         self.lbPublishedAt.text  = newsViewModel?.publishedAt ?? ""
         self.lbContent.text  = newsViewModel?.content ?? ""

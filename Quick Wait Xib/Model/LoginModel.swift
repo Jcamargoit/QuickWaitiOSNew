@@ -16,11 +16,6 @@ class LoginModel {
         self.password = ""
     }
     
-    init(user: String, password: String) {
-        self.user = user
-        self.password = password
-    }
-    
     func getUser() -> String {
         return self.user
     }

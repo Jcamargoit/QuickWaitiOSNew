@@ -7,75 +7,59 @@
 
 import Foundation
 
-class RegisterUserModel {
+struct RegisterUserModel:Codable {
     
-    var username: String
-    var email: String
-    var password: String
-    var cpf: String
-    var phoneNumber: String
+    var username: String?
+    var email: String?
+    var password: String?
+    var cpf: String?
+    var phoneNumber: String?
     
-    init() {
-        self.username = ""
-        self.email = ""
-        self.password = ""
-        self.cpf = ""
-        self.phoneNumber = ""
-    }
+}
 
-    func getUserName() -> String {
-        return self.username
-    }
-    
-    func getEmail() -> String {
-        return self.email
-    }
-    
-    func getPassword() -> String {
-        return self.password
-    }
-    
-    func getCpf() -> String {
-        return self.cpf
-    }
-    
-    
-    func getPhoneNumber() -> String {
-        return self.phoneNumber
-    }
-    
-    func setUserName(username: String) {
-        self.username = username
-    }
-    
-    
-    func setEmail(email: String) {
-        self.email = email
-    }
-    
-    func setPassword(password: String) {
-        self.password = password
-    }
-    
-    func setCpf(cpf: String) {
-        self.cpf = cpf
-    }
-    
-    func setPhoneNumber(phoneNumber: String) {
-        self.phoneNumber = phoneNumber
-    }
-    
-    
-    func checkAllFields() -> Bool {
-        return !self.username.isEmpty && !self.email.isEmpty && !self.password.isEmpty && !self.cpf.isEmpty && !self.phoneNumber.isEmpty
-    }
-    
-    func returnCpfValid() -> Bool {
-        return self.cpf.isValidCPF
+struct responseRegisterUser: Codable {
+    let message: String?
+}
+
+
+extension RegisterUserModel {
+ 
+    static func addNewUser(vm: RegisterUserViewModel) -> Resource<responseRegisterUser?>{
+        
+        let order = RegisterUserModel(vm)
+        guard let url = URL(string: "http://localhost:8072/auth/api/auth/signup") else{
+            fatalError("URL is incorrect!")
+        }
+       guard let data = try? JSONEncoder().encode(order) else {
+            fatalError("Error encoding order!")
+        }
+        var resource = Resource<responseRegisterUser?>(url: url)
+        resource.httpMethod = HttpMethod.post
+        resource.body = data
+        return resource
+        
     }
     
 }
 
-
-
+extension RegisterUserModel {
+    
+    init?(_ vm: RegisterUserViewModel){
+        
+        guard let username = vm.username,
+              let email = vm.email,
+              let password = vm.password,
+              let cpf = vm.cpf,
+              let phoneNumber = vm.phoneNumber else {
+                
+                return nil
+              }
+        self.username = username
+        self.email = email
+        self.password = password
+        self.cpf = cpf
+        self.phoneNumber = phoneNumber
+        
+    }
+}
 

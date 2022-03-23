@@ -49,25 +49,13 @@ class LoginViewController: UIViewController {
             }.disposed(by: disposed)
         
         self.viewModel.reportStatus.bind { value in self.takeReport(report: value)}.disposed(by: disposed)
-        
-           // .bin ficar se observando
-        self.viewModel.errorMessage.bind {
-            value in
-            if value != "" {
-                    self.simplePopUp(title: "Erro Log in", mensage: value)
-            }
-        }
-        
     }
     
     func takeReport(report: LoginViewModeStatus) {
         switch report {
         case .success:
-           
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                let vc = HomeViewController()
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
+            let vc = HomeViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         case .failed:
             self.simplePopUp(title: "Erro", mensage: "Favor preencher todos os dados.")
         case .startLoding:

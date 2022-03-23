@@ -26,9 +26,6 @@ class LoginViewModel {
     private var model: LoginModel = LoginModel()
     var reportStatus: BehaviorRelay<LoginViewModeStatus> = BehaviorRelay<LoginViewModeStatus>(value: .default)
     
-    
-    var errorMessage: BehaviorRelay<String> = BehaviorRelay<String>(value: "")
-    
     func setUserToModel(user: String) {
         self.model.setUser(user: user)
     }
@@ -57,31 +54,27 @@ class LoginViewModel {
             self.reportStatus.accept(.failed)
         } else {
             self.reportStatus.accept(.startLoding)
-            self.loginUserApiCall()
-      }
-    }
-    
-    func loginUserApiCall() {
-        UserClient.loginUser(loginModel: self.model).asObservable()
-            .subscribe(
-                onNext: { result in
-                    print("Token Usuario", result.token)
-                    //Gravar no user Default
-                    UserDefaults.standard.set(result.token, forKey: "TokenAcesso")
-                    self.reportStatus.accept(.stopLoading)
-                    
-                    if (result.message ?? "") != ""  {
-                        self.reportStatus.accept(.error)
-                        self.errorMessage.accept(result.message!)
-                    }else {
+            
+            UserClient.loginUser(loginModel: self.model).asObservable()
+                .subscribe(
+                    onNext: { result in
+                        print(result.email)
                         self.reportStatus.accept(.success)
-                    }
-                },
-                onError: { error in
-                     print(error)
-                    self.sendErrorTest()
-                    self.reportStatus.accept(.error)
-                    self.reportStatus.accept(.stopLoading)
-                }).disposed(by: disposable)
+                        self.reportStatus.accept(.stopLoading)
+                    },
+                    onError: { error in
+                        self.sendErrorTest()
+                        self.reportStatus.accept(.error)
+                        self.reportStatus.accept(.stopLoading)
+                    }).disposed(by: disposable)
+            
+            UserClient.createUser(name: "adas", email: "asdasda").asObservable().subscribe(onNext: {
+                result in
+                print(result.mensagem)
+            }, onError: {
+                error in
+                print(error)
+            }
+            ) }
     }
 }
