@@ -90,6 +90,10 @@
 		F2C40E8827BFE61300EC0066 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */; };
 		F2C80D2F27BD8A9600189473 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C80D2D27BD8A9600189473 /* NewsCollectionViewCell.swift */; };
 		F2C80D3027BD8A9600189473 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C80D2E27BD8A9600189473 /* NewsCollectionViewCell.xib */; };
+		F54138AF27E3C7EF00C71111 /* RecoverPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54138AE27E3C7EF00C71111 /* RecoverPasswordView.swift */; };
+		F54138B227E3F69200C71111 /* RecoverPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54138AE27E3C7EF00C71111 /* RecoverPasswordView.swift */; };
+		F54138B327E3F69500C71111 /* RecoverPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54138AE27E3C7EF00C71111 /* RecoverPasswordView.swift */; };
+		F58875EA27E56C4000A7B118 /* MainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58875E927E56C4000A7B118 /* MainTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +207,8 @@
 		F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		F2C80D2D27BD8A9600189473 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F2C80D2E27BD8A9600189473 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
+		F54138AE27E3C7EF00C71111 /* RecoverPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordView.swift; sourceTree = "<group>"; };
+		F58875E927E56C4000A7B118 /* MainTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +252,7 @@
 			children = (
 				4C4FFBB527E0B05A00C46CDD /* CustomButtonView.swift */,
 				4C4FFBB927E0F29E00C46CDD /* RegisterCustomTextfieldView.swift */,
+				F58875E927E56C4000A7B118 /* MainTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -509,6 +516,7 @@
 				4C1FA7AF27DA46250026D3C7 /* LoginView.swift */,
 				4C1E141C27DFD1810018B7FC /* ChoiceView.swift */,
 				4C4FFBB727E0F16700C46CDD /* RegisterUserView.swift */,
+				F54138AE27E3C7EF00C71111 /* RecoverPasswordView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -846,11 +854,13 @@
 				4CC28F2627E2320900AC7A21 /* NetworkReachability.swift in Sources */,
 				F2C04E3627B3FAD600710727 /* HomeViewController.swift in Sources */,
 				4CC28F2427E231FF00AC7A21 /* NetworkLogger.swift in Sources */,
+				F58875EA27E56C4000A7B118 /* MainTextField.swift in Sources */,
 				F2C04E5327B3FAD600710727 /* LoginModel.swift in Sources */,
 				4CC28F2027E231E800AC7A21 /* APIConfiguration.swift in Sources */,
 				F2C04E5527B3FAD600710727 /* ChoiceModel.swift in Sources */,
 				F2C04E4D27B3FAD600710727 /* RecoverPasswordViewModel.swift in Sources */,
 				F2C04E3A27B3FAD600710727 /* MyLaunchViewController.swift in Sources */,
+				F54138AF27E3C7EF00C71111 /* RecoverPasswordView.swift in Sources */,
 				F2C04E3727B3FAD600710727 /* ChoiceViewController.swift in Sources */,
 				F2C04E5427B3FAD600710727 /* RecoverPassawordModel.swift in Sources */,
 				F2C04E3827B3FAD600710727 /* SearchHospitalsResultViewController.swift in Sources */,
@@ -879,6 +889,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54138B227E3F69200C71111 /* RecoverPasswordView.swift in Sources */,
 				F26D68C72798B46700E20503 /* Quick_Wait_XibTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -887,6 +898,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54138B327E3F69500C71111 /* RecoverPasswordView.swift in Sources */,
 				F26D68D12798B46700E20503 /* Quick_Wait_XibUITests.swift in Sources */,
 				F26D68D32798B46700E20503 /* Quick_Wait_XibUITestsLaunchTests.swift in Sources */,
 			);

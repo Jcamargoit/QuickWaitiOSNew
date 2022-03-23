@@ -16,3 +16,16 @@ extension UITextView {
         contentOffset.y = -positiveTopOffset
     }
 }
+
+extension UIView {
+    
+    func setCorner(radius: CGFloat) {
+        layer.cornerRadius = radius
+        clipsToBounds = true
+    }
+    
+    func setBorder(width: CGFloat, color: UIColor) {
+        layer.borderColor = color.cgColor
+        layer.borderWidth = width
+    }
+}
