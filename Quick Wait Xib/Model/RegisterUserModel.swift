@@ -9,11 +9,11 @@ import Foundation
 
 class RegisterUserModel {
     
-    var username: String
-    var email: String
-    var password: String
-    var cpf: String
-    var phoneNumber: String
+    private var username: String
+    private var email: String
+    private var password: String
+    private var cpf: String
+    private var phoneNumber: String
     
     init() {
         self.username = ""
@@ -39,7 +39,6 @@ class RegisterUserModel {
         return self.cpf
     }
     
-    
     func getPhoneNumber() -> String {
         return self.phoneNumber
     }
@@ -47,7 +46,6 @@ class RegisterUserModel {
     func setUserName(username: String) {
         self.username = username
     }
-    
     
     func setEmail(email: String) {
         self.email = email
@@ -65,7 +63,6 @@ class RegisterUserModel {
         self.phoneNumber = phoneNumber
     }
     
-    
     func checkAllFields() -> Bool {
         return !self.username.isEmpty && !self.email.isEmpty && !self.password.isEmpty && !self.cpf.isEmpty && !self.phoneNumber.isEmpty
     }
@@ -74,8 +71,8 @@ class RegisterUserModel {
         return self.cpf.isValidCPF
     }
     
+    func returnValidPhone() -> Bool {
+        return self.phoneNumber.count == 11 || self.phoneNumber.count == 10
+    }
+    
 }
-
-
-
-

@@ -32,6 +32,8 @@
 		9C44C56927E8F828005249C9 /* NewsResultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44C56827E8F828005249C9 /* NewsResultCodable.swift */; };
 		9C44C56B27E8FE01005249C9 /* NewsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44C56A27E8FE01005249C9 /* NewsClient.swift */; };
 		9C44C56D27E8FF20005249C9 /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44C56C27E8FF20005249C9 /* NewsRouter.swift */; };
+		4CFF0E8427E9FA1900CC68EB /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF0E8327E9FA1900CC68EB /* LoginTests.swift */; };
+		4CFF0E8627E9FB1600CC68EB /* RegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF0E8527E9FB1600CC68EB /* RegisterTests.swift */; };
 		F2681AB027BC21070067FA4D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AAF27BC21070067FA4D /* APIService.swift */; };
 		F2681AB327BC26880067FA4D /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AB227BC26880067FA4D /* NewsModel.swift */; };
 		F2681AB827BC39A90067FA4D /* ApiNewsEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */; };
@@ -85,7 +87,6 @@
 		F2C04E5227B3FAD600710727 /* LocationHospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2E27B3FAD600710727 /* LocationHospitalModel.swift */; };
 		F2C04E5327B3FAD600710727 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E2F27B3FAD600710727 /* LoginModel.swift */; };
 		F2C04E5427B3FAD600710727 /* RecoverPassawordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E3027B3FAD600710727 /* RecoverPassawordModel.swift */; };
-		F2C04E5527B3FAD600710727 /* ChoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E3127B3FAD600710727 /* ChoiceModel.swift */; };
 		F2C04E5627B3FAD600710727 /* SearchHospitalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E3227B3FAD600710727 /* SearchHospitalsModel.swift */; };
 		F2C04E5927B4028800710727 /* SimplePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C04E5827B4028800710727 /* SimplePopUp.swift */; };
 		F2C40E8827BFE61300EC0066 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */; };
@@ -142,6 +143,8 @@
 		9C44C56C27E8FF20005249C9 /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
 		B55DFCAE17EE96FDD65D4AD9 /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D6E34657AF174DCF64E5C6BC /* Pods-Quick Wait Xib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib.debug.xcconfig"; sourceTree = "<group>"; };
+		4CFF0E8327E9FA1900CC68EB /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		4CFF0E8527E9FB1600CC68EB /* RegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTests.swift; sourceTree = "<group>"; };
 		F2681AAF27BC21070067FA4D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F2681AB227BC26880067FA4D /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNewsEndPoints.swift; sourceTree = "<group>"; };
@@ -199,7 +202,6 @@
 		F2C04E2E27B3FAD600710727 /* LocationHospitalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHospitalModel.swift; sourceTree = "<group>"; };
 		F2C04E2F27B3FAD600710727 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		F2C04E3027B3FAD600710727 /* RecoverPassawordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoverPassawordModel.swift; sourceTree = "<group>"; };
-		F2C04E3127B3FAD600710727 /* ChoiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceModel.swift; sourceTree = "<group>"; };
 		F2C04E3227B3FAD600710727 /* SearchHospitalsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHospitalsModel.swift; sourceTree = "<group>"; };
 		F2C04E5827B4028800710727 /* SimplePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePopUp.swift; sourceTree = "<group>"; };
 		F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
@@ -414,6 +416,8 @@
 			isa = PBXGroup;
 			children = (
 				F26D68C62798B46700E20503 /* Quick_Wait_XibTests.swift */,
+				4CFF0E8327E9FA1900CC68EB /* LoginTests.swift */,
+				4CFF0E8527E9FB1600CC68EB /* RegisterTests.swift */,
 			);
 			path = "Quick Wait XibTests";
 			sourceTree = "<group>";
@@ -535,7 +539,6 @@
 		F2C04E2C27B3FAD600710727 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F2C04E3127B3FAD600710727 /* ChoiceModel.swift */,
 				F2C04E2E27B3FAD600710727 /* LocationHospitalModel.swift */,
 				F2C04E2F27B3FAD600710727 /* LoginModel.swift */,
 				F2C04E3027B3FAD600710727 /* RecoverPassawordModel.swift */,
@@ -856,7 +859,6 @@
 				4CC28F2427E231FF00AC7A21 /* NetworkLogger.swift in Sources */,
 				F2C04E5327B3FAD600710727 /* LoginModel.swift in Sources */,
 				4CC28F2027E231E800AC7A21 /* APIConfiguration.swift in Sources */,
-				F2C04E5527B3FAD600710727 /* ChoiceModel.swift in Sources */,
 				F2C04E4D27B3FAD600710727 /* RecoverPasswordViewModel.swift in Sources */,
 				F2C04E3A27B3FAD600710727 /* MyLaunchViewController.swift in Sources */,
 				F2C04E3727B3FAD600710727 /* ChoiceViewController.swift in Sources */,
@@ -888,6 +890,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26D68C72798B46700E20503 /* Quick_Wait_XibTests.swift in Sources */,
+				4CFF0E8427E9FA1900CC68EB /* LoginTests.swift in Sources */,
+				4CFF0E8627E9FB1600CC68EB /* RegisterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
