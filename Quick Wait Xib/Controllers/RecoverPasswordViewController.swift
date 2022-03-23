@@ -11,8 +11,6 @@ class RecoverPasswordViewController: UIViewController {
     private var viewModel: RecoverPasswordViewModel = RecoverPasswordViewModel()
     private var disposed: DisposeBag = DisposeBag()
     
-    @IBOutlet weak var tfRecoverPassword: UITextField!
-    
     override func loadView() {
         
         view = self.presentationView
@@ -66,17 +64,6 @@ class RecoverPasswordViewController: UIViewController {
     }
     
     private func nextStep() {
-        let vc = RecoverPasswordResultViewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @IBAction func topToBack(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func taToNext(_ sender: UIButton) {
-        //Funciona
         let vc = RecoverPasswordResultViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
