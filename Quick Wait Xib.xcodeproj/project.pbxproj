@@ -70,7 +70,6 @@
 		F2C04E4227B3FAD600710727 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1C27B3FAD600710727 /* HomeViewController.xib */; };
 		F2C04E4327B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */; };
 		F2C04E4427B3FAD600710727 /* RecoverPasswordResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */; };
-		F2C04E4527B3FAD600710727 /* RecoverPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */; };
 		F2C04E4627B3FAD600710727 /* SearchHospitalsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */; };
 		F2C04E4827B3FAD600710727 /* SearchHospitalsResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */; };
 		F2C04E4927B3FAD600710727 /* MyLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */; };
@@ -187,7 +186,6 @@
 		F2C04E1C27B3FAD600710727 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsResultTableViewCell.xib; sourceTree = "<group>"; };
 		F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecoverPasswordResultViewController.xib; sourceTree = "<group>"; };
-		F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecoverPasswordViewController.xib; sourceTree = "<group>"; };
 		F2C04E2027B3FAD600710727 /* SearchHospitalsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsViewController.xib; sourceTree = "<group>"; };
 		F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHospitalsResultViewController.xib; sourceTree = "<group>"; };
 		F2C04E2327B3FAD600710727 /* MyLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLaunchScreen.xib; sourceTree = "<group>"; };
@@ -507,7 +505,6 @@
 				4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */,
 				F29C508C27BA9295004D0BD4 /* NewsViewController.xib */,
 				F2C04E1E27B3FAD600710727 /* RecoverPasswordResultViewController.xib */,
-				F2C04E1F27B3FAD600710727 /* RecoverPasswordViewController.xib */,
 				F2C04E2427B3FAD600710727 /* RegisterUserViewController.xib */,
 				F2C04E1D27B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib */,
 				F2C04E2227B3FAD600710727 /* SearchHospitalsResultViewController.xib */,
@@ -676,7 +673,6 @@
 				F2C04E4827B3FAD600710727 /* SearchHospitalsResultViewController.xib in Resources */,
 				F2C04E4627B3FAD600710727 /* SearchHospitalsViewController.xib in Resources */,
 				F2C04E4327B3FAD600710727 /* SearchHospitalsResultTableViewCell.xib in Resources */,
-				F2C04E4527B3FAD600710727 /* RecoverPasswordViewController.xib in Resources */,
 				4CB92CA627BE8DD50079B5C1 /* NewsTableViewCell.xib in Resources */,
 				F2C04E4227B3FAD600710727 /* HomeViewController.xib in Resources */,
 				F2BBEC0327BD272D0088D85A /* GoogleService-Info.plist in Resources */,
