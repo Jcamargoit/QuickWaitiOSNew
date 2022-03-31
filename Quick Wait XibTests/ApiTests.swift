@@ -7,6 +7,7 @@
 
 import XCTest
 import RxSwift
+import RxRelay
 @testable import Quick_Wait_Xib
 
 class ApiTests: XCTestCase {
@@ -14,27 +15,38 @@ class ApiTests: XCTestCase {
     
     //Test Login
     func testIfLoginIsWorking() {
-        let loginModel: LoginModel = LoginModel()
+        UserClient.loginUser(loginModel: fillUpLoginData()).asObservable().subscribe(onNext: { result in
+            return XCTAssert(result.status == 200)
+        }, onError: { _ in
+            return XCTAssert(false)
+        }).disposed(by: disposable)
         
-        var returnBool: Bool = false
+    }
+    
+    func fillUpLoginData() -> LoginModel {
+        let loginModel: LoginModel = LoginModel()
 
         loginModel.setUser(user: "admin")
         loginModel.setPassword(password: "123321")
         
-        UserClient.loginUser(loginModel: loginModel).asObservable().subscribe(onNext: { result in
-            returnBool = result.status == 200
-        }, onError: { _ in
-            returnBool = false
-        }).disposed(by: disposable)
-        
-        return XCTAssert(returnBool)
-        
+        return loginModel
     }
     
     func testIfSiginIsWorking() {
+        UserClient.createUser(registerUserModel: fillUpSiginData())
+            .asObservable().subscribe(
+            onNext: {
+                result in
+                return XCTAssert(result.status == 200)
+            },
+            onError: {
+                error in
+                return XCTAssert(false)
+        }).disposed(by: disposable)
+    }
+    
+    func fillUpSiginData() -> RegisterUserModel {
         let siginModel: RegisterUserModel = RegisterUserModel()
-        
-        var returnBool: Bool = false
         
         siginModel.setUserName(username: "admin")
         siginModel.setEmail(email: "ronaldo.samuel2021@gmail.com")
@@ -42,31 +54,15 @@ class ApiTests: XCTestCase {
         siginModel.setCpf(cpf: "50650520858")
         siginModel.setPassword(password: "123321")
         
-        UserClient.createUser(registerUserModel: siginModel).asObservable().subscribe(
-            onNext: {
-                result in
-            returnBool = result.status == 200
-        },
-            onError: {
-                error in
-            returnBool = false
-        }).disposed(by: disposable)
-        
-        return XCTAssert(returnBool)
-        
+        return siginModel
     }
     
     func testIfRecordsIsBeeingSelected() {
-        var returnBool: Bool = false
-        
         NewsClient.getNews().asObservable().subscribe(onNext: {
             result in
-            returnBool = result.status == "200"
+            return XCTAssert(result.status == "200")
         }, onError: { _ in
-            returnBool = false
+            return XCTAssert(false)
         }).disposed(by: disposable)
-        
-        return XCTAssert(returnBool)
-        
     }
 }
