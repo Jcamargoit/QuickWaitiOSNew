@@ -6,24 +6,23 @@ import Foundation
 
 // MARK: - Empty
 class NewsModel {
-    
+
     var status: String?
     var totalResults: Int?
     var articles: [String]
-    
-    
+
     init() {
         self.status = ""
         self.totalResults = 0
         self.articles = []
     }
-    
+
     init(codable: NewsResultCodable) {
-        
+
         self.status = codable.status
         self.totalResults = codable.totalResults
         self.articles = []
-        
+
         for item in codable.articles {
             self.articles.append(item.source.name ?? "")
         }

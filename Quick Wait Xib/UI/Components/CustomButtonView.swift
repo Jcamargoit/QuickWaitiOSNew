@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 class CustomButtonView: UIView {
-    
+
     var leadingContraint: NSLayoutConstraint?
-    
+
     var contentView: UIView = {
         var view = UIView()
         view.backgroundColor = .white
@@ -22,14 +22,14 @@ class CustomButtonView: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
+
     var iconImage: UIImageView = {
        var img = UIImageView()
         img.contentMode = .scaleAspectFit
         img.translatesAutoresizingMaskIntoConstraints = false
         return img
     }()
-    
+
     var buttonTitle: UILabel = {
        var lbl = UILabel()
         lbl.textAlignment = .center
@@ -38,23 +38,23 @@ class CustomButtonView: UIView {
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         createSubviews()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         createSubviews()
     }
-    
+
     func createSubviews() {
         setupContentView()
         setupIconImage()
         setupButtonTitle()
     }
-    
+
     func setupContentView() {
         addSubview(contentView)
         NSLayoutConstraint.activate([
@@ -64,7 +64,7 @@ class CustomButtonView: UIView {
             contentView.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
-    
+
     func setupIconImage() {
         contentView.addSubview(iconImage)
         NSLayoutConstraint.activate([
@@ -74,12 +74,12 @@ class CustomButtonView: UIView {
             iconImage.widthAnchor.constraint(equalToConstant: 25)
         ])
     }
-    
+
     func setupButtonTitle() {
         contentView.addSubview(buttonTitle)
-        
+
         leadingContraint = buttonTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0)
-        
+
         NSLayoutConstraint.activate([
             buttonTitle.topAnchor.constraint(equalTo: contentView.topAnchor),
             buttonTitle.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
@@ -87,20 +87,20 @@ class CustomButtonView: UIView {
             buttonTitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
         ])
     }
-    
+
     func setImage(imageName: String) {
         self.iconImage.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
         updateConstraintButton(padding: 25)
     }
-    
+
     func setButtonTitle(text: String) {
         self.buttonTitle.text = text
     }
-    
+
     func setupBoldFont(value: UIFont.Weight) {
         self.buttonTitle.font = UIFont.systemFont(ofSize: 11, weight: value)
     }
-    
+
     func updateConstraintButton(padding: CGFloat) {
         self.leadingContraint!.constant = padding
         layoutIfNeeded()

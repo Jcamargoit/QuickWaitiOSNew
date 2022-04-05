@@ -7,7 +7,7 @@
 
 import XCTest
 
-class Quick_Wait_XibUITestsLaunchTests: XCTestCase {
+class QuickWaitXibUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

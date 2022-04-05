@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct LocationHospitalModel {
     var latitude: String?
     var longitude: String?

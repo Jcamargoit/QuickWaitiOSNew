@@ -8,7 +8,7 @@
 import XCTest
 @testable import Quick_Wait_Xib
 
-class Quick_Wait_XibTests: XCTestCase {
+class QuickWaitXibTests: XCTestCase {
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.

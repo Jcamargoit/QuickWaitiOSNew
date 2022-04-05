@@ -10,9 +10,9 @@ import Alamofire
 
 class NetworkReachability {
     static let shared = NetworkReachability()
-    
+
     let reachabilityManager = NetworkReachabilityManager(host: "www.google.com")
-    
+
     func startNetworkMonitoring() {
         reachabilityManager?.startListening { status in
             switch status {
@@ -27,13 +27,13 @@ class NetworkReachability {
             }
         }
     }
-    
+
     func showOfflineAlert() {
         print("<\(type(of: self)) connection = offline>")
     }
-    
+
     func dismissOfflineAlert() {
         print("<\(type(of: self)) connection = online")
     }
-    
+
 }

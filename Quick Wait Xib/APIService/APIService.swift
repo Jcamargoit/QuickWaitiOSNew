@@ -21,7 +21,7 @@ enum HttpMethod: String {
 struct Resource<T: Codable> {
     let url: URL
     var httpMethod: HttpMethod = .get
-    var body: Data? = nil
+    var body: Data?
 
 }
 
@@ -32,16 +32,16 @@ extension Resource {
 }
 
 class APIService {
-    
+
     func load<T>(resource: Resource<T>, completion: @escaping (Result<T, NetworkError>) -> Void) {
-        
+
         var request = URLRequest(url: resource.url)
         request.httpMethod = resource.httpMethod.rawValue
         request.httpBody = resource.body
-        
-        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type") 
-        
-        URLSession.shared.dataTask(with: request) { data, response, error in
+
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+
+        URLSession.shared.dataTask(with: request) { data, _, error in
             guard let data = data, error == nil else {
                 completion(.failure(.domainError))
                 return

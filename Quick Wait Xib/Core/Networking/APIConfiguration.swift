@@ -12,11 +12,11 @@ protocol APIConfiguration: URLRequestConvertible {
          var method: HTTPMethod { get }
     var path: String { get }
     var parameters: RequestParams { get }
-    
+
 }
 
 enum HTTPHeaderField: String {
-    
+
     case authentication = "Authorization"
     case contentType = "Content-Type"
     case acceptType = "Accept"
@@ -25,14 +25,14 @@ enum HTTPHeaderField: String {
 }
 
 enum ContentType: String {
-    
+
     case json = "Application/json"
     case formEncode = "application/x-www-form-urlencoded"
-    
+
 }
 
 enum RequestParams {
-    
+
     case body(_:Parameters)
     case url(_:Parameters)
     //
@@ -40,7 +40,7 @@ enum RequestParams {
 }
 
 enum APIError: Error {
-    
+
     case noDecoded              // Status code 200 mas não decodificou
     case noContent              // Status code 204
     case badRequest             // Status code 400

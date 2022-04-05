@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginView: UIView {
-    
+
     var iconImage: UIImageView = {
        var img = UIImageView()
         img.image = UIImage(named: "logo")
@@ -16,7 +16,7 @@ class LoginView: UIView {
         img.translatesAutoresizingMaskIntoConstraints = false
         return img
     }()
-    
+
     var labelUser: UILabel = {
        var lbl = UILabel()
         lbl.text = "Usuário:"
@@ -25,7 +25,7 @@ class LoginView: UIView {
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
-    
+
     var txtUser: UITextView = {
        var txt = UITextView()
         txt.font = UIFont.systemFont(ofSize: 26)
@@ -39,7 +39,7 @@ class LoginView: UIView {
         txt.translatesAutoresizingMaskIntoConstraints = false
         return txt
     }()
-    
+
     var labelPassword: UILabel = {
        var lbl = UILabel()
         lbl.text = "Senha:"
@@ -48,7 +48,7 @@ class LoginView: UIView {
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
-    
+
     var txtPassword: UITextView = {
        var txt = UITextView()
         txt.font = UIFont.systemFont(ofSize: 26)
@@ -61,7 +61,7 @@ class LoginView: UIView {
         txt.translatesAutoresizingMaskIntoConstraints = false
         return txt
     }()
-    
+
     var labelForgotPass: UILabel = {
        var lbl = UILabel()
         lbl.text = "Esqueceu sua senha?"
@@ -70,7 +70,7 @@ class LoginView: UIView {
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
-    
+
     var buttonForgot: UIButton = {
         var btn = UIButton()
         btn.setTitle("Clique aqui", for: .normal)
@@ -79,7 +79,7 @@ class LoginView: UIView {
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
-    
+
     var buttonEnter: UIButton = {
        var btn = UIButton()
         btn.setTitle("Entrar", for: .normal)
@@ -92,7 +92,7 @@ class LoginView: UIView {
         btn.layer.shadowOffset = CGSize.init(width: 0, height: 3)
         return btn
     }()
-    
+
     var imageReturn: UIImageView = {
        var img = UIImageView()
         img.image = UIImage(named: "iconBackRegister")?.withRenderingMode(.alwaysOriginal)
@@ -100,19 +100,19 @@ class LoginView: UIView {
         img.translatesAutoresizingMaskIntoConstraints = false
         return img
     }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         createSubView()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         createSubView()
     }
-    
+
     func createSubView() {
-        
+
         backgroundColor = UIColor(red: 0.87, green: 1.00, blue: 1.00, alpha: 1.00)
         setupLogo()
         setupUserText()
@@ -121,43 +121,43 @@ class LoginView: UIView {
         setupButtonEnter()
         setupBack()
     }
-    
+
     func setupLogo() {
         addSubview(iconImage)
         NSLayoutConstraint.activate([
             iconImage.topAnchor.constraint(equalTo: topAnchor, constant: size.height * 0.13),
             iconImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
-            iconImage.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -15),
+            iconImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
             iconImage.heightAnchor.constraint(equalToConstant: size.height * 0.2)
         ])
     }
-    
+
     func setupUserText() {
         addSubview(labelUser)
         NSLayoutConstraint.activate([
             labelUser.topAnchor.constraint(equalTo: iconImage.bottomAnchor, constant: 30),
             labelUser.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
-            labelUser.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -25),
+            labelUser.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -25)
         ])
-        
+
         addSubview(txtUser)
         NSLayoutConstraint.activate([
             txtUser.topAnchor.constraint(equalTo: labelUser.bottomAnchor, constant: 4),
             txtUser.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 7),
             txtUser.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -7),
-            txtUser.heightAnchor.constraint(equalToConstant: 50),
+            txtUser.heightAnchor.constraint(equalToConstant: 50)
         ])
-        
+
     }
-    
+
     func setupPasswordText() {
         addSubview(labelPassword)
         NSLayoutConstraint.activate([
             labelPassword.topAnchor.constraint(equalTo: txtUser.bottomAnchor, constant: 25),
             labelPassword.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
-            labelPassword.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -25),
+            labelPassword.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -25)
         ])
-        
+
         addSubview(txtPassword)
         NSLayoutConstraint.activate([
             txtPassword.topAnchor.constraint(equalTo: labelPassword.bottomAnchor, constant: 4),
@@ -165,23 +165,23 @@ class LoginView: UIView {
             txtPassword.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -7),
             txtPassword.heightAnchor.constraint(equalToConstant: 50)
         ])
-        
+
     }
-    
+
     func setupForgotLabel() {
         addSubview(labelForgotPass)
         NSLayoutConstraint.activate([
             labelForgotPass.topAnchor.constraint(equalTo: txtPassword.bottomAnchor, constant: 25),
-            labelForgotPass.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
+            labelForgotPass.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25)
         ])
-        
+
         addSubview(buttonForgot)
         NSLayoutConstraint.activate([
             buttonForgot.centerYAnchor.constraint(equalTo: labelForgotPass.centerYAnchor),
-            buttonForgot.leadingAnchor.constraint(equalTo: labelForgotPass.trailingAnchor, constant: 5),
+            buttonForgot.leadingAnchor.constraint(equalTo: labelForgotPass.trailingAnchor, constant: 5)
         ])
     }
-    
+
     func setupButtonEnter() {
         addSubview(buttonEnter)
         NSLayoutConstraint.activate([
@@ -190,9 +190,9 @@ class LoginView: UIView {
             buttonEnter.centerXAnchor.constraint(equalTo: centerXAnchor),
             buttonEnter.heightAnchor.constraint(equalToConstant: 40)
         ])
-        
+
     }
-    
+
     func setupBack() {
         addSubview(imageReturn)
         NSLayoutConstraint.activate([
@@ -202,5 +202,5 @@ class LoginView: UIView {
             imageReturn.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
-    
+
 }

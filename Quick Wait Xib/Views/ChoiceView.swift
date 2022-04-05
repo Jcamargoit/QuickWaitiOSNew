@@ -16,7 +16,7 @@ class ChoiceView: UIView {
         img.translatesAutoresizingMaskIntoConstraints = false
         return img
     }()
-    
+
     var googleButton: CustomButtonView = {
         var btn = CustomButtonView()
         btn.setupBoldFont(value: .medium)
@@ -26,7 +26,7 @@ class ChoiceView: UIView {
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
-    
+
     var facebookButton: CustomButtonView = {
         var btn = CustomButtonView()
         btn.contentView.layer.cornerRadius = 14.5
@@ -36,7 +36,7 @@ class ChoiceView: UIView {
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
-    
+
     var viewSeparatorLeft: UIView = {
        var view = UIView()
         view.backgroundColor = UIColor(red: 0.10, green: 0.84, blue: 0.85, alpha: 1.00)
@@ -44,7 +44,7 @@ class ChoiceView: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
+
     var orLabel: UILabel = {
        var lbl = UILabel()
         lbl.text = "OU"
@@ -53,7 +53,7 @@ class ChoiceView: UIView {
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
-    
+
     var viewSeparatorRight: UIView = {
        var view = UIView()
          view.backgroundColor = UIColor(red: 0.10, green: 0.84, blue: 0.85, alpha: 1.00)
@@ -61,7 +61,7 @@ class ChoiceView: UIView {
          view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
+
     var btnEnter: CustomButtonView = {
        var btn = CustomButtonView()
         btn.contentView.layer.cornerRadius = 14.5
@@ -70,7 +70,7 @@ class ChoiceView: UIView {
         btn.translatesAutoresizingMaskIntoConstraints = false
        return btn
     }()
-    
+
     var btnSigin: CustomButtonView = {
        var btn = CustomButtonView()
         btn.contentView.layer.cornerRadius = 14.5
@@ -79,7 +79,7 @@ class ChoiceView: UIView {
         btn.translatesAutoresizingMaskIntoConstraints = false
        return btn
     }()
-    
+
     var btnGuest: CustomButtonView = {
         var btn = CustomButtonView()
         btn.contentView.layer.cornerRadius = 14.5
@@ -88,20 +88,19 @@ class ChoiceView: UIView {
          btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         createSubviews()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         createSubviews()
     }
-    
-    
+
     func createSubviews() {
-        
+
         backgroundColor = UIColor(red: 0.87, green: 1.00, blue: 1.00, alpha: 1.00)
         setupIconImage()
         setupGoogleButton()
@@ -111,17 +110,17 @@ class ChoiceView: UIView {
         setupSiginButton()
         setupGuestButton()
     }
-    
+
     func setupIconImage() {
         addSubview(logoIcon)
         NSLayoutConstraint.activate([
             logoIcon.topAnchor.constraint(equalTo: topAnchor, constant: size.height * 0.11),
             logoIcon.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
-            logoIcon.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -15),
+            logoIcon.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
             logoIcon.heightAnchor.constraint(equalToConstant: size.height * 0.2)
         ])
     }
-    
+
     func setupGoogleButton() {
         addSubview(googleButton)
         NSLayoutConstraint.activate([
@@ -131,7 +130,7 @@ class ChoiceView: UIView {
             googleButton.heightAnchor.constraint(equalToConstant: 39)
         ])
     }
-    
+
     func setupFacebookButton() {
         addSubview(facebookButton)
         NSLayoutConstraint.activate([
@@ -141,7 +140,7 @@ class ChoiceView: UIView {
             facebookButton.heightAnchor.constraint(equalToConstant: 39)
         ])
     }
-    
+
     func setupSeparator() {
         addSubview(viewSeparatorLeft)
         NSLayoutConstraint.activate([
@@ -150,13 +149,13 @@ class ChoiceView: UIView {
             viewSeparatorLeft.trailingAnchor.constraint(equalTo: centerXAnchor, constant: -25),
             viewSeparatorLeft.heightAnchor.constraint(equalToConstant: 8)
         ])
-        
+
         addSubview(orLabel)
         NSLayoutConstraint.activate([
             orLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             orLabel.centerYAnchor.constraint(equalTo: viewSeparatorLeft.centerYAnchor)
         ])
-        
+
         addSubview(viewSeparatorRight)
         NSLayoutConstraint.activate([
             viewSeparatorRight.topAnchor.constraint(equalTo: viewSeparatorLeft.topAnchor),
@@ -165,7 +164,7 @@ class ChoiceView: UIView {
             viewSeparatorRight.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -35)
         ])
     }
-    
+
     func setupEnterButton() {
         addSubview(btnEnter)
         NSLayoutConstraint.activate([
@@ -175,7 +174,7 @@ class ChoiceView: UIView {
             btnEnter.heightAnchor.constraint(equalToConstant: 39)
         ])
     }
-    
+
     func setupSiginButton() {
         addSubview(btnSigin)
         NSLayoutConstraint.activate([
@@ -185,7 +184,7 @@ class ChoiceView: UIView {
             btnSigin.heightAnchor.constraint(equalToConstant: 39)
         ])
     }
-    
+
     func setupGuestButton() {
         addSubview(btnGuest)
         NSLayoutConstraint.activate([

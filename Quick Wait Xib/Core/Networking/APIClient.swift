@@ -10,7 +10,7 @@ import Alamofire
 import RxSwift
 
 class APIClient {
-    
+
     static let sessionManagerWithoutAuthentication: Session = {
         let configuration = URLSessionConfiguration.af.default
         configuration.timeoutIntervalForRequest = 30
@@ -18,16 +18,16 @@ class APIClient {
         let networkLogger = NetworkLogger()
         return Session(configuration: configuration, eventMonitors: [networkLogger])
     }()
-    
+
     // MARK: - Executador de requests
     static func request<T: Codable> (_ urlConvertible: URLRequestConvertible) -> Observable<T> {
         return Observable<T>.create { observer in
-            
+
             sessionManagerWithoutAuthentication.request(urlConvertible).responseDecodable { (response: AFDataResponse<T>) in
-                
+
                 switch response.result {
                 case .success(let value):
-                    
+
                     observer.onNext(value)
                     observer.onCompleted()
                 case .failure(let error):
@@ -56,9 +56,9 @@ class APIClient {
                     }
                 }
             }
-            
+
             return Disposables.create {}
         }
     }
-    
+
 }

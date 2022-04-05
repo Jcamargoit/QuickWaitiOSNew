@@ -1,0 +1,23 @@
+disable_rules:
+  - identifier_name 
+# - colon
+  - comma
+# - control_statement
+  - variable_name
+  - force_cast
+  - large_tuple
+  - notification_center_detachment
+  - nesting
+  - function_parameter_count
+  - trailing_whitespace
+ 
+opt_in_rules:
+    - empty_count
+    
+excluded:
+    - Carthage
+    - Pods
+    
+line_length:
+    warning: 150
+    error: 200

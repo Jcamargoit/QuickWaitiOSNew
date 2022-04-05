@@ -11,17 +11,17 @@ import RxSwift
 import RxGesture
 
 class ChoiceViewController: UIViewController {
-    
+
     private var choiceViewModel = ChoiceViewModel()
     var presentationView: ChoiceView = ChoiceView()
     var disposable: DisposeBag = DisposeBag()
-    
+
     override func loadView() {
         view = presentationView
     }
-    
+
     var teste: String?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Transaction can be started by providing, at minimum, the name and the operation
@@ -35,56 +35,55 @@ class ChoiceViewController: UIViewController {
 
         span.finish() // Mark the span as finished
         transaction.finish()
-        
+
         bindView()
 
     }
-    
+
     func bindView() {
-        
+
         self.presentationView.googleButton.rx.tapGesture().when(.recognized).bind { _ in
             self.tapToLoginWithGoogle()
         }.disposed(by: disposable)
-        
+
         self.presentationView.facebookButton.rx.tapGesture().when(.recognized).bind { _ in
             self.tapToLoginWithFacebook()
         }.disposed(by: disposable)
-        
+
         self.presentationView.btnEnter.rx.tapGesture().when(.recognized).bind { _ in
             self.tapToLogin()
         }.disposed(by: disposable)
-        
+
         self.presentationView.btnSigin.rx.tapGesture().when(.recognized).bind { _ in
             self.tapToRegister()
         }.disposed(by: disposable)
-         
+
         self.presentationView.btnGuest.rx.tapGesture().when(.recognized).bind { _ in
             self.tapToLoginAsGuest()
         }.disposed(by: disposable)
     }
-    
-    
+
     func tapToLoginWithGoogle() {
     }
-    
+
     func tapToLoginWithFacebook() {
     }
-    
+
     func tapToLogin() {
-        let vc = LoginViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        let viewController = LoginViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
-    
+
     func tapToRegister() {
-        let vc = RegisterUserViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        let viewController = RegisterUserViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
-    
+
     func tapToLoginAsGuest() {
-        let vc = HomeViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        let viewController = HomeViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
-    
+
     deinit {
         print("Deinit ChoiceViewController")
     }

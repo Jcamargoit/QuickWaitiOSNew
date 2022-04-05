@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class LoadingViewController: UIViewController {
     var loadingActivityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView()
@@ -21,10 +20,10 @@ class LoadingViewController: UIViewController {
             .flexibleLeftMargin, .flexibleRightMargin,
             .flexibleTopMargin, .flexibleBottomMargin
         ]
-        
+
         return indicator
     }()
-    
+
     var blurEffectView: UIVisualEffectView = {
         let blurEffect = UIBlurEffect(style: .dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -34,9 +33,9 @@ class LoadingViewController: UIViewController {
         ]
         return blurEffectView
     }()
-    
+
     override func viewDidLoad() {
-        
+
         view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         blurEffectView.frame = self.view.bounds
         view.insertSubview(blurEffectView, at: 0)

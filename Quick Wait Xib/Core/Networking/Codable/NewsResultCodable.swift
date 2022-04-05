@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 // MARK: - Empty
 struct NewsResultCodable: Codable {
     let status: String?

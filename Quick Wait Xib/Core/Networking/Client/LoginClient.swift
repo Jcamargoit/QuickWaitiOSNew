@@ -12,11 +12,9 @@ class UserClient: APIClient {
     static func loginUser(loginModel: LoginModel) -> Observable<LoginResultCodable> {
         return request(UserRouter.loginUser(user: loginModel))
     }
-    
+
     static func createUser(registerUserModel: RegisterUserModel) -> Observable<DefaultCodable> {
         return request(UserRouter.registerUser(userRegister: registerUserModel))
     }
-    
-
 
 }

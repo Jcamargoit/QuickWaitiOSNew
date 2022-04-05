@@ -8,10 +8,10 @@
 import Foundation
 
 struct SearchHospitalsModel: Codable {
-    
-    var nome:String?
-    var latitude:String?
-    var longitude:String?
-    var endereco:String?
-    
+
+    var nome: String?
+    var latitude: String?
+    var longitude: String?
+    var endereco: String?
+
 }

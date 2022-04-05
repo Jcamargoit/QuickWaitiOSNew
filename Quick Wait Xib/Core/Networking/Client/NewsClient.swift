@@ -8,11 +8,10 @@
 import Foundation
 import RxSwift
 
-
 class NewsClient: APIClient {
-    
+
     static func getNews() -> Observable<NewsResultCodable> {
         return request(NewsRouter.userNews)
     }
-    
+
 }
