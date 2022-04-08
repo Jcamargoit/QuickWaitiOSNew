@@ -29,6 +29,15 @@ class ChoiceViewController: UIViewController {
         // Transactions can have child spans (and those spans can have child spans as well)
         let span = transaction.startChild(operation: "db", description: "Update first repo")
 
+        for family: String in UIFont.familyNames
+               {
+                   print(family)
+                   for names: String in UIFont.fontNames(forFamilyName: family)
+                   {
+                       print("== \(names)")
+                   }
+               }
+        
         // ...
         // (Perform the operation represented by the span/transaction)
         // ...

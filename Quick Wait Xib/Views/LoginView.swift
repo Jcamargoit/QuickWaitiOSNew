@@ -201,6 +201,7 @@ class LoginView: UIView {
             imageReturn.widthAnchor.constraint(equalToConstant: 50),
             imageReturn.heightAnchor.constraint(equalToConstant: 50)
         ])
+        sendSubviewToBack(imageReturn)
     }
 
 }

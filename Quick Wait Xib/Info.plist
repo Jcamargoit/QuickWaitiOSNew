@@ -10,13 +10,13 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Quicksand_Bold</string>
-		<string>Quicksand_Book_Oblique</string>
-		<string>Quicksand_Book</string>
-		<string>Quicksand_Light_Oblique</string>
-		<string>Quicksand_Dash</string>
-		<string>Quicksand_Light</string>
-		<string>Quicksand_Bold_Oblique</string>
+		<string>Quicksand_Bold.otf</string>
+		<string>Quicksand_Bold_Oblique.otf</string>
+		<string>Quicksand_Book.otf</string>
+		<string>Quicksand_Light_Oblique.otf</string>
+		<string>Quicksand_Dash.otf</string>
+		<string>Quicksand_Light.otf</string>
+		<string>Quicksand_Bold_Oblique.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

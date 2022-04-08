@@ -15,6 +15,11 @@
 		4C4FFBB827E0F16700C46CDD /* RegisterUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FFBB727E0F16700C46CDD /* RegisterUserView.swift */; };
 		4C4FFBBA27E0F29E00C46CDD /* RegisterCustomTextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FFBB927E0F29E00C46CDD /* RegisterCustomTextfieldView.swift */; };
 		4C4FFBBD27E1032B00C46CDD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FFBBC27E1032B00C46CDD /* String+Extensions.swift */; };
+		4C98F4C527FDB2E40016D35E /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C98F4C427FDB2E40016D35E /* DeveloperView.swift */; };
+		4C98F4C727FDB67F0016D35E /* DevelopersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C98F4C627FDB67F0016D35E /* DevelopersCollectionViewCell.swift */; };
+		4C98F4C927FDB6EB0016D35E /* DeveloperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C98F4C827FDB6EB0016D35E /* DeveloperModel.swift */; };
+		4C98F4CB27FDC2EF0016D35E /* DeveloperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C98F4CA27FDC2EF0016D35E /* DeveloperViewModel.swift */; };
+		4C98F4CD27FDD4FA0016D35E /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C98F4CC27FDD4FA0016D35E /* DevelopersViewController.swift */; };
 		4CA0A1EF27F47D4500D295A9 /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0A1EE27F47D4500D295A9 /* ApiTests.swift */; };
 		4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */; };
 		4CB92CA627BE8DD50079B5C1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */; };
@@ -119,6 +124,11 @@
 		4C4FFBB727E0F16700C46CDD /* RegisterUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserView.swift; sourceTree = "<group>"; };
 		4C4FFBB927E0F29E00C46CDD /* RegisterCustomTextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomTextfieldView.swift; sourceTree = "<group>"; };
 		4C4FFBBC27E1032B00C46CDD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		4C98F4C427FDB2E40016D35E /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
+		4C98F4C627FDB67F0016D35E /* DevelopersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C98F4C827FDB6EB0016D35E /* DeveloperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperModel.swift; sourceTree = "<group>"; };
+		4C98F4CA27FDC2EF0016D35E /* DeveloperViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewModel.swift; sourceTree = "<group>"; };
+		4C98F4CC27FDD4FA0016D35E /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		4CA0A1EE27F47D4500D295A9 /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
 		4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		4CB92CA427BE8DD50079B5C1 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
@@ -435,6 +445,7 @@
 				F2C80D2D27BD8A9600189473 /* NewsCollectionViewCell.swift */,
 				4CB92CA327BE8DD50079B5C1 /* NewsTableViewCell.swift */,
 				F2C04E0A27B3FAD500710727 /* SearchHospitalsResultTableViewCell.swift */,
+				4C98F4C627FDB67F0016D35E /* DevelopersCollectionViewCell.swift */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
@@ -455,6 +466,7 @@
 				F2C04E1027B3FAD500710727 /* SearchHospitalsResultViewController.swift */,
 				F2C04E1327B3FAD500710727 /* SearchHospitalsViewController.swift */,
 				F2AAEA7127CFBFB500D62386 /* SettingsViewController.swift */,
+				4C98F4CC27FDD4FA0016D35E /* DevelopersViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -490,6 +502,7 @@
 				4C1FA7AF27DA46250026D3C7 /* LoginView.swift */,
 				4C1E141C27DFD1810018B7FC /* ChoiceView.swift */,
 				4C4FFBB727E0F16700C46CDD /* RegisterUserView.swift */,
+				4C98F4C427FDB2E40016D35E /* DeveloperView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -503,6 +516,7 @@
 				F2C04E2727B3FAD600710727 /* LoginViewModel.swift */,
 				F2C04E2A27B3FAD600710727 /* RegisterUserViewModel.swift */,
 				F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */,
+				4C98F4CA27FDC2EF0016D35E /* DeveloperViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -516,6 +530,7 @@
 				F2C04E2D27B3FAD600710727 /* RegisterUserModel.swift */,
 				F2C04E3227B3FAD600710727 /* SearchHospitalsModel.swift */,
 				F2681AB227BC26880067FA4D /* NewsModel.swift */,
+				4C98F4C827FDB6EB0016D35E /* DeveloperModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -714,6 +729,7 @@
 				4CC28F3327E267CC00AC7A21 /* DefaultCodable.swift in Sources */,
 				F2C04E3927B3FAD600710727 /* LoginViewController.swift in Sources */,
 				F2C04E3527B3FAD600710727 /* RegisterUserViewController.swift in Sources */,
+				4C98F4C927FDB6EB0016D35E /* DeveloperModel.swift in Sources */,
 				F2681AB027BC21070067FA4D /* APIService.swift in Sources */,
 				F2C04E3B27B3FAD600710727 /* SearchHospitalsViewController.swift in Sources */,
 				F26D68B02798B46500E20503 /* AppDelegate.swift in Sources */,
@@ -735,6 +751,7 @@
 				4C4FFBBA27E0F29E00C46CDD /* RegisterCustomTextfieldView.swift in Sources */,
 				4C4FFBB627E0B05A00C46CDD /* CustomButtonView.swift in Sources */,
 				4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */,
+				4C98F4CB27FDC2EF0016D35E /* DeveloperViewModel.swift in Sources */,
 				F26D68B22798B46500E20503 /* SceneDelegate.swift in Sources */,
 				4C1E141D27DFD1810018B7FC /* ChoiceView.swift in Sources */,
 				F2C04E3E27B3FAD600710727 /* ShowLoading.swift in Sources */,
@@ -746,13 +763,16 @@
 				4CC28F2027E231E800AC7A21 /* APIConfiguration.swift in Sources */,
 				F2C04E4D27B3FAD600710727 /* RecoverPasswordViewModel.swift in Sources */,
 				F2C04E3A27B3FAD600710727 /* MyLaunchViewController.swift in Sources */,
+				4C98F4CD27FDD4FA0016D35E /* DevelopersViewController.swift in Sources */,
 				F2C04E3727B3FAD600710727 /* ChoiceViewController.swift in Sources */,
 				F2C04E5427B3FAD600710727 /* RecoverPassawordModel.swift in Sources */,
 				F2C04E3827B3FAD600710727 /* SearchHospitalsResultViewController.swift in Sources */,
 				F2C04E3D27B3FAD600710727 /* LoadingViewController.swift in Sources */,
 				F2C80D2F27BD8A9600189473 /* NewsCollectionViewCell.swift in Sources */,
 				F2681AB327BC26880067FA4D /* NewsModel.swift in Sources */,
+				4C98F4C727FDB67F0016D35E /* DevelopersCollectionViewCell.swift in Sources */,
 				F2C04E5627B3FAD600710727 /* SearchHospitalsModel.swift in Sources */,
+				4C98F4C527FDB2E40016D35E /* DeveloperView.swift in Sources */,
 				F29C3A0027C54D09002C417B /* NewsResultViewController.swift in Sources */,
 				4CC28F2227E231F500AC7A21 /* NetworkInterceptor.swift in Sources */,
 				F2C04E5227B3FAD600710727 /* LocationHospitalModel.swift in Sources */,
