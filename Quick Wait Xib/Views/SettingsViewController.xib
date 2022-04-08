@@ -13,7 +13,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="Quick_Wait_Xib" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
             <connections>
                 <outlet property="mynameisjo" destination="IM1-yD-b6Z" id="cGt-1Z-vI1"/>
                 <outlet property="view" destination="91Y-fi-Y8I" id="NHU-PU-QsJ"/>
