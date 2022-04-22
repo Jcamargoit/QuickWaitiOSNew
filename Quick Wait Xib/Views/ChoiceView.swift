@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class ChoiceView: UIView {
+
     var logoIcon: UIImageView = {
        var img = UIImageView()
         img.image = UIImage(named: "logo")

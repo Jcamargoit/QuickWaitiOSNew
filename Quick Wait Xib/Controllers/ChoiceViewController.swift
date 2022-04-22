@@ -15,12 +15,13 @@ class ChoiceViewController: UIViewController {
     private var choiceViewModel = ChoiceViewModel()
     var presentationView: ChoiceView = ChoiceView()
     var disposable: DisposeBag = DisposeBag()
+//    var imagBase64 = ImagBase64()
+//    var imageResult: UIImage?
 
     override func loadView() {
         view = presentationView
     }
-
-    var teste: String?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,16 +30,15 @@ class ChoiceViewController: UIViewController {
         // Transactions can have child spans (and those spans can have child spans as well)
         let span = transaction.startChild(operation: "db", description: "Update first repo")
 
-        // ...
-        // (Perform the operation represented by the span/transaction)
-        // ...
-
         span.finish() // Mark the span as finished
         transaction.finish()
 
         bindView()
+        
+   //     loadUserImage()
 
     }
+    
 
     func bindView() {
 
@@ -62,6 +62,14 @@ class ChoiceViewController: UIViewController {
             self.tapToLoginAsGuest()
         }.disposed(by: disposable)
     }
+    
+    
+//    func loadUserImage() {
+//        if let image = UserDefaults.standard.string(forKey: UserDefaultsKeys.userImageProfile.rawValue){
+//            self.imageResult = self.imagBase64.convertBase64ToImage(imageString: image)
+//        }
+//    }
+    
 
     func tapToLoginWithGoogle() {
     }
@@ -71,6 +79,7 @@ class ChoiceViewController: UIViewController {
 
     func tapToLogin() {
         let viewController = LoginViewController()
+      //  viewController.imageResult = self.imageResult
         navigationController?.pushViewController(viewController, animated: true)
     }
 
@@ -81,6 +90,7 @@ class ChoiceViewController: UIViewController {
 
     func tapToLoginAsGuest() {
         let viewController = HomeViewController()
+      //  viewController.imageResult = self.imageResult
         navigationController?.pushViewController(viewController, animated: true)
     }
 
