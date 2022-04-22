@@ -97,7 +97,11 @@ class CustomButtonView: UIView {
     }
 
     func setupBoldFont(value: UIFont.Weight) {
-        self.buttonTitle.font = UIFont.init(name: "QuicksandBold-Regular", size: 15)
+        self.buttonTitle.font = .primaryFontBoldMedium
+    }
+
+    func setupBoldFontSettings() {
+        self.buttonTitle.font = .primaryFontRegularLarger
     }
 
     func updateConstraintButton(padding: CGFloat) {

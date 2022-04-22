@@ -17,7 +17,6 @@ pod 'RxDataSources'
 pod 'RxSwiftExt'
 pod 'RxGesture'
 pod 'Alamofire'
-pod 'SwiftLint'
 
   target 'Quick Wait XibTests' do
     inherit! :search_paths

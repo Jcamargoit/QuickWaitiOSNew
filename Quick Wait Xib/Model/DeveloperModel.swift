@@ -14,8 +14,7 @@ class DeveloperModelElement {
     var ocupation: String
     var description: String
     var email: String
-    
-    
+
     init(id: Int, name: String, ocupation: String,
          description: String, email: String, imageURL: String) {
         self.id = id
@@ -25,7 +24,7 @@ class DeveloperModelElement {
         self.email = email
         self.imageURL = imageURL
     }
-    
+
 }
 
 typealias DeveloperModel = [DeveloperModelElement]

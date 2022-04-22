@@ -13,4 +13,5 @@ struct LoginResultCodable: Codable {
     var status: Int?
     var message: String?
     var email: String?
+    var id: Int?
 }

@@ -6,15 +6,35 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var ivPhotoProfile: UIImageView!
+    @IBOutlet weak var ivPhotoProfile: UIImageView!{
+        didSet {
+            ivPhotoProfile.setImageRounded()
+        }
+    }
     @IBOutlet weak var lbName: UILabel!
-
-    // private var homeViewModel = HomeViewModel()
+    
+    var imagBase64 = ImagBase64()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+       
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+            self.loadUserImage()
+        self.lbName.text = UserDefaults.standard.string(forKey: "userName") ?? "Nome"
     }
 
+    func loadUserImage() {
+        if let image = UserDefaults.standard.string(forKey: UserDefaultsKeys.userImageProfile.rawValue){
+            let imageResult = imagBase64.convertBase64ToImage(imageString: image)
+            self.ivPhotoProfile.image = imageResult
+        }
+    }
+    
+    
     @IBAction func tapToSearchHospitals(_ sender: UIButton) {
         let viewController = SearchHospitalsViewController()
         navigationController?.pushViewController(viewController, animated: true)
@@ -34,9 +54,9 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func tapToLogout(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
-        self.dismiss(animated: true, completion: nil)
+  
     }
+    
 
     deinit {
         print("Deinit HomeViewController")

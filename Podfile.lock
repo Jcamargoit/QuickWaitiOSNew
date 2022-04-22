@@ -144,7 +144,6 @@ PODS:
   - Sentry (7.10.1):
     - Sentry/Core (= 7.10.1)
   - Sentry/Core (7.10.1)
-  - SwiftLint (0.47.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -158,7 +157,6 @@ DEPENDENCIES:
   - RxSwiftExt
   - SDWebImage
   - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `7.10.1`)
-  - SwiftLint
 
 SPEC REPOS:
   trunk:
@@ -186,7 +184,6 @@ SPEC REPOS:
     - RxSwift
     - RxSwiftExt
     - SDWebImage
-    - SwiftLint
 
 EXTERNAL SOURCES:
   Sentry:
@@ -224,8 +221,7 @@ SPEC CHECKSUMS:
   RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
   SDWebImage: 631cf572cc93dfdfe54162e556410a61f1141928
   Sentry: ddcd9fde63cfe7e9e2243da59d98daa382413e49
-  SwiftLint: d41cc46a2ae58ac6d9f26954bc89f1d72e71fdef
 
-PODFILE CHECKSUM: 7afeeec76ed1fd7dce74f7c8719ed8ed4b9c53ff
+PODFILE CHECKSUM: 094b8afcf2fa4c1d06370a08e85f1ae1ecf95a3a
 
 COCOAPODS: 1.11.3

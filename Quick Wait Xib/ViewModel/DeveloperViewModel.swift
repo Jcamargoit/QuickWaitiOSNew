@@ -11,7 +11,7 @@ import RxRelay
 
 class DeveloperViewModel {
     var dataSource: BehaviorRelay<DeveloperModel> = BehaviorRelay<DeveloperModel>(value: DeveloperModel())
-    
+
     func bindViewModel() {
         var data: DeveloperModel = []
         data.append(contentsOf: [
@@ -36,7 +36,7 @@ class DeveloperViewModel {
                                   + "sldkjfkasdfaskajdf ksdkfjasld asdlfjasdjljsa "
                                   + "dflsdjfalsdlfjasdfjksdjf sdjfajskdfl", email: "teste@gmail.com", imageURL: "teste")
                         ])
-        
+
         self.dataSource.accept(data)
     }
 }

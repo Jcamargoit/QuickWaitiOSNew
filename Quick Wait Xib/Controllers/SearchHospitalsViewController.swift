@@ -1,7 +1,6 @@
 //  SearchHospitalsViewController.swift
 //  Quick Wait Xib
 //  Created by Juninho on 28/01/22.
-
 import UIKit
 import MapKit
 import CoreLocation
@@ -18,7 +17,6 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
             self.tfTypedAddress.delegate = self
         }
     }
-
     let locationManager = CLLocationManager()
     var centerCoordinate = CLLocationCoordinate2D()
     var centerCoordinateUser = CLLocationCoordinate2D()
@@ -71,8 +69,6 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
         self.managerLongitudeDigitado  = ""
         self.counterLocation = 0
         checkLocationAuthorization()
-
-        // openResultSearchSenInformations ()
         showLoading(enable: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
             self.showLoading(enable: false)
@@ -81,23 +77,15 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
     }
 
     func openResultSearchSenInformations () {
-
-        // APAGAR O PINO ESPECIFICO
-        //   let annotations = myMapView.annotations.filter({ !($0 is MKUserLocation) })
-        //  myMapView.removeAnnotations(annotations)
-
         // APAGAR A LINHA TRAÇADA DO MAPA
         self.myMapView.overlays.forEach {
             if !($0 is MKUserLocation) {
                 self.myMapView.removeOverlay($0)
             }
         }
-
         self.btnNavegationMap.isHidden = true
-
         let viewController = SearchHospitalsResultViewController(nibName: "SearchHospitalsResultViewController", bundle: nil)
         viewController.searchHospitalsModel = self.searchHospitalsModel
-
         if !tfTypedAddress.text!.isEmpty {
             viewController.managerLongitude = managerLongitudeDigitado
             viewController.managerLatitude = managerLatitudeDigitado
@@ -112,7 +100,6 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
     }
 
     func getLocation() {
-
         getCoordinateFrom(address: self.tfTypedAddress.text ?? "") { coordinate, error in
             guard let coordinate = coordinate, error == nil else {
                 // alerta, endereço nao localizado
@@ -131,10 +118,6 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        //   guard let location = locations.last else { return }
-        //        let region = MKCoordinateRegion.init(center: location.coordinate, latitudinalMeters: 2500, longitudinalMeters: 2500)
-        //        myMapView.setRegion(region, animated: true)
-
         self.counterLocation += 1
         if self.counterLocation == 1 {
             if let latitude = manager.location?.coordinate.latitude {
@@ -143,16 +126,12 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
             if let longitude = manager.location?.coordinate.longitude {
                 self.managerLongitude = "\(longitude)"
             }
-
             if let lastLocation = locations.last {
                 let geocoder = CLGeocoder()
                 geocoder.reverseGeocodeLocation(lastLocation) { [weak self] (placemarks, error) in
                     if error == nil {
                         if let firstLocation = placemarks?[0] { // get the city name
                             //                            print("meu Cidade \(firstLocation.locality)")
-                            //                            print("meu Bairro \(firstLocation.subLocality)")
-                            //                            print("meu Estado \(firstLocation.administrativeArea)")
-                            //                            print("meu Rua \(firstLocation.name)")
                             self?.lbCurrentLocation.text = "\(firstLocation.name ?? "") \(firstLocation.locality ?? "") \(firstLocation.administrativeArea ?? "")"
                         }
                     }
@@ -204,23 +183,19 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
     func followUserLocation() {
 
         if !tfTypedAddress.text!.isEmpty {
-
             let region = MKCoordinateRegion.init(center: self.coordenadasTypedAddress, latitudinalMeters: 1000, longitudinalMeters: 1000)
             print("a regiao ", region)
-
             myMapView.setRegion(region, animated: true)
             self.searchHospitalsModel.removeAll()
             self.counter = 0
             self.counterLocation = 0
             self.managerLongitudeDigitado = "\(self.coordenadasTypedAddress.longitude)"
             self.managerLatitudeDigitado = "\(self.coordenadasTypedAddress.latitude)"
-
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self.searchHospitalInMap(region)
                 print("a regiao final")
             }
         } else {
-
             if let location = locationManager.location?.coordinate {
                 let region = MKCoordinateRegion.init(center: location, latitudinalMeters: 1000, longitudinalMeters: 1000)
                 print("a regiao usuario ", region)
@@ -246,10 +221,8 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
     }
 
     func searchHospitalInMap(_ region: MKCoordinateRegion) {
-
         let searchRequest = MKLocalSearch.Request()
         searchRequest.naturalLanguageQuery = "hospital"
-
         searchRequest.region = myMapView.region
         let search = MKLocalSearch(request: searchRequest)
         search.start { (response, _) in
@@ -258,20 +231,15 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
                 print("Nenhum Hospital próixmo a você")
                 return
             }
-
             self.counter += 1
             if self.counter == 1 {
-
                 for item in response.mapItems {
                     if let name = item.name,
                        let location = item.placemark.location {
-
                         self.searchHospitalsModel.append(.init(nome: name,
                                                                latitude: "\(location.coordinate.latitude)",
                                                                longitude: "\(location.coordinate.longitude)", endereco: item.placemark.title ?? ""))
-
                         let userCoordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-
                         let pino = MKPointAnnotation()
                         let centerCoordinateUser = userCoordinate
                         pino.coordinate = centerCoordinateUser
@@ -282,30 +250,19 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
         }
     }
 
-    deinit {
-        print("Deinit SearchHospitalsViewController")
-    }
-
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let identifier = "MyPin"
-
         if annotation is MKUserLocation {
             return nil
         }
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-
         if annotationView == nil {
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             annotationView?.canShowCallout = true
             annotationView?.image = UIImage(named: "mapPinIcon")
-            // if you want a disclosure button, you'd might do something like:
-            //
-            // let detailButton = UIButton(type: .detailDisclosure)
-            // annotationView?.rightCalloutAccessoryView = detailButton
         } else {
             annotationView?.annotation = annotation
         }
-
         if annotation.coordinate.latitude == Double(self.managerLatitudeDigitado ?? "") {
             annotationView?.canShowCallout = true
             annotationView?.image = UIImage(named: "iconLocation")
@@ -315,22 +272,19 @@ class SearchHospitalsViewController: UIViewController, CLLocationManagerDelegate
         }
         return annotationView
     }
-
 }
 
 extension SearchHospitalsViewController {
-
     func openRouteOnMap() {
-
         var appleURL = ""
         var googleURL = ""
         var wazeURL = ""
 
-        appleURL = "http://maps.apple.com/?daddr=" + "\(self.locationHospitalModel.address?.replacingOccurrences(of: " ", with: "+").folding(options: .diacriticInsensitive, locale: .current) ?? "")"
+        appleURL = "http://maps.apple.com/?daddr="
+        + "\(self.locationHospitalModel.address?.replacingOccurrences(of: " ", with: "+").folding(options: .diacriticInsensitive, locale: .current) ?? "")"
         googleURL = "comgooglemaps://?daddr="
-        + "\(self.locationHospitalModel.address?.replacingOccurrences(of: " ", with: "+").folding(options: .diacriticInsensitive, locale: .current) ?? "")&directionsmode=driving"
+         + "\(self.locationHospitalModel.address?.replacingOccurrences(of: " ", with: "+").folding(options: .diacriticInsensitive, locale: .current) ?? "")&directionsmode=driving"
         wazeURL = "waze://?ll=\(self.locationHospitalModel.latitude ?? ""),\(self.locationHospitalModel.longitude ?? "")&navigate=false"
-
         let googleItem = ("Google Map", URL(string: googleURL)!)
         let wazeItem = ("Waze", URL(string: wazeURL)!)
         var installedNavigationApps = [("Apple Maps", URL(string: appleURL)!)]
@@ -355,7 +309,6 @@ extension SearchHospitalsViewController {
 }
 
 extension SearchHospitalsViewController: UITextFieldDelegate {
-
     // Return do teclado
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)
@@ -365,13 +318,11 @@ extension SearchHospitalsViewController: UITextFieldDelegate {
         showLoading(enable: true)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
-
             let userCoordinate = CLLocationCoordinate2D(latitude: Double(self.managerLatitudeDigitado ?? "") ?? 0,
                                                         longitude: Double(self.managerLongitudeDigitado ?? "") ?? 0)
             self.centerCoordinateUser = userCoordinate
             self.pinUser.coordinate = self.centerCoordinateUser
             self.myMapView.addAnnotation(self.pinUser)
-
             self.showLoading(enable: false)
             self.openResultSearchSenInformations()
         }

@@ -8,55 +8,55 @@
 import UIKit
 
 class DeveloperView: UIView {
-    
+
     var imgPersonBackGround: UIImageView = {
         var img = UIImageView()
-        
+
         return img
     }()
-    
+
     var backButton: UIButton = {
        var btn = UIButton()
-        
+
         return btn
     }()
-    
+
     var personImage: UIImageView = {
        var img = UIImageView()
-        
+
         return img
     }()
-    
+
     var namePerson: UILabel = {
        var lbl = UILabel()
-        
+
         return lbl
     }()
-    
+
     var personsArea: UILabel = {
        var lbl = UILabel()
-        
+
         return lbl
     }()
-    
+
     var descriptionPerson: UILabel = {
         var lbl = UILabel()
-        
+
         return lbl
     }()
-    
+
     var emailIcon: UIImageView = {
        var img = UIImageView()
-        
+
         return img
     }()
-    
+
     var emailLabel: UILabel = {
        var lbl = UILabel()
-        
+
         return lbl
     }()
-    
+
     var developersCollection: UICollectionView = {
             let layout = UICollectionViewFlowLayout()
             layout.scrollDirection = .horizontal
@@ -67,31 +67,31 @@ class DeveloperView: UIView {
             collection.register(DevelopersCollectionViewCell.self, forCellWithReuseIdentifier: DevelopersCollectionViewCell.identifier)
             return collection
     }()
-    
+
     var frameworkIcon: UIImageView = {
         var img = UIImageView()
-        
+
         return img
     }()
-    
+
     var frameworkLabel: UILabel = {
       var lbl = UILabel()
-        
+
         return lbl
     }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-    
+
     func createSubviews() {
-        
+
     }
-    
+
     func setupBackgroundImage() {
         addSubview(imgPersonBackGround)
         NSLayoutConstraint.activate([
@@ -100,7 +100,7 @@ class DeveloperView: UIView {
             imgPersonBackGround.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
-    
+
     func setupImgPerson() {
         addSubview(personImage)
         NSLayoutConstraint.activate([
@@ -110,7 +110,7 @@ class DeveloperView: UIView {
             personImage.heightAnchor.constraint(equalToConstant: 100)
         ])
     }
-    
+
     func setupPersonDescription() {
         addSubview(namePerson)
         NSLayoutConstraint.activate([
@@ -118,14 +118,14 @@ class DeveloperView: UIView {
             namePerson.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             namePerson.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15)
         ])
-        
+
         addSubview(personsArea)
         NSLayoutConstraint.activate([
             personsArea.topAnchor.constraint(equalTo: namePerson.bottomAnchor, constant: 10),
             personsArea.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             personsArea.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15)
         ])
-        
+
         addSubview(descriptionPerson)
         NSLayoutConstraint.activate([
             descriptionPerson.topAnchor.constraint(equalTo: namePerson.bottomAnchor, constant: 10),
@@ -133,7 +133,7 @@ class DeveloperView: UIView {
             descriptionPerson.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -25)
         ])
     }
-    
+
     func setupEmailCamp() {
         addSubview(emailLabel)
         NSLayoutConstraint.activate([
@@ -141,7 +141,7 @@ class DeveloperView: UIView {
             emailLabel.topAnchor.constraint(equalTo: descriptionPerson.bottomAnchor, constant: 30),
             emailLabel.bottomAnchor.constraint(equalTo: imgPersonBackGround.bottomAnchor, constant: -30)
         ])
-        
+
         addSubview(emailIcon)
         NSLayoutConstraint.activate([
             emailIcon.centerYAnchor.constraint(equalTo: emailLabel.centerYAnchor),
@@ -150,7 +150,7 @@ class DeveloperView: UIView {
             emailIcon.heightAnchor.constraint(equalToConstant: 25)
         ])
     }
-    
+
     func setupPersonsCollection() {
         addSubview(developersCollection)
         NSLayoutConstraint.activate([
@@ -160,7 +160,7 @@ class DeveloperView: UIView {
             developersCollection.heightAnchor.constraint(equalToConstant: size.height * 0.2)
         ])
     }
-    
+
     func setupFrameworkLogo() {
         addSubview(frameworkIcon)
         NSLayoutConstraint.activate([
@@ -169,14 +169,13 @@ class DeveloperView: UIView {
             frameworkIcon.trailingAnchor.constraint(equalTo: trailingAnchor),
             frameworkIcon.heightAnchor.constraint(equalToConstant: 60)
         ])
-        
+
         addSubview(frameworkLabel)
         NSLayoutConstraint.activate([
-            frameworkLabel.topAnchor.constraint(equalTo: frameworkIcon.bottomAnchor,constant: 4),
+            frameworkLabel.topAnchor.constraint(equalTo: frameworkIcon.bottomAnchor, constant: 4),
             frameworkLabel.centerXAnchor.constraint(equalTo: centerXAnchor)
-            
+
         ])
     }
 
-    
 }

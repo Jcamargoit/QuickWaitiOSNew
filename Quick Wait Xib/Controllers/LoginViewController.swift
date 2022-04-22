@@ -13,6 +13,10 @@ class LoginViewController: UIViewController {
     var presentationView: LoginView = LoginView()
     var disposed: DisposeBag = DisposeBag()
     private var viewModel = LoginViewModel()
+    
+//    var imageResult: UIImage?
+    
+
 
     override func loadView() {
         view = presentationView
@@ -21,6 +25,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindView()
+//
+//        viewModel.loadUserImage()
+//        self.imageResult = self.viewModel.imageResult
+//
+//
     }
 
     func bindView() {
@@ -65,6 +74,7 @@ class LoginViewController: UIViewController {
 
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 let viewController = HomeViewController()
+  //              viewController.imageResult = self.imageResult
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
         case .failed:

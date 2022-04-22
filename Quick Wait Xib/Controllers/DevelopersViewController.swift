@@ -21,7 +21,7 @@ class DevelopersViewController: UIViewController {
         super.viewDidLoad()
         bindView()
     }
-    
+
     func bindView() {
         viewModel.dataSource
             .bind(
@@ -36,5 +36,5 @@ class DevelopersViewController: UIViewController {
                 cell.configCell(data)
             }.disposed(by: disposed)
     }
-    
+
 }
