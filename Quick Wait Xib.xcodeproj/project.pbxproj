@@ -35,6 +35,8 @@
 		4CC28F3327E267CC00AC7A21 /* DefaultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC28F3227E267CC00AC7A21 /* DefaultCodable.swift */; };
 		4CFF0E8427E9FA1900CC68EB /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF0E8327E9FA1900CC68EB /* LoginTests.swift */; };
 		4CFF0E8627E9FB1600CC68EB /* RegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF0E8527E9FB1600CC68EB /* RegisterTests.swift */; };
+		585E1F0622F982BA7CEE9F7A /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16D2F5BCE0ED35A409AD42F /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */; };
+		63F3DC86848BBA4401081E52 /* Pods_Quick_Wait_Xib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1BE31D1E90AFD9CB5F0684 /* Pods_Quick_Wait_Xib.framework */; };
 		9C44C56927E8F828005249C9 /* NewsResultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44C56827E8F828005249C9 /* NewsResultCodable.swift */; };
 		9C44C56B27E8FE01005249C9 /* NewsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44C56A27E8FE01005249C9 /* NewsClient.swift */; };
 		9C44C56D27E8FF20005249C9 /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44C56C27E8FF20005249C9 /* NewsRouter.swift */; };
@@ -47,6 +49,7 @@
 		9CC5BC112810388D00390544 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5BC102810388D00390544 /* ProfileViewModel.swift */; };
 		9CCB6C51280776A8003D4C08 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB6C50280776A8003D4C08 /* ProfileController.swift */; };
 		9CCB6C53280776D0003D4C08 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB6C52280776D0003D4C08 /* ProfileView.swift */; };
+		DF4047CC187C9A0333870905 /* Pods_Quick_Wait_XibTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861CA5DAECD944E5B1937B86 /* Pods_Quick_Wait_XibTests.framework */; };
 		F2681AB027BC21070067FA4D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AAF27BC21070067FA4D /* APIService.swift */; };
 		F2681AB327BC26880067FA4D /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AB227BC26880067FA4D /* NewsModel.swift */; };
 		F2681AB827BC39A90067FA4D /* ApiNewsEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */; };
@@ -125,6 +128,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C551C16F1F89643D34D0E2F /* Pods-Quick Wait Xib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib.debug.xcconfig"; sourceTree = "<group>"; };
+		3BC03A758BE45A69EBF1F2DD /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41B0B7E5A86EA12A8F3F3CC5 /* Pods-Quick Wait XibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait XibTests.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait XibTests/Pods-Quick Wait XibTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C1E141C27DFD1810018B7FC /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 		4C1FA7AF27DA46250026D3C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4C1FA7B127DB700C0026D3C7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -153,6 +159,8 @@
 		4CC28F3227E267CC00AC7A21 /* DefaultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCodable.swift; sourceTree = "<group>"; };
 		4CFF0E8327E9FA1900CC68EB /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		4CFF0E8527E9FB1600CC68EB /* RegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTests.swift; sourceTree = "<group>"; };
+		80EA2A9A532EDCB0EE91CDDA /* Pods-Quick Wait XibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait XibTests.debug.xcconfig"; path = "Target Support Files/Pods-Quick Wait XibTests/Pods-Quick Wait XibTests.debug.xcconfig"; sourceTree = "<group>"; };
+		861CA5DAECD944E5B1937B86 /* Pods_Quick_Wait_XibTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_XibTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C44C56827E8F828005249C9 /* NewsResultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResultCodable.swift; sourceTree = "<group>"; };
 		9C44C56A27E8FE01005249C9 /* NewsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsClient.swift; sourceTree = "<group>"; };
 		9C44C56C27E8FF20005249C9 /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
@@ -165,6 +173,10 @@
 		9CC5BC102810388D00390544 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		9CCB6C50280776A8003D4C08 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		9CCB6C52280776D0003D4C08 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C16D2F5BCE0ED35A409AD42F /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87A9034B5E1E812FC4D3941 /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC1BE31D1E90AFD9CB5F0684 /* Pods_Quick_Wait_Xib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Wait_Xib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6FD406F5F412C51B16B0C83 /* Pods-Quick Wait Xib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Wait Xib.release.xcconfig"; path = "Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib.release.xcconfig"; sourceTree = "<group>"; };
 		F2681AAF27BC21070067FA4D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F2681AB227BC26880067FA4D /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		F2681AB727BC39A90067FA4D /* ApiNewsEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNewsEndPoints.swift; sourceTree = "<group>"; };
@@ -234,6 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F3DC86848BBA4401081E52 /* Pods_Quick_Wait_Xib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4047CC187C9A0333870905 /* Pods_Quick_Wait_XibTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,12 +262,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585E1F0622F982BA7CEE9F7A /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07637E8AF5443535EADEEAC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC1BE31D1E90AFD9CB5F0684 /* Pods_Quick_Wait_Xib.framework */,
+				C16D2F5BCE0ED35A409AD42F /* Pods_Quick_Wait_Xib_Quick_Wait_XibUITests.framework */,
+				861CA5DAECD944E5B1937B86 /* Pods_Quick_Wait_XibTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C4FFBB327E0B01500C46CDD /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +368,12 @@
 		E1DB031B73CAAE3D9B1149EA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				1C551C16F1F89643D34D0E2F /* Pods-Quick Wait Xib.debug.xcconfig */,
+				E6FD406F5F412C51B16B0C83 /* Pods-Quick Wait Xib.release.xcconfig */,
+				3BC03A758BE45A69EBF1F2DD /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */,
+				D87A9034B5E1E812FC4D3941 /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */,
+				80EA2A9A532EDCB0EE91CDDA /* Pods-Quick Wait XibTests.debug.xcconfig */,
+				41B0B7E5A86EA12A8F3F3CC5 /* Pods-Quick Wait XibTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -387,6 +418,7 @@
 				F26D68CF2798B46700E20503 /* Quick Wait XibUITests */,
 				F26D68AD2798B46500E20503 /* Products */,
 				E1DB031B73CAAE3D9B1149EA /* Pods */,
+				07637E8AF5443535EADEEAC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -569,11 +601,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F26D68D62798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait Xib" */;
 			buildPhases = (
+				826601469391AB23E4E787D6 /* [CP] Check Pods Manifest.lock */,
 				4CA0A1F027F7847E00D295A9 /* Run SwiftLint */,
 				F26D68A82798B46500E20503 /* Sources */,
 				F26D68A92798B46500E20503 /* Frameworks */,
 				F26D68AA2798B46500E20503 /* Resources */,
 				F2D848EF27D25932007421E5 /* ShellScript */,
+				C51D713FED11B785A4C11F7F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -588,6 +622,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F26D68D92798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait XibTests" */;
 			buildPhases = (
+				B73E45BF7EAD687C9EBC787D /* [CP] Check Pods Manifest.lock */,
 				F26D68BE2798B46700E20503 /* Sources */,
 				F26D68BF2798B46700E20503 /* Frameworks */,
 				F26D68C02798B46700E20503 /* Resources */,
@@ -606,9 +641,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F26D68DC2798B46700E20503 /* Build configuration list for PBXNativeTarget "Quick Wait XibUITests" */;
 			buildPhases = (
+				70F990EF6E0D647391F1AB3D /* [CP] Check Pods Manifest.lock */,
 				F26D68C82798B46700E20503 /* Sources */,
 				F26D68C92798B46700E20503 /* Frameworks */,
 				F26D68CA2798B46700E20503 /* Resources */,
+				B7D0005C241BFF267CF681F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -727,6 +764,106 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\n";
+		};
+		70F990EF6E0D647391F1AB3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quick Wait Xib-Quick Wait XibUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		826601469391AB23E4E787D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quick Wait Xib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B73E45BF7EAD687C9EBC787D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quick Wait XibTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D0005C241BFF267CF681F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib-Quick Wait XibUITests/Pods-Quick Wait Xib-Quick Wait XibUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C51D713FED11B785A4C11F7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick Wait Xib/Pods-Quick Wait Xib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		F2D848EF27D25932007421E5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -980,6 +1117,7 @@
 		};
 		F26D68D72798B46700E20503 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C551C16F1F89643D34D0E2F /* Pods-Quick Wait Xib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1018,6 +1156,7 @@
 		};
 		F26D68D82798B46700E20503 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6FD406F5F412C51B16B0C83 /* Pods-Quick Wait Xib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1056,6 +1195,7 @@
 		};
 		F26D68DA2798B46700E20503 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80EA2A9A532EDCB0EE91CDDA /* Pods-Quick Wait XibTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1076,6 +1216,7 @@
 		};
 		F26D68DB2798B46700E20503 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B0B7E5A86EA12A8F3F3CC5 /* Pods-Quick Wait XibTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1096,6 +1237,7 @@
 		};
 		F26D68DD2798B46700E20503 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BC03A758BE45A69EBF1F2DD /* Pods-Quick Wait Xib-Quick Wait XibUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1114,6 +1256,7 @@
 		};
 		F26D68DE2798B46700E20503 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87A9034B5E1E812FC4D3941 /* Pods-Quick Wait Xib-Quick Wait XibUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
