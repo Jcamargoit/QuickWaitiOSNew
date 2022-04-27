@@ -14,14 +14,23 @@ class DevelopersCollectionViewCell: UICollectionViewCell {
     
     var viewItem: UIView = {
         var view = UIView()
-        view.backgroundColor = .systemPink
+        view.backgroundColor = .clear
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
+
+    var border: UIView = {
+       var view = UIView()
+        view.backgroundColor = UIColor(red: 0.40, green: 0.19, blue: 0.47, alpha: 1.00)
+        view.layer.cornerRadius = 40.5
+        view.isHidden = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     var imagemItem: UIImageView = {
         var img = UIImageView()
         img.tintColor = .white
+        img.image = UIImage(named: "defaultIconPerson")
         img.translatesAutoresizingMaskIntoConstraints = false
         return img
     }()
@@ -36,11 +45,11 @@ class DevelopersCollectionViewCell: UICollectionViewCell {
         createSubViews()
     }
     
-    func createSubViews(){
+    func createSubViews() {
         setupViewItens()
     }
     
-    func setupViewItens(){
+    func setupViewItens() {
         
         contentView.addSubview(viewItem)
         NSLayoutConstraint.activate([
@@ -50,17 +59,26 @@ class DevelopersCollectionViewCell: UICollectionViewCell {
             viewItem.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
         
+        viewItem.addSubview(border)
+        NSLayoutConstraint.activate([
+            border.topAnchor.constraint(equalTo: viewItem.topAnchor,constant: 6),
+            border.leadingAnchor.constraint(equalTo: viewItem.leadingAnchor,constant: 6),
+            border.trailingAnchor.constraint(equalTo: viewItem.trailingAnchor,constant: -6),
+            border.bottomAnchor.constraint(equalTo: viewItem.bottomAnchor,constant: -6)
+        ])
+        
         viewItem.addSubview(imagemItem)
         NSLayoutConstraint.activate([
-            imagemItem.centerYAnchor.constraint(equalTo: viewItem.centerYAnchor, constant: -10),
-            imagemItem.centerXAnchor.constraint(equalTo: viewItem.centerXAnchor),
-            imagemItem.heightAnchor.constraint(equalToConstant: 75),
-            imagemItem.widthAnchor.constraint(equalToConstant: 75)
-        ])
+            imagemItem.topAnchor.constraint(equalTo: viewItem.topAnchor, constant: 10),
+            imagemItem.bottomAnchor.constraint(equalTo: viewItem.bottomAnchor, constant: -10),
+            imagemItem.leadingAnchor.constraint(equalTo: viewItem.leadingAnchor, constant: 10),
+            imagemItem.trailingAnchor.constraint(equalTo: viewItem.trailingAnchor, constant: -10)
+            ])
     }
-    
-    func configCell(_ item: DeveloperModelElement){
-        let image = UIImage(named: .logo)?.withRenderingMode(.alwaysTemplate)
-        imagemItem.image = image
+
+    func configCell(_ item: DeveloperModelElement) {
+        self.imagemItem.downloaded(from: item.imageURL, contentMode: .scaleAspectFill)
+        self.imagemItem.layer.cornerRadius = 37.5
+        self.imagemItem.clipsToBounds = true
     }
 }

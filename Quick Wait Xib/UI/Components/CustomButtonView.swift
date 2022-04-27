@@ -33,6 +33,8 @@ class CustomButtonView: UIView {
     var buttonTitle: UILabel = {
        var lbl = UILabel()
         lbl.textAlignment = .center
+        lbl.adjustsFontSizeToFitWidth = true
+        lbl.numberOfLines = 1
         lbl.textColor = UIColor(red: 0.15, green: 0.66, blue: 0.69, alpha: 1.00)
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
@@ -77,19 +79,19 @@ class CustomButtonView: UIView {
     func setupButtonTitle() {
         contentView.addSubview(buttonTitle)
 
-        leadingContraint = buttonTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0)
+        leadingContraint = buttonTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 9)
 
         NSLayoutConstraint.activate([
             buttonTitle.topAnchor.constraint(equalTo: contentView.topAnchor),
             buttonTitle.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             leadingContraint!,
-            buttonTitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
+            buttonTitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -9)
         ])
     }
 
     func setImage(imageName: String) {
         self.iconImage.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
-        updateConstraintButton(padding: 25)
+        updateConstraintButton(padding: 43)
     }
 
     func setButtonTitle(text: String) {
@@ -97,7 +99,7 @@ class CustomButtonView: UIView {
     }
 
     func setupBoldFont(value: UIFont.Weight) {
-        self.buttonTitle.font = UIFont.init(name: "QuicksandBold-Regular", size: 15)
+        self.buttonTitle.font = .primaryFontRegular
     }
 
     func updateConstraintButton(padding: CGFloat) {

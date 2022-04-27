@@ -105,6 +105,9 @@
                                     <buttonConfiguration key="configuration" style="plain" title="DESENVOLVEDORES">
                                         <backgroundConfiguration key="background" image="btnBackground"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="tapToDeveloper:" destination="-1" eventType="touchUpInside" id="3nE-JK-0F0"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBs-Rs-V9o">
                                     <rect key="frame" x="50" y="633.5" width="314" height="64"/>
@@ -141,6 +144,9 @@
                                     <buttonConfiguration key="configuration" style="plain" title="SAIR">
                                         <backgroundConfiguration key="background" image="btnBackground"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="tapToback:" destination="-1" eventType="touchUpInside" id="s00-Yx-0F6"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notificações de lembretes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="iOU-7H-XGl">
                                     <rect key="frame" x="50" y="913" width="255" height="16.5"/>

@@ -20,5 +20,10 @@ class SettingsViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func tapToDeveloper(_ sender: UIButton) {
+        let viewController = DevelopersViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 
 }

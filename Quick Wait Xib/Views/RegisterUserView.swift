@@ -85,8 +85,8 @@ class RegisterUserView: UIView {
 
     var fieldBirthDay: RegisterCustomTextfieldView = {
        var txt = RegisterCustomTextfieldView()
-        txt.setupNewTypeInput(input: .numberPad)
         txt.setTitle(value: "Data de nascimento")
+        txt.setupTextInputAndMask(mask: "00/00/0000", inputType: .numberPad)
         txt.translatesAutoresizingMaskIntoConstraints = false
         return txt
     }()
@@ -94,7 +94,8 @@ class RegisterUserView: UIView {
     var fieldPhone: RegisterCustomTextfieldView = {
        var txt = RegisterCustomTextfieldView()
         txt.setTitle(value: "Celular")
-        txt.setupNewTypeInput(input: .numberPad)
+        txt.makeDelegate()
+        txt.setupTextInputAndMask(mask: "(00) 0 0000-0000", inputType: .numberPad)
         txt.makeTextRequired()
         txt.translatesAutoresizingMaskIntoConstraints = false
         return txt

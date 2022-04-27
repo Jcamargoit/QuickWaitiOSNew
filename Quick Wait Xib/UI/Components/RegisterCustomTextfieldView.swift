@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import RxSwift
 import RxRelay
+import JMMaskTextField_Swift
 
 class RegisterCustomTextfieldView: UIView {
     var text: BehaviorRelay<String> = BehaviorRelay<String>(value: "")
@@ -37,12 +38,12 @@ class RegisterCustomTextfieldView: UIView {
         return lbl
     }()
 
-    var textfield: UITextField = {
-       var txt = UITextField()
+    var textfield: JMMaskTextField = {
+       var txt = JMMaskTextField()
         txt.font = UIFont.systemFont(ofSize: 23)
         txt.backgroundColor = .white
-        txt.keyboardType = .alphabet
         txt.autocapitalizationType = .none
+        txt.textColor = .gray
         txt.layer.masksToBounds = false
         txt.layer.shadowOpacity = 0.6
         txt.layer.shadowColor = UIColor.gray.cgColor
@@ -70,7 +71,8 @@ class RegisterCustomTextfieldView: UIView {
     }
 
     func bindText() {
-        self.textfield.rx.text.bind { value in self.text.accept(value ?? "") }.disposed(by: disposable)
+        self.textfield.rx.text.bind { value in self.text.accept(value ?? "")
+        }.disposed(by: disposable)
     }
 
     func setupContentView() {
@@ -101,6 +103,17 @@ class RegisterCustomTextfieldView: UIView {
             textfield.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
         ])
     }
+    
+    func setupTextInputAndMask(mask: String = "", inputType: UIKeyboardType) {
+        if !mask.isEmpty {
+            self.textfield.maskString = mask
+        }
+        self.textfield.keyboardType = inputType
+    }
+    
+    func makeDelegate() {
+        textfield.delegate = self
+    }
 
     func setTitle(value: String) {
         self.fieldTitle.text = value
@@ -119,4 +132,31 @@ class RegisterCustomTextfieldView: UIView {
         layoutIfNeeded()
     }
 
+}
+
+extension RegisterCustomTextfieldView: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        guard let text = textField.text as NSString? else { return true }
+        let newText = text.replacingCharacters(in: range, with: string)
+        
+        let maskTextField = textField as? JMMaskTextField
+        guard let unmaskedText = maskTextField!.stringMask?.unmask(string: newText) else { return true }
+        
+        if unmaskedText.count >= 11 {
+            maskTextField!.maskString = "(00) 0 0000-0000"
+        } else {
+            maskTextField!.maskString = "(00) 0000-0000"
+        }
+        
+        return true
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+
+        if textfield.textColor == UIColor.lightGray {
+            textfield.text = ""
+            textfield.textColor = UIColor.black
+        }
+    }
 }

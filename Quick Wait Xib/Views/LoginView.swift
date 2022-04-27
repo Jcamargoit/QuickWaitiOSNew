@@ -8,6 +8,28 @@
 import UIKit
 
 class LoginView: UIView {
+    
+    var bottomScroll: NSLayoutConstraint?
+
+    var scrollView: UIScrollView = {
+        var scrl = UIScrollView()
+        scrl.showsVerticalScrollIndicator = false
+        scrl.translatesAutoresizingMaskIntoConstraints = false
+        return scrl
+    }()
+
+    var stackSigin: UIStackView = {
+            var stk = UIStackView()
+            stk.axis = .vertical
+            stk.translatesAutoresizingMaskIntoConstraints = false
+            return stk
+        }()
+
+    var contentView: UIView = {
+        var view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
 
     var iconImage: UIImageView = {
        var img = UIImageView()
@@ -114,6 +136,9 @@ class LoginView: UIView {
     func createSubView() {
 
         backgroundColor = UIColor(red: 0.87, green: 1.00, blue: 1.00, alpha: 1.00)
+        setupScroll()
+        setupStack()
+        setupContentView()
         setupLogo()
         setupUserText()
         setupPasswordText()
@@ -121,11 +146,38 @@ class LoginView: UIView {
         setupButtonEnter()
         setupBack()
     }
+    
+    func setupScroll() {
+
+        bottomScroll = scrollView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0)
+        addSubview(scrollView)
+               NSLayoutConstraint.activate([
+                scrollView.topAnchor.constraint(equalTo: topAnchor),
+                bottomScroll!,
+                scrollView.leadingAnchor.constraint(equalTo: leadingAnchor),
+                scrollView.trailingAnchor.constraint(equalTo: trailingAnchor)
+               ])
+    }
+
+    func setupStack() {
+        scrollView.addSubview(stackSigin)
+        NSLayoutConstraint.activate([
+            stackSigin.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            stackSigin.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            stackSigin.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            stackSigin.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            stackSigin.widthAnchor.constraint(equalToConstant: size.width)
+        ])
+    }
+
+    func setupContentView() {
+        stackSigin.addArrangedSubview(contentView)
+    }
 
     func setupLogo() {
-        addSubview(iconImage)
+        contentView.addSubview(iconImage)
         NSLayoutConstraint.activate([
-            iconImage.topAnchor.constraint(equalTo: topAnchor, constant: size.height * 0.13),
+            iconImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: size.height * 0.13),
             iconImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             iconImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
             iconImage.heightAnchor.constraint(equalToConstant: size.height * 0.2)
@@ -133,14 +185,14 @@ class LoginView: UIView {
     }
 
     func setupUserText() {
-        addSubview(labelUser)
+        contentView.addSubview(labelUser)
         NSLayoutConstraint.activate([
             labelUser.topAnchor.constraint(equalTo: iconImage.bottomAnchor, constant: 30),
             labelUser.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
             labelUser.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -25)
         ])
 
-        addSubview(txtUser)
+        contentView.addSubview(txtUser)
         NSLayoutConstraint.activate([
             txtUser.topAnchor.constraint(equalTo: labelUser.bottomAnchor, constant: 4),
             txtUser.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 7),
@@ -151,14 +203,14 @@ class LoginView: UIView {
     }
 
     func setupPasswordText() {
-        addSubview(labelPassword)
+        contentView.addSubview(labelPassword)
         NSLayoutConstraint.activate([
             labelPassword.topAnchor.constraint(equalTo: txtUser.bottomAnchor, constant: 25),
             labelPassword.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
             labelPassword.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -25)
         ])
 
-        addSubview(txtPassword)
+        contentView.addSubview(txtPassword)
         NSLayoutConstraint.activate([
             txtPassword.topAnchor.constraint(equalTo: labelPassword.bottomAnchor, constant: 4),
             txtPassword.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 7),
@@ -169,13 +221,13 @@ class LoginView: UIView {
     }
 
     func setupForgotLabel() {
-        addSubview(labelForgotPass)
+        contentView.addSubview(labelForgotPass)
         NSLayoutConstraint.activate([
             labelForgotPass.topAnchor.constraint(equalTo: txtPassword.bottomAnchor, constant: 25),
             labelForgotPass.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25)
         ])
 
-        addSubview(buttonForgot)
+        contentView.addSubview(buttonForgot)
         NSLayoutConstraint.activate([
             buttonForgot.centerYAnchor.constraint(equalTo: labelForgotPass.centerYAnchor),
             buttonForgot.leadingAnchor.constraint(equalTo: labelForgotPass.trailingAnchor, constant: 5)
@@ -183,7 +235,7 @@ class LoginView: UIView {
     }
 
     func setupButtonEnter() {
-        addSubview(buttonEnter)
+        contentView.addSubview(buttonEnter)
         NSLayoutConstraint.activate([
             buttonEnter.topAnchor.constraint(equalTo: labelForgotPass.bottomAnchor, constant: size.height * 0.05),
             buttonEnter.widthAnchor.constraint(equalToConstant: size.width * 0.4),
@@ -194,14 +246,23 @@ class LoginView: UIView {
     }
 
     func setupBack() {
-        addSubview(imageReturn)
+        contentView.addSubview(imageReturn)
         NSLayoutConstraint.activate([
             imageReturn.topAnchor.constraint(equalTo: buttonEnter.bottomAnchor, constant: size.height * 0.08),
             imageReturn.centerXAnchor.constraint(equalTo: centerXAnchor),
             imageReturn.widthAnchor.constraint(equalToConstant: 50),
-            imageReturn.heightAnchor.constraint(equalToConstant: 50)
+            imageReturn.heightAnchor.constraint(equalToConstant: 50),
+            imageReturn.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
         sendSubviewToBack(imageReturn)
+    }
+    
+    func isEditing() {
+        self.bottomScroll?.constant = -size.height * 0.32
+    }
+
+    func stopEditing() {
+        self.bottomScroll?.constant = 0
     }
 
 }

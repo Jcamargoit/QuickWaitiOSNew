@@ -20,7 +20,22 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardOnTap()
         bindView()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear),
+                                               name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+
+    @objc func keyboardWillAppear() {
+        print("editando")
+        self.presentationView.isEditing()
+    }
+
+    @objc func keyboardWillDisappear() {
+        self.presentationView.stopEditing()
     }
 
     func bindView() {
