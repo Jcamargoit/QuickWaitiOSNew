@@ -105,6 +105,7 @@
 		F2C40E8827BFE61300EC0066 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */; };
 		F2C80D2F27BD8A9600189473 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C80D2D27BD8A9600189473 /* NewsCollectionViewCell.swift */; };
 		F2C80D3027BD8A9600189473 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C80D2E27BD8A9600189473 /* NewsCollectionViewCell.xib */; };
+		F519DDCA2819ADBC004D5462 /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F519DDC92819ADBC004D5462 /* UIViewController+Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +228,7 @@
 		F2C40E8727BFE61300EC0066 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		F2C80D2D27BD8A9600189473 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F2C80D2E27BD8A9600189473 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
+		F519DDC92819ADBC004D5462 /* UIViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +505,7 @@
 				9C5619F62800753200B0FD8B /* UIColor+Extension.swift */,
 				9C5619F82800757200B0FD8B /* UIFont+Extension.swift */,
 				9CA72969280DEB44005783F7 /* UIImageView+setRounded.swift */,
+				F519DDC92819ADBC004D5462 /* UIViewController+Preview.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -783,6 +786,7 @@
 				4CB92CA527BE8DD50079B5C1 /* NewsTableViewCell.swift in Sources */,
 				4C98F4CB27FDC2EF0016D35E /* DeveloperViewModel.swift in Sources */,
 				F26D68B22798B46500E20503 /* SceneDelegate.swift in Sources */,
+				F519DDCA2819ADBC004D5462 /* UIViewController+Preview.swift in Sources */,
 				4C1E141D27DFD1810018B7FC /* ChoiceView.swift in Sources */,
 				F2C04E3E27B3FAD600710727 /* ShowLoading.swift in Sources */,
 				4CC28F2627E2320900AC7A21 /* NetworkReachability.swift in Sources */,
